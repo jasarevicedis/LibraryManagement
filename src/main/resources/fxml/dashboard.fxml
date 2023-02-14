@@ -1,14 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="fxml.Dashboard"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="680.0" prefWidth="1230.0" style="-fx-background-color: #0598ff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.Dashboard">
+   <children>
+      <VBox prefHeight="680.0" prefWidth="254.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" />
+            <VBox alignment="CENTER" prefHeight="71.0" prefWidth="254.0">
+               <children>
+                  <Label text="Home" textAlignment="CENTER">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="71.0" prefWidth="254.0">
+               <children>
+                  <Label text="Books" textAlignment="CENTER">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="71.0" prefWidth="254.0">
+               <children>
+                  <Label text="Readers" textAlignment="CENTER">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="71.0" prefWidth="254.0">
+               <children>
+                  <Label text="Loans" textAlignment="CENTER">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="45.0" prefWidth="202.0" style="-fx-background-radius: 50;" text="Log out" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox layoutX="254.0" layoutY="7.0" prefHeight="668.0" prefWidth="971.0" style="-fx-background-color: white; -fx-background-radius: 25;">
+         <children>
+            <VBox prefHeight="636.0" prefWidth="962.0" />
+         </children>
+      </VBox>
+   </children>
 </AnchorPane>
