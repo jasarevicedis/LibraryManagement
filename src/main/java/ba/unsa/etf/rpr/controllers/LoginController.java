@@ -22,12 +22,14 @@ public class LoginController  {
 
 
         if(usernameTextField.getText().isBlank() == false && passwordPasswordField.getText().isBlank() == false){
-            loginMessageLabel.setText("You try to login");
+            //loginMessageLabel.setText("You try to login");
+            validateLogin();
         }
         else {
-            loginMessageLabel.setText("Please enter username and password");
+            //loginMessageLabel.setText("Please enter username and password");
         }
     }
+    public void validateLogin(){}
 
 
 }

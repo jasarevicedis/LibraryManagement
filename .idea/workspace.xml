@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -390,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676416550790</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="connection details created">
+      <created>1676416815499</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1676416815499</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -405,7 +412,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="abstract dao created" />
     <MESSAGE value="importing professor's abstract dao" />
     <MESSAGE value="AdminDao imported" />
     <MESSAGE value="AuthorDao added" />
@@ -430,6 +436,7 @@
     <MESSAGE value="starting database connection process" />
     <MESSAGE value="module info added, sql added" />
     <MESSAGE value="connecting to database" />
-    <option name="LAST_COMMIT_MESSAGE" value="connecting to database" />
+    <MESSAGE value="connection details created" />
+    <option name="LAST_COMMIT_MESSAGE" value="connection details created" />
   </component>
 </project>
