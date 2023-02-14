@@ -19,7 +19,14 @@ public class LoginController  {
     private PasswordField passwordPasswordField;
 
     public void loginButtonOnAction(ActionEvent e){
-        loginMessageLabel.setText("You try to login");
+
+
+        if(usernameTextField.getText().isBlank() == false && passwordPasswordField.getText().isBlank() == false){
+            loginMessageLabel.setText("You try to login");
+        }
+        else {
+            loginMessageLabel.setText("Please enter username and password");
+        }
     }
 
 
