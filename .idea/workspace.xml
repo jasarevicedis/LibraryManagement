@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/exceptions/LibraryException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/exceptions/LibraryException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/domain/Idable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +173,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676388410764</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Exception edited">
+      <created>1676388508972</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1676388508972</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fixed base dao class">
+      <created>1676388590648</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1676388590648</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,6 +214,8 @@
     <MESSAGE value="sidebar cretaed" />
     <MESSAGE value="Dao start" />
     <MESSAGE value="exception created" />
-    <option name="LAST_COMMIT_MESSAGE" value="exception created" />
+    <MESSAGE value="Exception edited" />
+    <MESSAGE value="fixed base dao class" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed base dao class" />
   </component>
 </project>
