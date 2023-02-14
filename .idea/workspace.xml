@@ -372,7 +372,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Dao start" />
     <MESSAGE value="exception created" />
     <MESSAGE value="Exception edited" />
     <MESSAGE value="fixed base dao class" />
@@ -397,6 +396,7 @@
     <MESSAGE value="logout controller starting" />
     <MESSAGE value="logout button atribute added" />
     <MESSAGE value="DButils created" />
-    <option name="LAST_COMMIT_MESSAGE" value="DButils created" />
+    <MESSAGE value="connecting login buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="connecting login buttons" />
   </component>
 </project>
