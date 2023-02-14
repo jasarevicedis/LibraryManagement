@@ -18,4 +18,17 @@ public class Loan {
     public int getBook_id(){
         return book_id;
     }
+
+    public void setId(int id){
+        this.id = id;
+    }
+    public void setLoan_date(Date loan_date){
+        this.loan_date = loan_date;
+    }
+    public void setMember_id(int member_id){
+        this.member_id = member_id;
+    }
+    public void setBook_id(int book_id){
+        this.book_id = book_id;
+    }
 }
