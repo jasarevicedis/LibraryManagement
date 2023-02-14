@@ -20,8 +20,11 @@ public class Admin {
     public void setId(int id){
         this.id = id;
     }
-    public  void SetUsername(String username){
+    public  void setUsername(String username){
         this.username = username;
+    }
+    public void setPassword(String password){
+        this.password = password;
     }
 }
 
