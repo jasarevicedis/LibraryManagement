@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/BookDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/AdminDaoSQLImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/domain/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/domain/Admin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -222,7 +224,28 @@
       <option name="project" value="LOCAL" />
       <updated>1676390027902</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="BookDao added">
+      <created>1676390095727</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1676390095727</updated>
+    </task>
+    <task id="LOCAL-00023" summary="LoanDao added">
+      <created>1676390143339</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1676390143339</updated>
+    </task>
+    <task id="LOCAL-00024" summary="LoanDao added">
+      <created>1676390186095</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1676390186095</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,6 +279,8 @@
     <MESSAGE value="importing professor's abstract dao" />
     <MESSAGE value="AdminDao imported" />
     <MESSAGE value="AuthorDao added" />
-    <option name="LAST_COMMIT_MESSAGE" value="AuthorDao added" />
+    <MESSAGE value="BookDao added" />
+    <MESSAGE value="LoanDao added" />
+    <option name="LAST_COMMIT_MESSAGE" value="LoanDao added" />
   </component>
 </project>
