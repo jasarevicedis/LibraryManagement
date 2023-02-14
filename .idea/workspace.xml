@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="" />
+    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/exceptions/LibraryException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/exceptions/LibraryException.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -164,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676388164004</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="exception created">
+      <created>1676388410764</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1676388410764</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,6 +199,7 @@
     <MESSAGE value="login method and dashboard starting" />
     <MESSAGE value="sidebar cretaed" />
     <MESSAGE value="Dao start" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dao start" />
+    <MESSAGE value="exception created" />
+    <option name="LAST_COMMIT_MESSAGE" value="exception created" />
   </component>
 </project>
