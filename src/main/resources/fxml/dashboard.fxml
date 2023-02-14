@@ -52,7 +52,7 @@
          <children>
             <VBox alignment="BOTTOM_CENTER" prefHeight="636.0" prefWidth="962.0">
                <children>
-                  <Pane prefHeight="200.0" prefWidth="200.0" />
+                  <Pane prefHeight="148.0" prefWidth="971.0" style="-fx-background-color: lightblue;" />
                   <GridPane alignment="CENTER" prefHeight="434.0" prefWidth="971.0">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -62,12 +62,12 @@
                       <RowConstraints maxHeight="381.0" minHeight="10.0" prefHeight="381.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <TableView prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                        <TableView prefHeight="372.0" prefWidth="971.0" GridPane.rowIndex="1">
                           <columns>
                             <TableColumn prefWidth="75.0" text="ID" />
                             <TableColumn prefWidth="207.0" text="FIRST NAME" />
-                              <TableColumn prefWidth="207.0" text="LAST NAME" />
-                              <TableColumn prefWidth="207.0" text="JOINING DATE" />
+                              <TableColumn prefWidth="205.0" text="LAST NAME" />
+                              <TableColumn prefWidth="209.0" text="JOINING DATE" />
                           </columns>
                         </TableView>
                         <TextField />
