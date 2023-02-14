@@ -1,5 +1,7 @@
 package ba.unsa.etf.rpr.domain;
 
+import java.util.Objects;
+
 /**
  * class for author table
  */
@@ -26,4 +28,6 @@ public class Author {
     public void setLast_name(String last_name){
         this.last_name = last_name;
     }
+
+
 }
