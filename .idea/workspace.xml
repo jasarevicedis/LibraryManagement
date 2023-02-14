@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="" />
+    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LogoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LogoutController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -325,7 +327,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676413110953</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="login controller starting">
+      <created>1676413526847</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1676413526847</updated>
+    </task>
+    <task id="LOCAL-00038" summary="logout controller starting">
+      <created>1676413738922</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1676413738922</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -340,8 +356,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fontawesome added, fixed login errors" />
-    <MESSAGE value="Creating LoginController and connecting it with its fxml file" />
     <MESSAGE value="login method and dashboard starting" />
     <MESSAGE value="sidebar cretaed" />
     <MESSAGE value="Dao start" />
@@ -365,6 +379,8 @@
     <MESSAGE value="JAVAFX" />
     <MESSAGE value="Created README" />
     <MESSAGE value="requirements" />
-    <option name="LAST_COMMIT_MESSAGE" value="requirements" />
+    <MESSAGE value="login controller starting" />
+    <MESSAGE value="logout controller starting" />
+    <option name="LAST_COMMIT_MESSAGE" value="logout controller starting" />
   </component>
 </project>
