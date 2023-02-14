@@ -5,4 +5,30 @@ public class Book {
     private String title;
     private int PublishYear;
     private int author_id; //foreign key
+
+    public int getId(){
+        return id;
+    }
+    public String getTitle(){
+        return title;
+    }
+    public int getPublishYear(){
+        return PublishYear;
+    }
+    public int getAuthor_id(){
+        return author_id;
+    }
+    public void setId(int id){
+        this.id = id;
+    }
+    public void setTitle(String title){
+        this.title = title;
+    }
+    public void setPublishYear(int PublishYear){
+        this.PublishYear = PublishYear;
+    }
+    public void setAuthor_id(int author_id){
+        this.author_id = author_id;
+    }
 }
+
