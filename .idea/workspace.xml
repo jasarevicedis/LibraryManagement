@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676411989040</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Created README">
+      <created>1676412741763</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1676412741763</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -328,7 +335,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Simple changes:&#10;-login.fxml&#10;-controllers created" />
     <MESSAGE value="login.fxml added" />
     <MESSAGE value="fontawesome added, fixed login errors" />
     <MESSAGE value="Creating LoginController and connecting it with its fxml file" />
@@ -353,6 +359,7 @@
     <MESSAGE value="created pages" />
     <MESSAGE value="updated sidebar" />
     <MESSAGE value="JAVAFX" />
-    <option name="LAST_COMMIT_MESSAGE" value="JAVAFX" />
+    <MESSAGE value="Created README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created README" />
   </component>
 </project>
