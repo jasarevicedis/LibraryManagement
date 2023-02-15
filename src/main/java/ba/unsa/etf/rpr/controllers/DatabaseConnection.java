@@ -9,7 +9,7 @@ public class DatabaseConnection {
         String databaseName = "freedb_RPRprojekatbaza";
         String databaseUser = "freedb_ejasarevic3";
         String databasePassword = "yDUg2u$7HZ2f?a%";
-        String url = "jdbc:mysql://localhost/"+ databaseName;
+        String url = "jdbc:mysql://sql.freedb.tech/"+ databaseName;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             databaseLink = DriverManager.getConnection(url,databaseUser,databasePassword);

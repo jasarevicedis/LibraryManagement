@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DatabaseConnection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,20 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00011" summary="login method and dashboard starting">
-      <created>1676383052928</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1676383052928</updated>
-    </task>
-    <task id="LOCAL-00012" summary="sidebar cretaed">
-      <created>1676385539014</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1676385539028</updated>
     </task>
     <task id="LOCAL-00013" summary="Dao start">
       <created>1676388164004</created>
@@ -420,7 +405,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676450119534</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="updated some ids">
+      <created>1676451186393</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1676451186393</updated>
+    </task>
+    <task id="LOCAL-00061" summary="updated some ids again">
+      <created>1676451324197</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1676451324197</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -435,8 +434,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created README" />
-    <MESSAGE value="requirements" />
     <MESSAGE value="login controller starting" />
     <MESSAGE value="logout controller starting" />
     <MESSAGE value="logout button atribute added" />
@@ -460,6 +457,8 @@
     <MESSAGE value="exception added" />
     <MESSAGE value="database creditentials added" />
     <MESSAGE value="trying to fix login button" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to fix login button" />
+    <MESSAGE value="updated some ids" />
+    <MESSAGE value="updated some ids again" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated some ids again" />
   </component>
 </project>
