@@ -25,7 +25,19 @@ public class DashboardController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources){}
 
+    @FXML
     private void handleClicks(ActionEvent event){
+        if(event.getSource() == btnHome){
 
+        }
+        else if(event.getSource() == btnBooks){
+
+        }
+        else if(event.getSource() == btnMembers){
+
+        }
+        else if(event.getSource() == btnLoans){
+
+        }
     }
 }
