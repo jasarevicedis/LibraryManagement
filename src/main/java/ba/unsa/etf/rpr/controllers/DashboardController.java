@@ -32,15 +32,18 @@ public class DashboardController implements Initializable {
     @FXML
     private void handleClicks(ActionEvent event){
         if(event.getSource() == btnHome){
-
+            lblPageName.setText("Home");
         }
         else if(event.getSource() == btnBooks){
+            lblPageName.setText("Books");
 
         }
         else if(event.getSource() == btnMembers){
+            lblPageName.setText("Members");
 
         }
         else if(event.getSource() == btnLoans){
+            lblPageName.setText("Loans");
 
         }
     }

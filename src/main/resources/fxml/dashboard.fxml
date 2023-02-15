@@ -48,7 +48,7 @@
          </children></VBox>
       <Pane layoutX="189.0" layoutY="42.0" prefHeight="93.0" prefWidth="531.0" style="-fx-background-color: lightblue;">
          <children>
-            <Label layoutX="54.0" layoutY="29.0" prefHeight="36.0" prefWidth="114.0" style="-fx-background-color: transparent;" text="Home" textFill="WHITE">
+            <Label fx:id="lblPageName" layoutX="54.0" layoutY="29.0" prefHeight="36.0" prefWidth="114.0" style="-fx-background-color: transparent;" text="Home" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="24.0" />
                </font>
