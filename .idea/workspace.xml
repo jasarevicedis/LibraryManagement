@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -397,7 +398,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676416815499</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="validateLogin() created">
+      <created>1676416923214</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1676416923214</updated>
+    </task>
+    <task id="LOCAL-00048" summary="validateLogin() updated">
+      <created>1676417123436</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1676417123436</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -412,8 +427,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="importing professor's abstract dao" />
-    <MESSAGE value="AdminDao imported" />
     <MESSAGE value="AuthorDao added" />
     <MESSAGE value="BookDao added" />
     <MESSAGE value="LoanDao added" />
@@ -437,6 +450,8 @@
     <MESSAGE value="module info added, sql added" />
     <MESSAGE value="connecting to database" />
     <MESSAGE value="connection details created" />
-    <option name="LAST_COMMIT_MESSAGE" value="connection details created" />
+    <MESSAGE value="validateLogin() created" />
+    <MESSAGE value="validateLogin() updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="validateLogin() updated" />
   </component>
 </project>

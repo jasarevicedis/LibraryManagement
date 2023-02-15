@@ -8,10 +8,14 @@ import java.awt.*;
 import java.net.URL;
 import java.sql.Connection;
 import java.util.ResourceBundle;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.control.PasswordField;
+import javafx.stage.Stage;
 
 public class LoginController  {
+    @FXML
+    private Button cancelButton;
     @FXML
     private Label loginMessageLabel;
     @FXML
@@ -33,6 +37,13 @@ public class LoginController  {
     public void validateLogin(){
         DatabaseConnection connectNow = new DatabaseConnection();
         Connection connectDB = connectNow.getConnection();
+
+        String verifyLogin = "";
+    }
+
+    public void cancelButtonOnAction(ActionEvent e){
+        Stage stage = (Stage) cancelButton.getScene().getWindow();
+        stage.close();
     }
 
 
