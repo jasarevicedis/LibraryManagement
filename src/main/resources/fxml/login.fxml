@@ -2,6 +2,7 @@
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -25,11 +26,11 @@
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="360.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField layoutX="123.0" layoutY="203.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
-            <PasswordField layoutX="123.0" layoutY="273.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="usernameTextField" layoutX="123.0" layoutY="203.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="passwordTextField" layoutX="123.0" layoutY="273.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
             <FontAwesomeIconView fill="#0598ff" glyphName="USER" layoutX="82.0" layoutY="223.0" size="20" />
             <FontAwesomeIconView fill="#0598ff" glyphName="KEY" layoutX="79.0" layoutY="293.0" size="20" />
-            <Button layoutX="131.0" layoutY="339.0" mnemonicParsing="false"  prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #0598ff;" text="Login" textFill="WHITE" />
+            <Button fx:id="loginButton" layoutX="131.0" layoutY="339.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #0598ff;" text="Login" textFill="WHITE" />
             <Text fill="#0598ff" layoutX="125.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Login">
                <font>
                   <Font size="16.0" />
@@ -42,6 +43,7 @@
             </FontAwesomeIconView>
             <Button fx:id="cancelButton" layoutX="318.0" layoutY="2.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" style="-fx-background-color: TRANSPARENT;" />
             <FontAwesomeIconView fill="#0598ff" glyphName="CLOSE" layoutX="319.0" layoutY="20.0" size="18" text="" />
+            <Label fx:id="loginMessageLabel" layoutX="124.0" layoutY="172.0" prefHeight="17.0" prefWidth="170.0" style="-fx-background-color: transparent;" textFill="#ff5656" />
          </children>
       </AnchorPane>
    </center>

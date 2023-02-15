@@ -7,6 +7,7 @@
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,13 +76,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Creating LoginController and connecting it with its fxml file">
-      <created>1676380930489</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1676380930489</updated>
     </task>
     <task id="LOCAL-00011" summary="login method and dashboard starting">
       <created>1676383052928</created>
@@ -419,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676449427971</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="trying to fix login button">
+      <created>1676450119517</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1676450119534</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,7 +435,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="JAVAFX" />
     <MESSAGE value="Created README" />
     <MESSAGE value="requirements" />
     <MESSAGE value="login controller starting" />
@@ -459,6 +459,7 @@
     <MESSAGE value="qhile for query" />
     <MESSAGE value="exception added" />
     <MESSAGE value="database creditentials added" />
-    <option name="LAST_COMMIT_MESSAGE" value="database creditentials added" />
+    <MESSAGE value="trying to fix login button" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying to fix login button" />
   </component>
 </project>
