@@ -27,7 +27,7 @@
       <AnchorPane prefHeight="200.0" prefWidth="360.0" BorderPane.alignment="CENTER">
          <children>
             <TextField fx:id="usernameTextField" layoutX="123.0" layoutY="203.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
-            <PasswordField fx:id="passwordTextField" layoutX="123.0" layoutY="273.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="passwordPasswordField" layoutX="123.0" layoutY="273.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
             <FontAwesomeIconView fill="#0598ff" glyphName="USER" layoutX="82.0" layoutY="223.0" size="20" />
             <FontAwesomeIconView fill="#0598ff" glyphName="KEY" layoutX="79.0" layoutY="293.0" size="20" />
             <Button fx:id="loginButton" layoutX="131.0" layoutY="339.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #0598ff;" text="Login" textFill="WHITE" />
