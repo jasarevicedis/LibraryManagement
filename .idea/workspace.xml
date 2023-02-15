@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="" />
+    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,20 +74,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00026" summary="author  set/get">
-      <created>1676397031937</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1676397031937</updated>
-    </task>
-    <task id="LOCAL-00027" summary="book  set/get">
-      <created>1676398188002</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1676398188002</updated>
     </task>
     <task id="LOCAL-00028" summary="loan  set/get">
       <created>1676398483771</created>
@@ -416,7 +404,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676494639050</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="multi page theme">
+      <created>1676494974925</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1676494974925</updated>
+    </task>
+    <task id="LOCAL-00076" summary="grid pane atributtes added">
+      <created>1676495071003</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1676495071003</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -431,8 +433,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="cancel button action" />
-    <MESSAGE value="login.fxml changes" />
     <MESSAGE value="MAIN file changes" />
     <MESSAGE value="wrong on action fixed" />
     <MESSAGE value="connection fixing" />
@@ -456,6 +456,8 @@
     <MESSAGE value="button ids added" />
     <MESSAGE value="adding label id" />
     <MESSAGE value="page label edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="page label edit" />
+    <MESSAGE value="multi page theme" />
+    <MESSAGE value="grid pane atributtes added" />
+    <option name="LAST_COMMIT_MESSAGE" value="grid pane atributtes added" />
   </component>
 </project>

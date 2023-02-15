@@ -46,18 +46,19 @@ public class DashboardController implements Initializable {
     private void handleClicks(ActionEvent event){
         if(event.getSource() == btnHome){
             lblPageName.setText("Home");
+            pnHome.toFront();
         }
         else if(event.getSource() == btnBooks){
             lblPageName.setText("Books");
-
+            pnBooks.toFront();
         }
         else if(event.getSource() == btnMembers){
             lblPageName.setText("Members");
-
+            pnMembers.toFront();
         }
         else if(event.getSource() == btnLoans){
             lblPageName.setText("Loans");
-
+            pnLoans.toFront();
         }
     }
 }
