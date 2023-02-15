@@ -76,20 +76,6 @@
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
     </task>
-    <task id="LOCAL-00005" summary="Setup">
-      <created>1672246042646</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1672246042646</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Plugin adding">
-      <created>1676363102879</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1676363102879</updated>
-    </task>
     <task id="LOCAL-00007" summary="Simple changes:&#10;-login.fxml&#10;-controllers created">
       <created>1676368309422</created>
       <option name="number" value="00007" />
@@ -419,7 +405,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676447125746</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="login query added">
+      <created>1676447675635</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1676447675644</updated>
+    </task>
+    <task id="LOCAL-00055" summary="try catch added">
+      <created>1676447937954</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1676447937974</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,7 +434,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="loan  set/get" />
     <MESSAGE value="member  set/get" />
     <MESSAGE value="created pages" />
     <MESSAGE value="updated sidebar" />
@@ -459,6 +458,7 @@
     <MESSAGE value="wrong on action fixed" />
     <MESSAGE value="connection fixing" />
     <MESSAGE value="login query added" />
-    <option name="LAST_COMMIT_MESSAGE" value="login query added" />
+    <MESSAGE value="try catch added" />
+    <option name="LAST_COMMIT_MESSAGE" value="try catch added" />
   </component>
 </project>

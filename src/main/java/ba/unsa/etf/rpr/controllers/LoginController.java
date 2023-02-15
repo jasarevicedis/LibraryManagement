@@ -7,6 +7,7 @@ import javafx.fxml.Initializable;
 import java.awt.*;
 import java.net.URL;
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ResourceBundle;
 import javafx.scene.control.Button;
@@ -42,6 +43,15 @@ public class LoginController  {
         String verifyLogin = "SELECT count(1) FROM admin WHERE username = '"+ usernameTextField.getText() +"' AND password = '"+ passwordPasswordField.getText() +"'";
         try {
             Statement statement = connectDB.createStatement();
+            ResultSet queryResult = statement.executeQuery(verifyLogin);
+
+            while(queryResult.next()){
+                if(queryResult.getInt(1) == 1){
+                    loginMessageLabel.setText("Welcome");
+                }else{
+                    loginMessageLabel.setText("Invalid login!");
+                }
+            }
         }catch(Exception e){
 
         }
