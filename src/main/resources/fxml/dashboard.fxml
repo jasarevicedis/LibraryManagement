@@ -1,80 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="680.0" prefWidth="1230.0" style="-fx-background-color: #0598ff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.controllers.DashboardController">
+
+<AnchorPane prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.Dashboard">
    <children>
-      <VBox prefHeight="680.0" prefWidth="254.0">
-         <children>
-            <VBox prefHeight="200.0" prefWidth="100.0" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="62.0" prefWidth="254.0" style="-fx-background-color: transparent;" text="Home" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-               <VBox.margin>
-                  <Insets top="5.0" />
-               </VBox.margin>
-            </Button>
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="62.0" prefWidth="254.0" style="-fx-background-color: transparent;" text="Books" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Button>
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="62.0" prefWidth="254.0" style="-fx-background-color: transparent;" text="Members" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Button>
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="62.0" prefWidth="254.0" style="-fx-background-color: transparent;" text="Loans" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Button>
-            <VBox alignment="CENTER" prefHeight="185.0" prefWidth="254.0">
-               <children>
-                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="45.0" prefWidth="202.0" style="-fx-background-radius: 50;" text="Log out" />
-               </children>
-            </VBox>
-         </children>
-      </VBox>
-      <VBox layoutX="254.0" layoutY="7.0" prefHeight="668.0" prefWidth="971.0" style="-fx-background-color: white; -fx-background-radius: 25;">
-         <children>
-            <VBox alignment="BOTTOM_CENTER" prefHeight="636.0" prefWidth="962.0">
-               <children>
-                  <Pane prefHeight="148.0" prefWidth="971.0" style="-fx-background-color: lightblue;" />
-                  <GridPane alignment="CENTER" prefHeight="434.0" prefWidth="971.0">
-                    <columnConstraints>
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                    </columnConstraints>
-                    <rowConstraints>
-                      <RowConstraints maxHeight="212.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
-                      <RowConstraints maxHeight="381.0" minHeight="10.0" prefHeight="381.0" vgrow="SOMETIMES" />
-                    </rowConstraints>
-                     <children>
-                        <TableView prefHeight="372.0" prefWidth="971.0" GridPane.rowIndex="1">
-                          <columns>
-                            <TableColumn prefWidth="75.0" text="ID" />
-                            <TableColumn prefWidth="207.0" text="FIRST NAME" />
-                              <TableColumn prefWidth="205.0" text="LAST NAME" />
-                              <TableColumn prefWidth="209.0" text="JOINING DATE" />
-                          </columns>
-                        </TableView>
-                        <TextField />
-                     </children>
-                  </GridPane>
-               </children></VBox>
-         </children>
-      </VBox>
+      <VBox prefHeight="480.0" prefWidth="189.0" style="-fx-background-color: #0598ff;" />
    </children>
 </AnchorPane>
