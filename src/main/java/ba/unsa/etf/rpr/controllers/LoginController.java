@@ -38,7 +38,7 @@ public class LoginController  {
         DatabaseConnection connectNow = new DatabaseConnection();
         Connection connectDB = connectNow.getConnection();
 
-        String verifyLogin = "";
+        String verifyLogin = "SELECT count(1) FROM admin WHERE username = '"+ usernameTextField.getText() +"' AND password = '"+ passwordPasswordField.getText() +"'";
     }
 
     public void cancelButtonOnAction(ActionEvent e){
