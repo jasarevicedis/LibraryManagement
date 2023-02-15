@@ -1,6 +1,7 @@
 package ba.unsa.etf.rpr.controllers;
 
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -23,4 +24,8 @@ public class DashboardController implements Initializable {
     private Button btnLoans;
     @Override
     public void initialize(URL location, ResourceBundle resources){}
+
+    private void handleClicks(ActionEvent event){
+
+    }
 }
