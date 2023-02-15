@@ -73,13 +73,6 @@
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
     </task>
-    <task id="LOCAL-00030" summary="member  set/get">
-      <created>1676405972168</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1676405972168</updated>
-    </task>
     <task id="LOCAL-00031" summary="created pages">
       <created>1676408020824</created>
       <option name="number" value="00031" />
@@ -416,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676495351242</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="scene builder fixes">
+      <created>1676495678558</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1676495678559</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -431,7 +431,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="connection fixing" />
     <MESSAGE value="login query added" />
     <MESSAGE value="try catch added" />
     <MESSAGE value="qhile for query" />
@@ -456,6 +455,7 @@
     <MESSAGE value="grid pane atributtes added" />
     <MESSAGE value="toFront added" />
     <MESSAGE value="fxids added to panes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fxids added to panes" />
+    <MESSAGE value="scene builder fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="scene builder fixes" />
   </component>
 </project>
