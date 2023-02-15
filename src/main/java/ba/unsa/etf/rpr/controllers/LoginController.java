@@ -7,6 +7,7 @@ import javafx.fxml.Initializable;
 import java.awt.*;
 import java.net.URL;
 import java.sql.Connection;
+import java.sql.Statement;
 import java.util.ResourceBundle;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -39,6 +40,11 @@ public class LoginController  {
         Connection connectDB = connectNow.getConnection();
 
         String verifyLogin = "SELECT count(1) FROM admin WHERE username = '"+ usernameTextField.getText() +"' AND password = '"+ passwordPasswordField.getText() +"'";
+        try {
+            Statement statement = connectDB.createStatement();
+        }catch(Exception e){
+
+        }
     }
 
     public void cancelButtonOnAction(ActionEvent e){
