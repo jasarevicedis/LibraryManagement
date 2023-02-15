@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" afterDir="false" />
-    </list>
+    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,20 +72,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00028" summary="loan  set/get">
-      <created>1676398483771</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1676398483771</updated>
-    </task>
-    <task id="LOCAL-00029" summary="loan  set/get">
-      <created>1676405794891</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1676405794891</updated>
     </task>
     <task id="LOCAL-00030" summary="member  set/get">
       <created>1676405972168</created>
@@ -418,7 +402,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676495071003</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="toFront added">
+      <created>1676495240998</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1676495240999</updated>
+    </task>
+    <task id="LOCAL-00078" summary="fxids added to panes">
+      <created>1676495351242</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1676495351242</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -433,8 +431,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="MAIN file changes" />
-    <MESSAGE value="wrong on action fixed" />
     <MESSAGE value="connection fixing" />
     <MESSAGE value="login query added" />
     <MESSAGE value="try catch added" />
@@ -458,6 +454,8 @@
     <MESSAGE value="page label edit" />
     <MESSAGE value="multi page theme" />
     <MESSAGE value="grid pane atributtes added" />
-    <option name="LAST_COMMIT_MESSAGE" value="grid pane atributtes added" />
+    <MESSAGE value="toFront added" />
+    <MESSAGE value="fxids added to panes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fxids added to panes" />
   </component>
 </project>
