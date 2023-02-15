@@ -33,7 +33,7 @@ public class LoginController  {
             validateLogin();
         }
         else {
-            //loginMessageLabel.setText("Please enter username and password");
+            loginMessageLabel.setText("Please enter username and password");
         }
     }
     public void validateLogin(){

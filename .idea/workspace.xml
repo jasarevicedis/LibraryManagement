@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,13 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00009" summary="fontawesome added, fixed login errors">
-      <created>1676378361721</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1676378361721</updated>
     </task>
     <task id="LOCAL-00010" summary="Creating LoginController and connecting it with its fxml file">
       <created>1676380930489</created>
@@ -418,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676449305666</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="database creditentials added">
+      <created>1676449427970</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1676449427971</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -433,7 +434,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated sidebar" />
     <MESSAGE value="JAVAFX" />
     <MESSAGE value="Created README" />
     <MESSAGE value="requirements" />
@@ -458,6 +458,7 @@
     <MESSAGE value="try catch added" />
     <MESSAGE value="qhile for query" />
     <MESSAGE value="exception added" />
-    <option name="LAST_COMMIT_MESSAGE" value="exception added" />
+    <MESSAGE value="database creditentials added" />
+    <option name="LAST_COMMIT_MESSAGE" value="database creditentials added" />
   </component>
 </project>
