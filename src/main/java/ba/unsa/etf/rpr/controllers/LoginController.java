@@ -26,8 +26,7 @@ public class LoginController  {
     @FXML
     private PasswordField passwordPasswordField;
 
-    @FXML
-    private Label lblPageName;
+
 
     public void loginButtonOnAction(ActionEvent e){
 
