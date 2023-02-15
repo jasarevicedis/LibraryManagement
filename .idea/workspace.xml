@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,13 +74,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Dao start">
-      <created>1676388164004</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1676388164004</updated>
     </task>
     <task id="LOCAL-00014" summary="exception created">
       <created>1676388410764</created>
@@ -419,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676451324197</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="dashboard restart">
+      <created>1676492013230</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1676492013231</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,7 +433,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="login controller starting" />
     <MESSAGE value="logout controller starting" />
     <MESSAGE value="logout button atribute added" />
     <MESSAGE value="DButils created" />
@@ -459,6 +457,7 @@
     <MESSAGE value="trying to fix login button" />
     <MESSAGE value="updated some ids" />
     <MESSAGE value="updated some ids again" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated some ids again" />
+    <MESSAGE value="dashboard restart" />
+    <option name="LAST_COMMIT_MESSAGE" value="dashboard restart" />
   </component>
 </project>
