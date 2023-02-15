@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,20 +76,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Setup">
-      <created>1672245295845</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1672245295845</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Setup">
-      <created>1672245367174</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1672245367174</updated>
     </task>
     <task id="LOCAL-00003" summary="Setup">
       <created>1672245454369</created>
@@ -418,7 +406,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676445487005</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="login.fxml changes">
+      <created>1676445845531</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1676445845566</updated>
+    </task>
+    <task id="LOCAL-00051" summary="MAIN file changes">
+      <created>1676445941685</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1676445941685</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -433,8 +435,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="BookDao added" />
-    <MESSAGE value="LoanDao added" />
     <MESSAGE value="admin  set/get" />
     <MESSAGE value="author  set/get" />
     <MESSAGE value="book  set/get" />
@@ -458,6 +458,8 @@
     <MESSAGE value="validateLogin() created" />
     <MESSAGE value="validateLogin() updated" />
     <MESSAGE value="cancel button action" />
-    <option name="LAST_COMMIT_MESSAGE" value="cancel button action" />
+    <MESSAGE value="login.fxml changes" />
+    <MESSAGE value="MAIN file changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="MAIN file changes" />
   </component>
 </project>
