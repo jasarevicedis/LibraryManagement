@@ -45,5 +45,7 @@
                </font>
             </Button>
          </children></VBox>
+      <Pane layoutX="189.0" layoutY="42.0" prefHeight="93.0" prefWidth="531.0" style="-fx-background-color: lightblue;" />
+      <Pane layoutX="189.0" prefHeight="42.0" prefWidth="531.0" style="-fx-background-color: white;" />
    </children>
 </AnchorPane>
