@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -412,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676417123436</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="cancel button action">
+      <created>1676445487005</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1676445487005</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -427,7 +433,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="AuthorDao added" />
     <MESSAGE value="BookDao added" />
     <MESSAGE value="LoanDao added" />
     <MESSAGE value="admin  set/get" />
@@ -452,6 +457,7 @@
     <MESSAGE value="connection details created" />
     <MESSAGE value="validateLogin() created" />
     <MESSAGE value="validateLogin() updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="validateLogin() updated" />
+    <MESSAGE value="cancel button action" />
+    <option name="LAST_COMMIT_MESSAGE" value="cancel button action" />
   </component>
 </project>

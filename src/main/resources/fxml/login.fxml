@@ -40,8 +40,8 @@
                   <Font size="1.0" />
                </font>
             </FontAwesomeIconView>
-            <Button layoutX="272.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: TRANSPARENT;" />
-            <FontAwesomeIconView fill="#0598ff" glyphName="CLOSE" layoutX="319.0" layoutY="20.0" size="18" />
+            <Button fx:id="cancelButton" layoutX="318.0" layoutY="2.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" style="-fx-background-color: TRANSPARENT;" />
+            <FontAwesomeIconView fill="#0598ff" glyphName="CLOSE" layoutX="319.0" layoutY="20.0" size="18" text="" />
          </children>
       </AnchorPane>
    </center>
