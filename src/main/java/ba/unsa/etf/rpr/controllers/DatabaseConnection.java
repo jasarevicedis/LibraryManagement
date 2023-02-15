@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 public class DatabaseConnection {
     public Connection databaseLink;
     public Connection getConnection(){
-        String databaseName = "";
+        String databaseName = "freedb_RPRprojekatbaza";
         String databaseUser = "";
         String databasePassword = "";
         String url = "jdbc:mysql://localhost/"+ databaseName;
