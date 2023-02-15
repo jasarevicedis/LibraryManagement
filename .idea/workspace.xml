@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="" />
+    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,20 +74,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00021" summary="AuthorDao added">
-      <created>1676390027902</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1676390027902</updated>
-    </task>
-    <task id="LOCAL-00022" summary="BookDao added">
-      <created>1676390095727</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1676390095727</updated>
     </task>
     <task id="LOCAL-00023" summary="LoanDao added">
       <created>1676390143339</created>
@@ -416,7 +404,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676493853926</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="fixing ui">
+      <created>1676494206440</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1676494206440</updated>
+    </task>
+    <task id="LOCAL-00071" summary="button ids added">
+      <created>1676494401781</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1676494401781</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -431,8 +433,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="connecting to database" />
-    <MESSAGE value="connection details created" />
     <MESSAGE value="validateLogin() created" />
     <MESSAGE value="validateLogin() updated" />
     <MESSAGE value="cancel button action" />
@@ -456,6 +456,8 @@
     <MESSAGE value="handling switching tabs" />
     <MESSAGE value="handleClicks" />
     <MESSAGE value="handleClicks added to buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="handleClicks added to buttons" />
+    <MESSAGE value="fixing ui" />
+    <MESSAGE value="button ids added" />
+    <option name="LAST_COMMIT_MESSAGE" value="button ids added" />
   </component>
 </project>
