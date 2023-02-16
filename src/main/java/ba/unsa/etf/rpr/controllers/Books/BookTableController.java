@@ -6,6 +6,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
+import java.awt.event.MouseEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -21,5 +22,11 @@ public class BookTableController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb){}
+
+
+    @FXML
+    private void getAddView(MouseEvent event){}
+    @FXML
+    private void refreshTable(MouseEvent event){}
 
 }
