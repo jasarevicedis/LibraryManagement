@@ -4,7 +4,7 @@ public class Book {
     private int id;
     private String title;
     private int PublishYear;
-    private int author_id; //foreign key
+    private String author;
 
     public int getId(){
         return id;
@@ -15,8 +15,8 @@ public class Book {
     public int getPublishYear(){
         return PublishYear;
     }
-    public int getAuthor_id(){
-        return author_id;
+    public String getAuthor(){
+        return author;
     }
     public void setId(int id){
         this.id = id;
@@ -27,8 +27,8 @@ public class Book {
     public void setPublishYear(int PublishYear){
         this.PublishYear = PublishYear;
     }
-    public void setAuthor_id(int author_id){
-        this.author_id = author_id;
+    public void setAuthor(String author){
+        this.author = author;
     }
 }
 

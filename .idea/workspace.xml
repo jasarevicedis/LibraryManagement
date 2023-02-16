@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/Books/BookTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/Books/BookTableController.java" afterDir="false" />
-    </list>
+    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,20 +72,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00037" summary="login controller starting">
-      <created>1676413526847</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1676413526847</updated>
-    </task>
-    <task id="LOCAL-00038" summary="logout controller starting">
-      <created>1676413738922</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1676413738922</updated>
     </task>
     <task id="LOCAL-00039" summary="logout button atribute added">
       <created>1676413911885</created>
@@ -418,7 +402,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676534823969</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Books controller updated">
+      <created>1676535203039</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1676535203093</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Books controller updated">
+      <created>1676535386014</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1676535386014</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -433,7 +431,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="database creditentials added" />
     <MESSAGE value="trying to fix login button" />
     <MESSAGE value="updated some ids" />
     <MESSAGE value="updated some ids again" />
@@ -458,6 +455,7 @@
     <MESSAGE value="login action fixing" />
     <MESSAGE value="dashboard updates" />
     <MESSAGE value="Books controller added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Books controller added" />
+    <MESSAGE value="Books controller updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Books controller updated" />
   </component>
 </project>
