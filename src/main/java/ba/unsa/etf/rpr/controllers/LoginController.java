@@ -40,7 +40,7 @@ public class LoginController  {
             //loginMessageLabel.setText("You try to login");
             validateLogin();
             Stage primaryStage = new Stage();
-            Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/fxml/dashboard.fxml"));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();
