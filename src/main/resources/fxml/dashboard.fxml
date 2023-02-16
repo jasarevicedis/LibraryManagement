@@ -16,9 +16,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.controllers.DashboardController">
+<AnchorPane prefHeight="480.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.controllers.DashboardController">
    <children>
-      <VBox prefHeight="480.0" prefWidth="189.0" style="-fx-background-color: #0598ff;">
+      <VBox prefHeight="481.0" prefWidth="189.0" style="-fx-background-color: #0598ff;">
          <children>
             <Pane prefHeight="125.0" prefWidth="189.0" />
             <Button fx:id="btnHome" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="49.0" prefWidth="189.0" style="-fx-background-color: transparent;" text="Home" textFill="WHITE">
@@ -55,7 +55,7 @@
             </Button>
          </children></VBox>
       <Pane layoutX="189.0" prefHeight="42.0" prefWidth="531.0" style="-fx-background-color: white;" />
-      <Pane layoutX="189.0" layoutY="42.0" prefHeight="72.0" prefWidth="531.0" style="-fx-background-color: lightblue;">
+      <Pane layoutX="189.0" layoutY="42.0" prefHeight="72.0" prefWidth="591.0" style="-fx-background-color: lightblue;">
          <children>
             <Label fx:id="lblPageName" layoutX="53.0" layoutY="14.0" prefHeight="36.0" prefWidth="114.0" style="-fx-background-color: transparent;" text="Home" textFill="WHITE">
                <font>
@@ -64,7 +64,7 @@
             </Label>
          </children>
       </Pane>
-      <StackPane layoutX="189.0" layoutY="119.0" prefHeight="362.0" prefWidth="531.0">
+      <StackPane layoutX="189.0" layoutY="119.0" prefHeight="362.0" prefWidth="591.0">
          <children>
             <GridPane fx:id="pnHome">
                <columnConstraints>
@@ -102,9 +102,9 @@
                <children>
                   <TableView prefHeight="319.0" prefWidth="531.0" GridPane.rowIndex="1">
                     <columns>
-                      <TableColumn prefWidth="117.0" text="BookId" />
-                      <TableColumn prefWidth="233.0" text="Title" />
-                        <TableColumn minWidth="0.0" prefWidth="180.0" text="Author" />
+                      <TableColumn prefWidth="71.0" text="BookId" />
+                      <TableColumn prefWidth="307.0" text="Title" />
+                        <TableColumn minWidth="0.0" prefWidth="212.0" text="Author" />
                     </columns>
                   </TableView>
                   <HBox prefHeight="33.0" prefWidth="531.0">
