@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="" />
+    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/Books/BookTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/Books/BookTableController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -72,20 +74,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Created README">
-      <created>1676412741763</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1676412741763</updated>
-    </task>
-    <task id="LOCAL-00036" summary="requirements">
-      <created>1676413110953</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1676413110953</updated>
     </task>
     <task id="LOCAL-00037" summary="login controller starting">
       <created>1676413526847</created>
@@ -416,7 +404,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676534214530</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="dashboard updates">
+      <created>1676534590882</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1676534590882</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Books controller added">
+      <created>1676534823969</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1676534823969</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -431,8 +433,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="qhile for query" />
-    <MESSAGE value="exception added" />
     <MESSAGE value="database creditentials added" />
     <MESSAGE value="trying to fix login button" />
     <MESSAGE value="updated some ids" />
@@ -456,6 +456,8 @@
     <MESSAGE value="scene builder fixes" />
     <MESSAGE value="fixing fxml file" />
     <MESSAGE value="login action fixing" />
-    <option name="LAST_COMMIT_MESSAGE" value="login action fixing" />
+    <MESSAGE value="dashboard updates" />
+    <MESSAGE value="Books controller added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Books controller added" />
   </component>
 </project>
