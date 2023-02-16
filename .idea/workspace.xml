@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="" />
+    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,20 +76,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00031" summary="created pages">
-      <created>1676408020824</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1676408020825</updated>
-    </task>
-    <task id="LOCAL-00032" summary="updated sidebar">
-      <created>1676409309170</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1676409309171</updated>
     </task>
     <task id="LOCAL-00033" summary="JAVAFX">
       <created>1676411370989</created>
@@ -416,7 +406,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676495678559</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="scene builder fixes">
+      <created>1676496483496</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1676496483496</updated>
+    </task>
+    <task id="LOCAL-00081" summary="fixing fxml file">
+      <created>1676496577909</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1676496577909</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -431,7 +435,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="login query added" />
     <MESSAGE value="try catch added" />
     <MESSAGE value="qhile for query" />
     <MESSAGE value="exception added" />
@@ -456,6 +459,7 @@
     <MESSAGE value="toFront added" />
     <MESSAGE value="fxids added to panes" />
     <MESSAGE value="scene builder fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="scene builder fixes" />
+    <MESSAGE value="fixing fxml file" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing fxml file" />
   </component>
 </project>
