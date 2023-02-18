@@ -1,7 +1,7 @@
 package ba.unsa.etf.rpr.dao;
 
 import ba.unsa.etf.rpr.domain.Idable;
-import ba.unsa.etf.rpr.exceptions.LibraryException;
+import ba.unsa.etf.rpr.exceptions.DBException;
 
 import java.sql.*;
 import java.util.*;
@@ -54,9 +54,9 @@ public abstract class AbstractDao<T extends Idable> implements Dao<T> {
      * Method for mapping ResultSet into Object
      * @param rs - result set from database
      * @return a Bean object for specific table
-     * @throws ba.unsa.etf.rpr.exceptions.LibraryException in case of error with db
+     * @throws DBException in case of error with db
      */
-    public abstract T row2object(ResultSet rs) throws LibraryException;
+    public abstract T row2object(ResultSet rs) throws DBException;
 
     /**
      * Method for mapping Object into Map
@@ -65,26 +65,26 @@ public abstract class AbstractDao<T extends Idable> implements Dao<T> {
      */
     public abstract Map<String, Object> object2row(T object);
 
-    public T getById(int id) throws LibraryException {
+    public T getById(int id) throws DBException {
         return executeQueryUnique("SELECT * FROM "+this.tableName+" WHERE id = ?", new Object[]{id});
     }
 
-    public List<T> getAll() throws LibraryException {
+    public List<T> getAll() throws DBException {
         return executeQuery("SELECT * FROM "+ tableName, null);
     }
 
-    public void delete(int id) throws LibraryException {
+    public void delete(int id) throws DBException {
         String sql = "DELETE FROM "+tableName+" WHERE id = ?";
         try{
             PreparedStatement stmt = getConnection().prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             stmt.setObject(1, id);
             stmt.executeUpdate();
         }catch (SQLException e){
-            throw new LibraryException(e.getMessage(), e);
+            throw new DBException(e.getMessage(), e);
         }
     }
 
-    public T add(T item) throws LibraryException{
+    public T add(T item) throws DBException {
         Map<String, Object> row = object2row(item);
         Map.Entry<String, String> columns = prepareInsertParts(row);
 
@@ -110,11 +110,11 @@ public abstract class AbstractDao<T extends Idable> implements Dao<T> {
 
             return item;
         }catch (SQLException e){
-            throw new LibraryException(e.getMessage(), e);
+            throw new DBException(e.getMessage(), e);
         }
     }
 
-    public T update(T item) throws LibraryException{
+    public T update(T item) throws DBException {
         Map<String, Object> row = object2row(item);
         String updateColumns = prepareUpdateParts(row);
         StringBuilder builder = new StringBuilder();
@@ -136,7 +136,7 @@ public abstract class AbstractDao<T extends Idable> implements Dao<T> {
             stmt.executeUpdate();
             return item;
         }catch (SQLException e){
-            throw new LibraryException(e.getMessage(), e);
+            throw new DBException(e.getMessage(), e);
         }
     }
 
@@ -145,9 +145,9 @@ public abstract class AbstractDao<T extends Idable> implements Dao<T> {
      * @param query - SQL query
      * @param params - params for query
      * @return List of objects from database
-     * @throws LibraryException in case of error with db
+     * @throws DBException in case of error with db
      */
-    public List<T> executeQuery(String query, Object[] params) throws LibraryException{
+    public List<T> executeQuery(String query, Object[] params) throws DBException {
         try {
             PreparedStatement stmt = getConnection().prepareStatement(query);
             if (params != null){
@@ -162,7 +162,7 @@ public abstract class AbstractDao<T extends Idable> implements Dao<T> {
             }
             return resultList;
         } catch (SQLException e) {
-            throw new LibraryException(e.getMessage(), e);
+            throw new DBException(e.getMessage(), e);
         }
     }
 
@@ -171,14 +171,14 @@ public abstract class AbstractDao<T extends Idable> implements Dao<T> {
      * @param query - query that returns single record
      * @param params - list of params for sql query
      * @return Object
-     * @throws LibraryException in case when object is not found
+     * @throws DBException in case when object is not found
      */
-    public T executeQueryUnique(String query, Object[] params) throws LibraryException{
+    public T executeQueryUnique(String query, Object[] params) throws DBException {
         List<T> result = executeQuery(query, params);
         if (result != null && result.size() == 1){
             return result.get(0);
         }else{
-            throw new LibraryException("Object not found");
+            throw new DBException("Object not found");
         }
     }
 

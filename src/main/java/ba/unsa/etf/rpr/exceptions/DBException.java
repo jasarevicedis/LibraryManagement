@@ -5,12 +5,12 @@ package ba.unsa.etf.rpr.exceptions;
  * @author ejasarevic3
  */
 
-public class LibraryException extends Exception{
-    public LibraryException(String msg, Exception reason){
+public class DBException extends Exception{
+    public DBException(String msg, Exception reason){
         super(msg, reason);
     }
 
-    public LibraryException(String msg){
+    public DBException(String msg){
         super(msg);
     }
 }
