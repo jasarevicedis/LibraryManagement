@@ -108,14 +108,32 @@
                <rowConstraints>
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" />
+               </children>
             </GridPane>
-            <GridPane fx:id="pnMmembers">
+            <GridPane fx:id="pnMembers">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                </columnConstraints>
                <rowConstraints>
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="203.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="365.0" minHeight="10.0" prefHeight="362.0" vgrow="SOMETIMES" />
                </rowConstraints>
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="531.0">
+                     <children>
+                        <TextField prefHeight="25.0" prefWidth="208.0">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin></TextField>
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" text="Button">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin></Button>
+                     </children>
+                  </HBox>
+               </children>
             </GridPane>
             <GridPane fx:id="pnLoans" prefHeight="360.0" prefWidth="531.0">
                <columnConstraints>
@@ -142,18 +160,6 @@
                         <TableColumn minWidth="0.0" prefWidth="247.0" text="Author" />
                     </columns>
                   </TableView>
-                  <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="531.0">
-                     <children>
-                        <TextField prefHeight="25.0" prefWidth="208.0">
-                           <HBox.margin>
-                              <Insets left="10.0" />
-                           </HBox.margin></TextField>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" text="Button">
-                           <HBox.margin>
-                              <Insets left="5.0" />
-                           </HBox.margin></Button>
-                     </children>
-                  </HBox>
                </children>
             </GridPane>
          </children>
