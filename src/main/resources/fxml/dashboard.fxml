@@ -139,10 +139,16 @@
                         <TableColumn minWidth="0.0" prefWidth="212.0" text="Author" />
                     </columns>
                   </TableView>
-                  <HBox prefHeight="33.0" prefWidth="531.0">
+                  <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="531.0">
                      <children>
-                        <TextField />
-                        <Button mnemonicParsing="false" text="Button" />
+                        <TextField prefHeight="25.0" prefWidth="208.0">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin></TextField>
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" text="Button">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin></Button>
                      </children>
                   </HBox>
                </children>
