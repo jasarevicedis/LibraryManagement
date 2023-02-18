@@ -22,7 +22,7 @@
    <children>
       <VBox prefHeight="531.0" prefWidth="189.0" style="-fx-background-color: #0598ff;">
          <children>
-            <Pane prefHeight="125.0" prefWidth="189.0">
+            <Pane prefHeight="148.0" prefWidth="189.0">
                <children>
                   <ImageView fitHeight="66.0" fitWidth="98.0" layoutX="44.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" />
                </children></Pane>
@@ -135,8 +135,8 @@
                   <TableView prefHeight="333.0" prefWidth="662.0" GridPane.rowIndex="1">
                     <columns>
                       <TableColumn prefWidth="71.0" text="BookId" />
-                      <TableColumn prefWidth="307.0" text="Title" />
-                        <TableColumn minWidth="0.0" prefWidth="212.0" text="Author" />
+                      <TableColumn prefWidth="363.0" text="Title" />
+                        <TableColumn minWidth="0.0" prefWidth="247.0" text="Author" />
                     </columns>
                   </TableView>
                   <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="531.0">
