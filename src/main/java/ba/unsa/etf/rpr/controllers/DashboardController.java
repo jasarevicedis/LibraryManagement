@@ -7,12 +7,14 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class DashboardController implements Initializable {
-
+    @FXML
+    private Button cancelButton;
     @FXML
     private Button btnHome;
 
@@ -60,5 +62,9 @@ public class DashboardController implements Initializable {
             lblPageName.setText("Loans");
             pnLoans.toFront();
         }
+    }
+    public void cancelButtonOnAction(ActionEvent e){
+        Stage stage = (Stage) cancelButton.getScene().getWindow();
+        stage.close();
     }
 }

@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="" />
+    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,13 +74,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00046" summary="connection details created">
-      <created>1676416815499</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1676416815499</updated>
     </task>
     <task id="LOCAL-00047" summary="validateLogin() created">
       <created>1676416923214</created>
@@ -416,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676744638416</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="fx updated">
+      <created>1676744976010</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1676744976011</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -431,7 +433,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="setting grid pane" />
     <MESSAGE value="table view added" />
     <MESSAGE value="sidebar buttons labels added" />
     <MESSAGE value="handling switching tabs" />
@@ -456,6 +457,7 @@
     <MESSAGE value="logout added" />
     <MESSAGE value="icon placeholders added" />
     <MESSAGE value="fx" />
-    <option name="LAST_COMMIT_MESSAGE" value="fx" />
+    <MESSAGE value="fx updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="fx updated" />
   </component>
 </project>
