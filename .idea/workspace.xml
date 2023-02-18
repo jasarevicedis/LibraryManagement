@@ -73,20 +73,6 @@
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
     </task>
-    <task id="LOCAL-00044" summary="module info added, sql added">
-      <created>1676416341168</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1676416341168</updated>
-    </task>
-    <task id="LOCAL-00045" summary="connecting to database">
-      <created>1676416550790</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1676416550790</updated>
-    </task>
     <task id="LOCAL-00046" summary="connection details created">
       <created>1676416815499</created>
       <option name="number" value="00046" />
@@ -416,7 +402,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676744119590</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="fx">
+      <created>1676744448244</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1676744448244</updated>
+    </task>
+    <task id="LOCAL-00094" summary="fx">
+      <created>1676744638416</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1676744638416</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

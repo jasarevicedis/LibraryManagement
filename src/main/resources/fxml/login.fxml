@@ -41,8 +41,10 @@
                   <Font size="1.0" />
                </font>
             </FontAwesomeIconView>
-            <Button fx:id="cancelButton" layoutX="318.0" layoutY="2.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" style="-fx-background-color: TRANSPARENT;" />
-            <FontAwesomeIconView fill="#0598ff" glyphName="CLOSE" layoutX="319.0" layoutY="20.0" size="18" text="" />
+            <Button fx:id="cancelButton" layoutX="318.0" layoutY="2.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" style="-fx-background-color: TRANSPARENT;">
+               <graphic>
+                  <FontAwesomeIconView fill="#0598ff" glyphName="CLOSE" size="18" text="" />
+               </graphic></Button>
             <Label fx:id="loginMessageLabel" layoutX="124.0" layoutY="172.0" prefHeight="17.0" prefWidth="170.0" style="-fx-background-color: transparent;" textFill="#ff5656" />
          </children>
       </AnchorPane>
