@@ -18,7 +18,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="531.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="ba.unsa.etf.rpr.controllers.DashboardController">
+<AnchorPane prefHeight="531.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.controllers.DashboardController">
    <children>
       <VBox prefHeight="531.0" prefWidth="189.0" style="-fx-background-color: #0598ff;">
          <children>
@@ -31,7 +31,7 @@
                   <Font name="System Bold" size="20.0" />
                </font>
                <graphic>
-                  <FontAwesomeIconView />
+                  <FontAwesomeIconView fill="WHITE" glyphName="HOME" />
                </graphic>
                <padding>
                   <Insets left="40.0" />
@@ -48,7 +48,7 @@
                   <Font name="System Bold" size="20.0" />
                </font>
                <graphic>
-                  <FontAwesomeIconView />
+                  <FontAwesomeIconView fill="WHITE" glyphName="BOOK" />
                </graphic>
             </Button>
             <Button fx:id="btnMembers" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="49.0" prefWidth="189.0" style="-fx-background-color: transparent;" text="Members" textFill="WHITE">
@@ -59,7 +59,7 @@
                   <Font name="System Bold" size="20.0" />
                </font>
                <graphic>
-                  <FontAwesomeIconView />
+                  <FontAwesomeIconView fill="WHITE" glyphName="USERS" />
                </graphic>
             </Button>
             <Button fx:id="btnLoans" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="49.0" prefWidth="189.0" style="-fx-background-color: transparent;" text="Loans" textFill="WHITE">
@@ -80,7 +80,7 @@
                         <Font name="System Bold" size="20.0" />
                      </font>
                      <graphic>
-                        <FontAwesomeIconView />
+                        <FontAwesomeIconView glyphName="STICKY-NOTE" />
                      </graphic>
                   </Button>
                </children>
