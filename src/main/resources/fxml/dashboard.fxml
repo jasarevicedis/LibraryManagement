@@ -257,7 +257,10 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Pane layoutX="39.0" layoutY="91.0" prefHeight="118.0" prefWidth="114.0" style="-fx-background-color: lightblue;" />
+                     </children></Pane>
                </children>
             </GridPane>
          </children>

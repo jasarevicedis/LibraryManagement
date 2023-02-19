@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" afterDir="false" />
-    </list>
+    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,13 +72,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00066" summary="sidebar buttons labels added">
-      <created>1676493464478</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1676493464478</updated>
     </task>
     <task id="LOCAL-00067" summary="handling switching tabs">
       <created>1676493532236</created>
@@ -418,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676834094613</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="logout function added">
+      <created>1676834318577</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1676834318577</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -433,7 +431,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="grid pane atributtes added" />
     <MESSAGE value="toFront added" />
     <MESSAGE value="fxids added to panes" />
     <MESSAGE value="scene builder fixes" />
@@ -458,6 +455,7 @@
     <MESSAGE value="stack attributes added" />
     <MESSAGE value="fixed login bug" />
     <MESSAGE value="fixed cloding login page bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed cloding login page bug" />
+    <MESSAGE value="logout function added" />
+    <option name="LAST_COMMIT_MESSAGE" value="logout function added" />
   </component>
 </project>
