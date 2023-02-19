@@ -73,13 +73,6 @@
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
     </task>
-    <task id="LOCAL-00058" summary="database creditentials added">
-      <created>1676449427970</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1676449427971</updated>
-    </task>
     <task id="LOCAL-00059" summary="trying to fix login button">
       <created>1676450119517</created>
       <option name="number" value="00059" />
@@ -416,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676815547445</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="editing members">
+      <created>1676816024407</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1676816024409</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -431,7 +431,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="button ids added" />
     <MESSAGE value="adding label id" />
     <MESSAGE value="page label edit" />
     <MESSAGE value="multi page theme" />
@@ -456,6 +455,7 @@
     <MESSAGE value="book controller transformed to dashboard controller" />
     <MESSAGE value="fx edit" />
     <MESSAGE value="add Book added fx" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Book added fx" />
+    <MESSAGE value="editing members" />
+    <option name="LAST_COMMIT_MESSAGE" value="editing members" />
   </component>
 </project>
