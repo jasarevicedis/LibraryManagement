@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,13 +74,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00065" summary="table view added">
-      <created>1676492856146</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1676492856147</updated>
     </task>
     <task id="LOCAL-00066" summary="sidebar buttons labels added">
       <created>1676493464478</created>
@@ -418,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676833674411</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="fixed cloding login page bug">
+      <created>1676834094613</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1676834094613</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -433,7 +433,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="multi page theme" />
     <MESSAGE value="grid pane atributtes added" />
     <MESSAGE value="toFront added" />
     <MESSAGE value="fxids added to panes" />
@@ -458,6 +457,7 @@
     <MESSAGE value="editing members" />
     <MESSAGE value="stack attributes added" />
     <MESSAGE value="fixed login bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed login bug" />
+    <MESSAGE value="fixed cloding login page bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed cloding login page bug" />
   </component>
 </project>

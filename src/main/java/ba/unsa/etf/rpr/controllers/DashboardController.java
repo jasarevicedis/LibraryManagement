@@ -5,7 +5,10 @@ import ba.unsa.etf.rpr.domain.Book;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
@@ -14,10 +17,14 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.awt.event.MouseEvent;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import static javafx.scene.control.PopupControl.USE_COMPUTED_SIZE;
 
 public class DashboardController implements Initializable {
     @FXML
@@ -90,7 +97,15 @@ public class DashboardController implements Initializable {
         stage.close();
     }
 
-    public void logoutButtonOnAction(ActionEvent e){}
+    public void logoutButtonOnAction(ActionEvent e) throws IOException {
+        Stage stage = (Stage) cancelButton.getScene().getWindow();
+        stage.close();
+        Stage primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/login.fxml"));
+        Scene scene = new Scene(root);
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
 
     @FXML
     private void getAddViewBooks(MouseEvent event){}
