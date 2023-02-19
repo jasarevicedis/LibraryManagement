@@ -73,20 +73,6 @@
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
     </task>
-    <task id="LOCAL-00059" summary="trying to fix login button">
-      <created>1676450119517</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1676450119534</updated>
-    </task>
-    <task id="LOCAL-00060" summary="updated some ids">
-      <created>1676451186393</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1676451186393</updated>
-    </task>
     <task id="LOCAL-00061" summary="updated some ids again">
       <created>1676451324197</created>
       <option name="number" value="00061" />
@@ -416,7 +402,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676816024409</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="editing members">
+      <created>1676816443041</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1676816443042</updated>
+    </task>
+    <task id="LOCAL-00109" summary="editing members">
+      <created>1676816604926</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1676816604927</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
