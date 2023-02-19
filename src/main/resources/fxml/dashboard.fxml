@@ -259,9 +259,21 @@
                <children>
                   <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
                      <children>
-                        <Pane layoutX="98.0" layoutY="259.0" prefHeight="118.0" prefWidth="114.0" style="-fx-background-color: lightblue; -fx-background-radius: 20px;" />
-                        <Pane layoutX="278.0" layoutY="259.0" prefHeight="118.0" prefWidth="114.0" style="-fx-background-color: lightblue; -fx-background-radius: 20px;" />
-                        <Pane layoutX="453.0" layoutY="259.0" prefHeight="118.0" prefWidth="114.0" style="-fx-background-color: lightblue; -fx-background-radius: 20px;" />
+                        <Pane layoutX="98.0" layoutY="259.0" prefHeight="118.0" prefWidth="114.0" style="-fx-background-color: lightblue; -fx-background-radius: 20px;">
+                           <children>
+                              <FontAwesomeIconView layoutX="32.0" layoutY="57.0" size="50" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="278.0" layoutY="259.0" prefHeight="118.0" prefWidth="114.0" style="-fx-background-color: lightblue; -fx-background-radius: 20px;">
+                           <children>
+                              <FontAwesomeIconView layoutX="32.0" layoutY="57.0" size="50" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="453.0" layoutY="259.0" prefHeight="118.0" prefWidth="114.0" style="-fx-background-color: lightblue; -fx-background-radius: 20px;">
+                           <children>
+                              <FontAwesomeIconView layoutX="32.0" layoutY="57.0" size="50" />
+                           </children>
+                        </Pane>
                      </children></Pane>
                </children>
             </GridPane>
