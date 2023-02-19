@@ -197,7 +197,7 @@
                               <Insets left="30.0" />
                            </HBox.margin>
                         </ComboBox>
-                        <Button fx:id="addBook1" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add books" textFill="WHITE">
+                        <Button fx:id="addMember" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add members" textFill="WHITE">
                            <HBox.margin>
                               <Insets left="30.0" />
                            </HBox.margin>
@@ -209,9 +209,10 @@
                   </HBox>
                   <TableView fx:id="bookTable1" prefHeight="333.0" prefWidth="662.0" GridPane.rowIndex="1">
                      <columns>
-                        <TableColumn fx:id="bookId1" prefWidth="71.0" text="BookId" />
-                        <TableColumn fx:id="bookTitle1" prefWidth="363.0" text="Title" />
-                        <TableColumn fx:id="bookAuthor1" minWidth="0.0" prefWidth="247.0" text="Author" />
+                        <TableColumn fx:id="memberId" prefWidth="71.0" text="Id" />
+                        <TableColumn fx:id="memberFirstName" prefWidth="195.0" text="First name" />
+                        <TableColumn fx:id="bookAuthor1" minWidth="0.0" prefWidth="206.0" text="Last name" />
+                        <TableColumn fx:id="bookAuthor11" minWidth="0.0" prefWidth="209.0" text="Join date" />
                      </columns>
                   </TableView>
                </children>
