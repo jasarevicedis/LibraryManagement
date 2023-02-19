@@ -66,8 +66,31 @@ public abstract class AbstractDao<T extends Idable> implements Dao<T> {
     public abstract Map<String, Object> object2row(T object);
 
     public T getById(int id) throws DBException {
-        return executeQueryUnique("SELECT * FROM "+this.tableName+" WHERE id = ?", new Object[]{id});
+        String query= "SELECT * FROM "+this.tableName+" WHERE id = ?";
+
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+
+            preparedStatement.setInt(1, id);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            if (resultSet.next()) {
+                T result = row2object(resultSet);
+
+                resultSet.close();
+
+                return result;
+            } else {
+                throw new DBException("Object not found");
+            }
+
+        } catch (SQLException e) {
+            throw new DBException(e);
+        }
     }
+
+
 
     public List<T> getAll() throws DBException {
         return executeQuery("SELECT * FROM "+ tableName, null);

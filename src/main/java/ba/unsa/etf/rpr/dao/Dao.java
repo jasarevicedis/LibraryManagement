@@ -7,6 +7,7 @@ import java.util.List;
 /**
  * Root Dao interface
  * @author Edis Jasarevic
+ * @param <T> bean class
  */
 public interface Dao<T> {
     /**
