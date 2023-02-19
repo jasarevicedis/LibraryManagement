@@ -69,6 +69,7 @@ public class DashboardController implements Initializable {
     private void handleClicks(ActionEvent event){
         if(event.getSource() == btnHome){
             lblPageName.setText("Home");
+            dashboardStack.toFront();
             pnHome.toFront();
         }
         else if(event.getSource() == btnBooks){

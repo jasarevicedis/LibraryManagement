@@ -154,7 +154,7 @@
                   </HBox>
                </children>
             </GridPane>
-            <GridPane fx:id="pnBooks" prefHeight="329.0" prefWidth="682.0" style="-fx-background-color: lightgray;" visible="false">
+            <GridPane fx:id="pnBooks" prefHeight="329.0" prefWidth="682.0" style="-fx-background-color: lightgray;">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
@@ -200,7 +200,7 @@
                   </HBox>
                </children>
             </GridPane>
-            <GridPane fx:id="pnMembers" visible="false">
+            <GridPane fx:id="pnMembers">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                </columnConstraints>
@@ -249,7 +249,7 @@
                   </TableView>
                </children>
             </GridPane>
-            <GridPane fx:id="pnHome" visible="false">
+            <GridPane fx:id="pnHome">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                </columnConstraints>
