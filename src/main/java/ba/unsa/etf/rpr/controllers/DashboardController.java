@@ -1,19 +1,33 @@
 package ba.unsa.etf.rpr.controllers;
 
 
+import ba.unsa.etf.rpr.domain.Book;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
+import java.awt.event.MouseEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class DashboardController implements Initializable {
+    private TableView<Book> booksTable;
+    @FXML
+    private TableColumn<Book, String> idCol;
+    @FXML
+    private TableColumn<Book, String> titleCol;
+    @FXML
+    private TableColumn<Book, Integer> publishCol;
+    @FXML
+    private TableColumn<Book, String> authorCol;
     @FXML
     private Button logoutButton;
     @FXML
@@ -72,4 +86,16 @@ public class DashboardController implements Initializable {
     }
 
     public void logoutButtonOnAction(ActionEvent e){}
+
+    @FXML
+    private void getAddViewBooks(MouseEvent event){}
+    @FXML
+    private void refreshTableBooks(MouseEvent event){}
+    private void loadDateBooks(){
+        idCol.setCellValueFactory(new PropertyValueFactory<>("id"));
+        titleCol.setCellValueFactory(new PropertyValueFactory<>("title"));
+        publishCol.setCellValueFactory(new PropertyValueFactory<>("PublishYear"));
+        authorCol.setCellValueFactory(new PropertyValueFactory<>("author"));
+
+    }
 }

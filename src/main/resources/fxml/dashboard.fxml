@@ -153,7 +153,7 @@
                 <RowConstraints maxHeight="363.0" minHeight="10.0" prefHeight="363.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <TableView prefHeight="333.0" prefWidth="662.0" GridPane.rowIndex="1">
+                  <TableView prefHeight="333.0" prefWidth="662.0" GridPane.rowIndex="1" >
                     <columns>
                       <TableColumn prefWidth="71.0" text="BookId" />
                       <TableColumn prefWidth="363.0" text="Title" />
