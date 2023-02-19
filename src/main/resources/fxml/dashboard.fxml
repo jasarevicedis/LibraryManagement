@@ -259,7 +259,9 @@
                <children>
                   <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
                      <children>
-                        <Pane layoutX="39.0" layoutY="91.0" prefHeight="118.0" prefWidth="114.0" style="-fx-background-color: lightblue;" />
+                        <Pane layoutX="98.0" layoutY="259.0" prefHeight="118.0" prefWidth="114.0" style="-fx-background-color: lightblue;" />
+                        <Pane layoutX="278.0" layoutY="259.0" prefHeight="118.0" prefWidth="114.0" style="-fx-background-color: lightblue;" />
+                        <Pane layoutX="453.0" layoutY="259.0" prefHeight="118.0" prefWidth="114.0" style="-fx-background-color: lightblue;" />
                      </children></Pane>
                </children>
             </GridPane>
