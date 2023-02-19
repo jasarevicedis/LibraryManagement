@@ -100,19 +100,8 @@
             </Label>
          </children>
       </Pane>
-      <StackPane layoutX="189.0" layoutY="114.0" prefHeight="417.0" prefWidth="682.0">
+      <StackPane fx:id="dashboardStack" layoutX="189.0" layoutY="114.0" prefHeight="417.0" prefWidth="682.0">
          <children>
-            <GridPane fx:id="pnHome" visible="false">
-               <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               </columnConstraints>
-               <rowConstraints>
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-               </rowConstraints>
-               <children>
-                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" />
-               </children>
-            </GridPane>
             <GridPane fx:id="pnLoans" prefHeight="360.0" prefWidth="531.0">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -258,6 +247,17 @@
                         <TableColumn fx:id="bookAuthor11" minWidth="0.0" prefWidth="209.0" text="Join date" />
                      </columns>
                   </TableView>
+               </children>
+            </GridPane>
+            <GridPane fx:id="pnHome" visible="false">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" />
                </children>
             </GridPane>
          </children>
