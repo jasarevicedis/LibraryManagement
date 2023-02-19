@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/BookDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,13 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00054" summary="login query added">
-      <created>1676447675635</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1676447675644</updated>
     </task>
     <task id="LOCAL-00055" summary="try catch added">
       <created>1676447937954</created>
@@ -421,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676812463376</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="book controller transformed to dashboard controller">
+      <created>1676813227719</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1676813227719</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -436,7 +434,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="handleClicks" />
     <MESSAGE value="handleClicks added to buttons" />
     <MESSAGE value="fixing ui" />
     <MESSAGE value="button ids added" />
@@ -461,6 +458,7 @@
     <MESSAGE value="renamed user exception" />
     <MESSAGE value="user exception created" />
     <MESSAGE value="get by id updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="get by id updated" />
+    <MESSAGE value="book controller transformed to dashboard controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="book controller transformed to dashboard controller" />
   </component>
 </project>
