@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,13 +72,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00055" summary="try catch added">
-      <created>1676447937954</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1676447937974</updated>
     </task>
     <task id="LOCAL-00056" summary="qhile for query">
       <created>1676448313512</created>
@@ -419,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676813227719</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="fx edit">
+      <created>1676814722052</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1676814722053</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,7 +431,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="handleClicks added to buttons" />
     <MESSAGE value="fixing ui" />
     <MESSAGE value="button ids added" />
     <MESSAGE value="adding label id" />
@@ -459,6 +455,7 @@
     <MESSAGE value="user exception created" />
     <MESSAGE value="get by id updated" />
     <MESSAGE value="book controller transformed to dashboard controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="book controller transformed to dashboard controller" />
+    <MESSAGE value="fx edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="fx edit" />
   </component>
 </project>

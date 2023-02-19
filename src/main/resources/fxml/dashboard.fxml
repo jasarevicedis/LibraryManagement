@@ -152,10 +152,13 @@
                            <HBox.margin>
                               <Insets left="10.0" />
                            </HBox.margin></TextField>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" text="Button">
+                        <Button fx:id="addBook" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add books" textFill="WHITE">
                            <HBox.margin>
                               <Insets left="5.0" />
-                           </HBox.margin></Button>
+                           </HBox.margin>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="PLUS" />
+                           </graphic></Button>
                      </children>
                   </HBox>
                </children>
