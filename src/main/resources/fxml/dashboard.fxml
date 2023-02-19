@@ -293,6 +293,7 @@
                               </Label>
                            </children>
                         </Pane>
+                        <Pane layoutX="98.0" layoutY="45.0" prefHeight="148.0" prefWidth="469.0" style="-fx-background-color: lightblue; -fx-background-radius: 20px;" />
                      </children></Pane>
                </children>
             </GridPane>

@@ -73,13 +73,6 @@
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
     </task>
-    <task id="LOCAL-00073" summary="adding label id">
-      <created>1676494544295</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1676494544295</updated>
-    </task>
     <task id="LOCAL-00074" summary="page label edit">
       <created>1676494639050</created>
       <option name="number" value="00074" />
@@ -416,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676835602134</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="fixed exit styling">
+      <created>1676835874338</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1676835874338</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -431,7 +431,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Books controller added" />
     <MESSAGE value="Books controller updated" />
     <MESSAGE value="book class updated" />
     <MESSAGE value="loadDate" />
@@ -456,6 +455,7 @@
     <MESSAGE value="item icons added" />
     <MESSAGE value="ICON text added" />
     <MESSAGE value="added exit icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="added exit icon" />
+    <MESSAGE value="fixed exit styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed exit styling" />
   </component>
 </project>
