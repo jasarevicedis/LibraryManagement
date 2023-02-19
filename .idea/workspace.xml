@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="" />
+    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,13 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00074" summary="page label edit">
-      <created>1676494639050</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1676494639050</updated>
     </task>
     <task id="LOCAL-00075" summary="multi page theme">
       <created>1676494974925</created>
@@ -416,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676835874338</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="added pane on home">
+      <created>1676836310760</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1676836310779</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -431,7 +434,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Books controller updated" />
     <MESSAGE value="book class updated" />
     <MESSAGE value="loadDate" />
     <MESSAGE value="logout added" />
@@ -456,6 +458,7 @@
     <MESSAGE value="ICON text added" />
     <MESSAGE value="added exit icon" />
     <MESSAGE value="fixed exit styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed exit styling" />
+    <MESSAGE value="added pane on home" />
+    <option name="LAST_COMMIT_MESSAGE" value="added pane on home" />
   </component>
 </project>
