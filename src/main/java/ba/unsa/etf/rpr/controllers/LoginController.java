@@ -41,11 +41,14 @@ public class LoginController  {
             //loginMessageLabel.setText("You try to login");
             validateLogin();
             if(loginSuccessfull==1){
+                Stage stage = (Stage) cancelButton.getScene().getWindow();
+                stage.close();
                 Stage primaryStage = new Stage();
                 Parent root = FXMLLoader.load(getClass().getResource("/fxml/dashboard.fxml"));
                 Scene scene = new Scene(root);
                 primaryStage.setScene(scene);
                 primaryStage.show();
+
             }
         }
         else {
