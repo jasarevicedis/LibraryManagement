@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,20 +72,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00050" summary="login.fxml changes">
-      <created>1676445845531</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1676445845566</updated>
-    </task>
-    <task id="LOCAL-00051" summary="MAIN file changes">
-      <created>1676445941685</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1676445941685</updated>
     </task>
     <task id="LOCAL-00052" summary="wrong on action fixed">
       <created>1676446592763</created>
@@ -419,7 +402,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676749080817</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="fx updated">
+      <created>1676756832410</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1676756832411</updated>
+    </task>
+    <task id="LOCAL-00100" summary="renamed user exception">
+      <created>1676757001683</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1676757001683</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,7 +431,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="table view added" />
     <MESSAGE value="sidebar buttons labels added" />
     <MESSAGE value="handling switching tabs" />
     <MESSAGE value="handleClicks" />
@@ -459,6 +455,7 @@
     <MESSAGE value="icon placeholders added" />
     <MESSAGE value="fx" />
     <MESSAGE value="fx updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="fx updated" />
+    <MESSAGE value="renamed user exception" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed user exception" />
   </component>
 </project>
