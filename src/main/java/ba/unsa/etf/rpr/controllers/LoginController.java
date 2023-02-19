@@ -22,6 +22,7 @@ import javafx.stage.Stage;
 import javafx.scene.control.Label;
 
 public class LoginController  {
+    private int  loginSuccessfull=0;
     @FXML
     private Button cancelButton;
     @FXML
@@ -39,11 +40,13 @@ public class LoginController  {
         if(usernameTextField.getText().isBlank() == false && passwordPasswordField.getText().isBlank() == false){
             //loginMessageLabel.setText("You try to login");
             validateLogin();
-            Stage primaryStage = new Stage();
-            Parent root = FXMLLoader.load(getClass().getResource("/fxml/dashboard.fxml"));
-            Scene scene = new Scene(root);
-            primaryStage.setScene(scene);
-            primaryStage.show();
+            if(loginSuccessfull==1){
+                Stage primaryStage = new Stage();
+                Parent root = FXMLLoader.load(getClass().getResource("/fxml/dashboard.fxml"));
+                Scene scene = new Scene(root);
+                primaryStage.setScene(scene);
+                primaryStage.show();
+            }
         }
         else {
             loginMessageLabel.setText("Please enter username and password");
@@ -61,6 +64,7 @@ public class LoginController  {
             while(queryResult.next()){
                 if(queryResult.getInt(1) == 1){
                     loginMessageLabel.setText("Welcome");
+                    loginSuccessfull = 1;
                 }else{
                     loginMessageLabel.setText("Invalid login!");
                 }
