@@ -117,10 +117,10 @@
                <children>
                   <TableView fx:id="bookTable11" prefHeight="288.0" prefWidth="682.0" GridPane.rowIndex="1">
                      <columns>
-                        <TableColumn fx:id="memberId1" prefWidth="71.0" text="Id" />
-                        <TableColumn fx:id="memberFirstName1" prefWidth="195.0" text="First name" />
-                        <TableColumn fx:id="bookAuthor11" minWidth="0.0" prefWidth="206.0" text="Last name" />
-                        <TableColumn fx:id="bookAuthor111" minWidth="0.0" prefWidth="209.0" text="Join date" />
+                        <TableColumn  prefWidth="71.0" text="Id" />
+                        <TableColumn  prefWidth="195.0" text="First name" />
+                        <TableColumn  minWidth="0.0" prefWidth="206.0" text="Last name" />
+                        <TableColumn  minWidth="0.0" prefWidth="209.0" text="Join date" />
                      </columns>
                      <columnResizePolicy>
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -193,7 +193,7 @@
                               <Insets left="20.0" />
                            </HBox.margin>
                         </ComboBox>
-                        <Button mnemonicParsing="false" onAction="#refreshBookTable" style="-fx-background-color: transparent;">
+                        <Button mnemonicParsing="false"  style="-fx-background-color: transparent;">
                            <HBox.margin>
                               <Insets left="10.0" />
                            </HBox.margin>
@@ -201,7 +201,7 @@
                               <FontAwesomeIconView fill="#0598ff" glyphName="REFRESH" size="20" />
                            </graphic>
                         </Button>
-                        <Button fx:id="addBook" mnemonicParsing="false" onAction="#getAddBookView" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add books" textFill="WHITE">
+                        <Button fx:id="addBook" mnemonicParsing="false"  prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add books" textFill="WHITE">
                            <HBox.margin>
                               <Insets left="10.0" />
                            </HBox.margin>

@@ -106,4 +106,14 @@ public class MemberDaoSQLImpl extends AbstractDao<Member> implements MemberDao {
 
         return members;
     }
+
+    /**
+     * @param first_name
+     * @return
+     * @throws DBException
+     */
+    @Override
+    public List<Member> getByFirstName(String first_name) throws DBException {
+        return null;
+    }
 }
