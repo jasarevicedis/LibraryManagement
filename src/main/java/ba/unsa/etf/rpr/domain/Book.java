@@ -1,6 +1,6 @@
 package ba.unsa.etf.rpr.domain;
 
-public class Book {
+public class Book implements Idable {
     private int id;
     private String title;
     private int PublishYear;
