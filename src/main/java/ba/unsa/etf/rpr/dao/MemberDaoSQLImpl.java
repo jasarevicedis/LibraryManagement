@@ -4,8 +4,10 @@ import ba.unsa.etf.rpr.domain.Book;
 import ba.unsa.etf.rpr.domain.Member;
 import ba.unsa.etf.rpr.exceptions.DBException;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -50,8 +52,29 @@ public class MemberDaoSQLImpl extends AbstractDao<Member> implements MemberDao {
      * @throws DBException
      */
     @Override
-    public void searchByFirstName(String first_name) throws DBException {
+    public List<Member> searchByFirstName(String first_name) throws DBException {
+        List<Member> members = new ArrayList<>();
 
+        String query = "SELECT * FROM member WHERE name = ?";
+
+        try {
+            PreparedStatement preparedStatement = getConnection().prepareStatement(query);
+
+            preparedStatement.setString(1, first_name);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+                members.add(row2object(resultSet));
+            }
+
+            resultSet.close();
+
+        } catch (SQLException e) {
+            throw new DBException(e);
+        }
+
+        return members;
     }
 
     /**
@@ -59,7 +82,28 @@ public class MemberDaoSQLImpl extends AbstractDao<Member> implements MemberDao {
      * @throws DBException
      */
     @Override
-    public void searchByLastName(String last_name) throws DBException {
+    public List<Member> searchByLastName(String last_name) throws DBException {
+        List<Member> members = new ArrayList<>();
 
+        String query = "SELECT * FROM member WHERE name = ?";
+
+        try {
+            PreparedStatement preparedStatement = getConnection().prepareStatement(query);
+
+            preparedStatement.setString(1, last_name);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+                members.add(row2object(resultSet));
+            }
+
+            resultSet.close();
+
+        } catch (SQLException e) {
+            throw new DBException(e);
+        }
+
+        return members;
     }
 }
