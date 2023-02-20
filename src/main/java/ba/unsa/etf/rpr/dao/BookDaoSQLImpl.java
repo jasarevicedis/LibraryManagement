@@ -6,6 +6,7 @@ import ba.unsa.etf.rpr.exceptions.DBException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class BookDaoSQLImpl extends AbstractDao<Book> implements BookDao {
     public BookDaoSQLImpl() throws DBException {
@@ -28,6 +29,12 @@ public class BookDaoSQLImpl extends AbstractDao<Book> implements BookDao {
 
     @Override
     public Map<String, Object> object2row(Book object) {
-        return null;
+        Map<String, Object> row = new TreeMap<>();
+        row.put("id", object.getId());
+        row.put("title", object.getTitle());
+        row.put("PublishYear", object.getPublishYear());
+        row.put("author", object.getAuthor());
+
+        return row;
     }
 }
