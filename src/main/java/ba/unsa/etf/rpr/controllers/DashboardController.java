@@ -138,6 +138,7 @@ public class DashboardController  {
         Stage primaryStage = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/login.fxml"));
         Scene scene = new Scene(root);
+        primaryStage.initStyle(StageStyle.UNDECORATED);
         primaryStage.setScene(scene);
         primaryStage.show();
     }

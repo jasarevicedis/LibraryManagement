@@ -20,6 +20,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.PasswordField;
 import javafx.stage.Stage;
 import javafx.scene.control.Label;
+import javafx.stage.StageStyle;
 
 public class LoginController  {
     private int  loginSuccessfull=0;
@@ -45,6 +46,7 @@ public class LoginController  {
                 stage.close();
                 Stage primaryStage = new Stage();
                 Parent root = FXMLLoader.load(getClass().getResource("/fxml/dashboard.fxml"));
+                primaryStage.initStyle(StageStyle.UNDECORATED);
                 Scene scene = new Scene(root);
                 primaryStage.setScene(scene);
                 primaryStage.show();

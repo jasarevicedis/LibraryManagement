@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/AddBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/AddBookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/addBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/addBook.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,20 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00121" summary="added exit icon">
-      <created>1676835602134</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1676835602134</updated>
-    </task>
-    <task id="LOCAL-00122" summary="fixed exit styling">
-      <created>1676835874338</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1676835874338</updated>
     </task>
     <task id="LOCAL-00123" summary="added pane on home">
       <created>1676836310760</created>
@@ -422,7 +405,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676933399544</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="fixing fxml">
+      <created>1676934671491</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1676934671493</updated>
+    </task>
+    <task id="LOCAL-00171" summary="logout function">
+      <created>1676934946431</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1676934946431</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -437,8 +434,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="search methods added" />
-    <MESSAGE value="getByTitle" />
     <MESSAGE value="get BY author implemented" />
     <MESSAGE value="member constructor added" />
     <MESSAGE value="Loan constructor added" />
@@ -462,6 +457,8 @@
     <MESSAGE value="trying to fix size of panes" />
     <MESSAGE value="fixing book table connection" />
     <MESSAGE value="fixing bugs, adding properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing bugs, adding properties" />
+    <MESSAGE value="fixing fxml" />
+    <MESSAGE value="logout function" />
+    <option name="LAST_COMMIT_MESSAGE" value="logout function" />
   </component>
 </project>
