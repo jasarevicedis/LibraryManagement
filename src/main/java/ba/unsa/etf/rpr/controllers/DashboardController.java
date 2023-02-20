@@ -46,7 +46,7 @@ public class DashboardController  {
     @FXML
     private TableView<Book> bookTable;
     @FXML
-    private TableColumn<Book, String> bookIdCol;
+    private TableColumn<Book, Integer> bookIdCol;
     @FXML
     private TableColumn<Book, String> bookTitleCol;
     @FXML
@@ -84,7 +84,13 @@ public class DashboardController  {
     @FXML
     private GridPane pnLoans;
 
+
     private final BookManager manager = new BookManager();
+
+
+    public DashboardController() {
+    }
+
     @FXML
     public void initialize(){
         bookIdCol.setCellValueFactory(new PropertyValueFactory<>("id"));

@@ -169,9 +169,9 @@
                <children>
                   <TableView fx:id="booksTable" prefHeight="333.0" prefWidth="662.0" GridPane.rowIndex="1">
                     <columns>
-                      <TableColumn fx:id="bookId" prefWidth="71.0" text="BookId" />
-                      <TableColumn fx:id="bookTitle" prefWidth="363.0" text="Title" />
-                        <TableColumn fx:id="bookAuthor" minWidth="0.0" prefWidth="247.0" text="Author" />
+                      <TableColumn fx:id="bookIdCol" prefWidth="71.0" text="BookId" />
+                      <TableColumn fx:id="bookTitleCol" prefWidth="363.0" text="Title" />
+                        <TableColumn fx:id="bookAuthorCol" minWidth="0.0" prefWidth="247.0" text="Author" />
                     </columns>
                   </TableView>
                   <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="531.0">
