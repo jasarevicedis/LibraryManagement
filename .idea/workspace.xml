@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" afterDir="false" />
-    </list>
+    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,13 +73,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00123" summary="added pane on home">
-      <created>1676836310760</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1676836310779</updated>
     </task>
     <task id="LOCAL-00124" summary="README updates">
       <created>1676837531617</created>
@@ -419,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676934946431</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="init style fixing">
+      <created>1676935256889</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1676935256893</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,7 +432,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="get BY author implemented" />
     <MESSAGE value="member constructor added" />
     <MESSAGE value="Loan constructor added" />
     <MESSAGE value="member row20bject method fixed" />
@@ -459,6 +456,7 @@
     <MESSAGE value="fixing bugs, adding properties" />
     <MESSAGE value="fixing fxml" />
     <MESSAGE value="logout function" />
-    <option name="LAST_COMMIT_MESSAGE" value="logout function" />
+    <MESSAGE value="init style fixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="init style fixing" />
   </component>
 </project>

@@ -126,6 +126,11 @@
                   </TableView>
                   <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="678.0">
                      <children>
+                        <Button fx:id="refreshLoans" mnemonicParsing="false" onAction="#refreshLoansTable" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <FontAwesomeIconView fill="#0598ff" glyphName="REFRESH" size="20" />
+                           </graphic>
+                        </Button>
                         <Button fx:id="addLoan" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add loan" textFill="WHITE">
                            <HBox.margin>
                               <Insets left="30.0" />
@@ -186,6 +191,11 @@
                <children>
                   <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="531.0">
                      <children>
+                        <Button fx:id="refreshMembers" mnemonicParsing="false" onAction="#refreshMembersTable" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <FontAwesomeIconView fill="#0598ff" glyphName="REFRESH" size="20" />
+                           </graphic>
+                        </Button>
                         <Button fx:id="addMember" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add members" textFill="WHITE">
                            <HBox.margin>
                               <Insets left="30.0" />
