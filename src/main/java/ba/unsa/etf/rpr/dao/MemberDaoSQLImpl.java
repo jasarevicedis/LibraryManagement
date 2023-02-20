@@ -5,6 +5,7 @@ import ba.unsa.etf.rpr.domain.Member;
 import ba.unsa.etf.rpr.exceptions.DBException;
 
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 
@@ -15,18 +16,18 @@ public class MemberDaoSQLImpl extends AbstractDao<Member> implements MemberDao {
     }
 
     @Override
-    public Member row2object(ResultSet rs) throws DBException {
+    public Member row2object(ResultSet resultSet) throws DBException {
         try {
             return new Member(
                     resultSet.getInt("id"),
-                    resultSet.getString("username"),
-                    resultSet.getString("password"),
                     resultSet.getString("first_name"),
-                    resultSet.getString("last_name")
+                    resultSet.getString("last_name"),
+                    resultSet.getDate("loan_date")
+
             );
 
         } catch (SQLException e) {
-            throw new DBHandleException(e);
+            throw new DBException(e);
         }
     }
 
