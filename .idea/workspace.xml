@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/addBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/addBook.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/addMember.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/addMember.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/addLoan.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/addLoan.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,13 +76,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00110" summary="editing members">
-      <created>1676816926405</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1676816926405</updated>
     </task>
     <task id="LOCAL-00111" summary="stack attributes added">
       <created>1676818281788</created>
@@ -420,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676915273210</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <task id="LOCAL-00159" summary="add member fxml work">
+      <created>1676915827276</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1676915827276</updated>
+    </task>
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -435,7 +435,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="book data edit" />
     <MESSAGE value="book sql class" />
     <MESSAGE value="book sql classes added" />
     <MESSAGE value="dao factory added" />
@@ -460,6 +459,7 @@
     <MESSAGE value="fxing urls" />
     <MESSAGE value="addb book fxml work" />
     <MESSAGE value="add book fxml work" />
-    <option name="LAST_COMMIT_MESSAGE" value="add book fxml work" />
+    <MESSAGE value="add member fxml work" />
+    <option name="LAST_COMMIT_MESSAGE" value="add member fxml work" />
   </component>
 </project>
