@@ -1,6 +1,7 @@
 package ba.unsa.etf.rpr.controllers;
 
 
+import ba.unsa.etf.rpr.business.BookManager;
 import ba.unsa.etf.rpr.domain.Book;
 import ba.unsa.etf.rpr.exceptions.DBException;
 import javafx.collections.FXCollections;
@@ -26,12 +27,13 @@ import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.List;
 import java.util.ResourceBundle;
 
 import static javafx.scene.control.PopupControl.USE_COMPUTED_SIZE;
 
 
-public class DashboardController implements Initializable {
+public class DashboardController  {
 
     @FXML
     private TextField titleField;
@@ -42,15 +44,15 @@ public class DashboardController implements Initializable {
     @FXML
     private StackPane dashboardStack;
     @FXML
-    private TableView<Book> booksTable;
+    private TableView<Book> bookTable;
     @FXML
-    private TableColumn<Book, String> idCol;
+    private TableColumn<Book, String> bookIdCol;
     @FXML
-    private TableColumn<Book, String> titleCol;
+    private TableColumn<Book, String> bookTitleCol;
     @FXML
-    private TableColumn<Book, Integer> publishCol;
+    private TableColumn<Book, Integer> bookPublishCol;
     @FXML
-    private TableColumn<Book, String> authorCol;
+    private TableColumn<Book, String> bookAuthorCol;
     @FXML
     private Button logoutButton;
     @FXML
@@ -81,8 +83,23 @@ public class DashboardController implements Initializable {
 
     @FXML
     private GridPane pnLoans;
-    @Override
-    public void initialize(URL location, ResourceBundle resources){}
+
+    private final BookManager manager = new BookManager();
+    @FXML
+    public void initialize(){
+        bookIdCol.setCellValueFactory(new PropertyValueFactory<>("id"));
+        bookTitleCol.setCellValueFactory(new PropertyValueFactory<>("title"));
+        //publishCol.setCellValueFactory(new PropertyValueFactory<>("PublishYear"));
+        bookAuthorCol.setCellValueFactory(new PropertyValueFactory<>("author"));
+
+        try {
+            List<Book>  bookList = manager.getAll();
+
+            updateTable(bookList);
+        } catch (DBException e) {
+
+        }
+    }
 
     @FXML
     private void handleClicks(ActionEvent event){
@@ -157,10 +174,15 @@ public class DashboardController implements Initializable {
         bookList.clear();
     }
     private void loadDateBooks(){
-        idCol.setCellValueFactory(new PropertyValueFactory<>("id"));
-        titleCol.setCellValueFactory(new PropertyValueFactory<>("title"));
-        publishCol.setCellValueFactory(new PropertyValueFactory<>("PublishYear"));
-        authorCol.setCellValueFactory(new PropertyValueFactory<>("author"));
+        bookIdCol.setCellValueFactory(new PropertyValueFactory<>("id"));
+        bookTitleCol.setCellValueFactory(new PropertyValueFactory<>("title"));
+        //publishCol.setCellValueFactory(new PropertyValueFactory<>("PublishYear"));
+        bookAuthorCol.setCellValueFactory(new PropertyValueFactory<>("author"));
 
+    }
+    private void updateTable(List<Book> bookList) {
+        bookTable.setItems(FXCollections.observableList(bookList));
+
+        bookTable.refresh();
     }
 }
