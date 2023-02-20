@@ -1,9 +1,11 @@
 package ba.unsa.etf.rpr.dao;
 
+import ba.unsa.etf.rpr.domain.Book;
 import ba.unsa.etf.rpr.domain.Member;
 import ba.unsa.etf.rpr.exceptions.DBException;
 
 import java.sql.ResultSet;
+import java.util.List;
 import java.util.Map;
 
 public class MemberDaoSQLImpl extends AbstractDao<Member> implements MemberDao {
@@ -21,4 +23,6 @@ public class MemberDaoSQLImpl extends AbstractDao<Member> implements MemberDao {
     public Map<String, Object> object2row(Member object) {
         return null;
     }
+
+
 }

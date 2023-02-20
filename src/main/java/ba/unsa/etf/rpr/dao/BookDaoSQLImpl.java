@@ -5,6 +5,7 @@ import ba.unsa.etf.rpr.exceptions.DBException;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -36,5 +37,15 @@ public class BookDaoSQLImpl extends AbstractDao<Book> implements BookDao {
         row.put("author", object.getAuthor());
 
         return row;
+    }
+
+    @Override
+    public List<Book> getByTitle(String word) throws DBException {
+
+    }
+
+    @Override
+    public List<Book> getByAuthor(String name) throws DBException {
+        return null;
     }
 }
