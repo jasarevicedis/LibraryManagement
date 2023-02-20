@@ -45,4 +45,21 @@ public class MemberDaoSQLImpl extends AbstractDao<Member> implements MemberDao {
     }
 
 
+    /**
+     * @param first_name
+     * @throws DBException
+     */
+    @Override
+    public void searchByFirstName(String first_name) throws DBException {
+
+    }
+
+    /**
+     * @param last_name
+     * @throws DBException
+     */
+    @Override
+    public void searchByLastName(String last_name) throws DBException {
+
+    }
 }
