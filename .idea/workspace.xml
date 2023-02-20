@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/LoanDaoSQLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/LoanDaoSQLImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/domain/Loan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/domain/Loan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/BookDaoSQLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/BookDaoSQLImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/domain/Book.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,20 +76,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00085" summary="Books controller added">
-      <created>1676534823969</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1676534823969</updated>
-    </task>
-    <task id="LOCAL-00086" summary="Books controller updated">
-      <created>1676535203039</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1676535203093</updated>
     </task>
     <task id="LOCAL-00087" summary="Books controller updated">
       <created>1676535386014</created>
@@ -419,7 +406,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676878684216</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="dao factory fixed bugs">
+      <created>1676878747281</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1676878747281</updated>
+    </task>
+    <task id="LOCAL-00135" summary="dao factory fixed bugs">
+      <created>1676878863856</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1676878863856</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,7 +435,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="user exception created" />
     <MESSAGE value="get by id updated" />
     <MESSAGE value="book controller transformed to dashboard controller" />
     <MESSAGE value="fx edit" />
@@ -459,6 +459,7 @@
     <MESSAGE value="book sql classes added" />
     <MESSAGE value="dao factory added" />
     <MESSAGE value="dao factory edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="dao factory edit" />
+    <MESSAGE value="dao factory fixed bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="dao factory fixed bugs" />
   </component>
 </project>

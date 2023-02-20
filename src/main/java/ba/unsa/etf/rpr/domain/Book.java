@@ -1,11 +1,20 @@
 package ba.unsa.etf.rpr.domain;
 
 public class Book implements Idable {
+
     private int id;
     private String title;
     private int PublishYear;
     private String author;
 
+    public Book(){};
+    public Book(int id, String title, int PublishYear, String author){
+        this.id=id;
+        this.title=title;
+        this.PublishYear = PublishYear;
+        this.author=author;
+    };
+    @Override
     public int getId(){
         return id;
     }
@@ -18,6 +27,7 @@ public class Book implements Idable {
     public String getAuthor(){
         return author;
     }
+    @Override
     public void setId(int id){
         this.id = id;
     }
