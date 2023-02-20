@@ -99,9 +99,9 @@ public class DashboardController  {
         bookAuthorCol.setCellValueFactory(new PropertyValueFactory<>("author"));
 
         try {
-            List<Book>  bookList = manager.getAll();
+            List<Book>  booksList = manager.getAll();
 
-            updateTable(bookList);
+            updateTable(booksList);
         } catch (DBException e) {
 
         }
@@ -186,8 +186,8 @@ public class DashboardController  {
         bookAuthorCol.setCellValueFactory(new PropertyValueFactory<>("author"));
 
     }
-    private void updateTable(List<Book> bookList) {
-        bookTable.setItems(FXCollections.observableList(bookList));
+    private void updateTable(List<Book> bookssList) {
+        bookTable.setItems(FXCollections.observableList(bookssList));
 
         bookTable.refresh();
     }

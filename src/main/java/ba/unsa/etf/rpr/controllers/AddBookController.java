@@ -14,7 +14,7 @@ public class AddBookController {
     public TextField publishField;
     private final BookManager manager = new BookManager();
 
-    public void add(ActionEvent actionEvent) {
+    public void add(javafx.event.ActionEvent actionEvent) {
         try {
             Book book = manager.createBook(titleField.getText(), authorField.getText(), Integer.parseInt(publishField.getText()));
 
@@ -29,6 +29,7 @@ public class AddBookController {
 
         }
     }
+
 
 
 }
