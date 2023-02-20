@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,20 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00116" summary="styling homepage">
-      <created>1676834819612</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1676834819624</updated>
-    </task>
-    <task id="LOCAL-00117" summary="item panes added">
-      <created>1676835021612</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1676835021612</updated>
     </task>
     <task id="LOCAL-00118" summary="radiuses added">
       <created>1676835151981</created>
@@ -419,7 +405,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676927928512</updated>
     </task>
-    <option name="localTasksCounter" value="165" />
+    <task id="LOCAL-00165" summary="ICONS added">
+      <created>1676928432733</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1676928432798</updated>
+    </task>
+    <task id="LOCAL-00166" summary="trying to fix size of panes">
+      <created>1676928596355</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1676928596355</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,8 +434,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="dao factory edit" />
-    <MESSAGE value="dao factory fixed bugs" />
     <MESSAGE value="book class edits" />
     <MESSAGE value="toRow implemented" />
     <MESSAGE value="search methods added" />
@@ -459,6 +457,8 @@
     <MESSAGE value="add loan fxml work" />
     <MESSAGE value="controller fixing" />
     <MESSAGE value="fxml bugs fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="fxml bugs fixed" />
+    <MESSAGE value="ICONS added" />
+    <MESSAGE value="trying to fix size of panes" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying to fix size of panes" />
   </component>
 </project>
