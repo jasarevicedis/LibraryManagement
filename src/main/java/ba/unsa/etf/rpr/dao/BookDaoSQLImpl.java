@@ -68,6 +68,27 @@ public class BookDaoSQLImpl extends AbstractDao<Book> implements BookDao {
 
     @Override
     public List<Book> getByAuthor(String name) throws DBException {
-        return null;
+        List<Book> bookList = new ArrayList<>();
+
+        String query = "SELECT * FROM book WHERE author = ?";
+
+        try {
+            PreparedStatement preparedStatement = getConnection().prepareStatement(query);
+
+            preparedStatement.setString(1, name);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+                bookList.add(row2object(resultSet));
+            }
+
+            resultSet.close();
+
+        } catch (SQLException e) {
+            throw new DBException(e);
+        }
+
+        return bookList;
     }
 }
