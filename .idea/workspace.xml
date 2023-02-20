@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/AddBookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/AddLoanController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/AddMemberController.java" afterDir="false" />
-    </list>
+    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,20 +73,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00106" summary="add Book added fx">
-      <created>1676815547421</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1676815547445</updated>
-    </task>
-    <task id="LOCAL-00107" summary="editing members">
-      <created>1676816024407</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1676816024409</updated>
     </task>
     <task id="LOCAL-00108" summary="editing members">
       <created>1676816443041</created>
@@ -421,7 +403,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676913670505</updated>
     </task>
-    <option name="localTasksCounter" value="155" />
+    <task id="LOCAL-00155" summary="adding controllers">
+      <created>1676913926944</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1676913926944</updated>
+    </task>
+    <task id="LOCAL-00156" summary="fxing urls">
+      <created>1676914011855</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1676914011855</updated>
+    </task>
+    <option name="localTasksCounter" value="157" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -436,8 +432,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed exit styling" />
-    <MESSAGE value="added pane on home" />
     <MESSAGE value="README updates" />
     <MESSAGE value="refresh button added" />
     <MESSAGE value="book data edit" />
@@ -461,6 +455,8 @@
     <MESSAGE value="book manager implemented" />
     <MESSAGE value="unnecesary removed" />
     <MESSAGE value="added pop up containers" />
-    <option name="LAST_COMMIT_MESSAGE" value="added pop up containers" />
+    <MESSAGE value="adding controllers" />
+    <MESSAGE value="fxing urls" />
+    <option name="LAST_COMMIT_MESSAGE" value="fxing urls" />
   </component>
 </project>
