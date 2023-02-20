@@ -71,7 +71,7 @@
                   <Font name="System Bold" size="20.0" />
                </font>
                <graphic>
-                  <FontAwesomeIconView />
+                  <FontAwesomeIconView fill="WHITE" glyphName="ARCHIVE" />
                </graphic>
             </Button>
             <Pane prefHeight="166.0" prefWidth="189.0">
@@ -81,7 +81,7 @@
                         <Font name="System Bold" size="20.0" />
                      </font>
                      <graphic>
-                        <FontAwesomeIconView glyphName="STICKY-NOTE" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="SHARE" />
                      </graphic>
                   </Button>
                </children>
@@ -193,7 +193,7 @@
                               <Insets left="20.0" />
                            </HBox.margin>
                         </ComboBox>
-                        <Button fx:id="refreshBooks" mnemonicParsing="false" onMouseClicked="#refreshBookTable" style="-fx-background-color: transparent;">
+                        <Button fx:id="refreshBooks" mnemonicParsing="false" onAction="#refreshBookTable" style="-fx-background-color: transparent;">
                            <HBox.margin>
                               <Insets left="10.0" />
                            </HBox.margin>
@@ -201,7 +201,7 @@
                               <FontAwesomeIconView fill="#0598ff" glyphName="REFRESH" size="20" />
                            </graphic>
                         </Button>
-                        <Button fx:id="addBook" mnemonicParsing="false" onMouseClicked="#getAddBookView" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add books" textFill="WHITE">
+                        <Button fx:id="addBook" mnemonicParsing="false" onAction="#getAddBookView" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add books" textFill="WHITE">
                            <HBox.margin>
                               <Insets left="10.0" />
                            </HBox.margin>
@@ -273,7 +273,7 @@
                      <children>
                         <Pane layoutX="98.0" layoutY="259.0" prefHeight="118.0" prefWidth="114.0" style="-fx-background-color: lightblue; -fx-background-radius: 20px;">
                            <children>
-                              <FontAwesomeIconView layoutX="32.0" layoutY="57.0" size="50" />
+                              <FontAwesomeIconView fill="#004eff" glyphName="BOOK" layoutX="32.0" layoutY="57.0" size="50" />
                               <Label layoutX="36.0" layoutY="69.0" text="120" textFill="WHITE">
                                  <font>
                                     <Font name="System Bold" size="24.0" />
@@ -283,7 +283,7 @@
                         </Pane>
                         <Pane layoutX="278.0" layoutY="259.0" prefHeight="118.0" prefWidth="114.0" style="-fx-background-color: lightblue; -fx-background-radius: 20px;">
                            <children>
-                              <FontAwesomeIconView layoutX="32.0" layoutY="57.0" size="50" />
+                              <FontAwesomeIconView fill="#125dff" glyphName="USER" layoutX="39.0" layoutY="57.0" size="50" />
                               <Label layoutX="36.0" layoutY="69.0" text="120" textFill="WHITE">
                                  <font>
                                     <Font name="System Bold" size="24.0" />
@@ -293,7 +293,7 @@
                         </Pane>
                         <Pane layoutX="453.0" layoutY="259.0" prefHeight="118.0" prefWidth="114.0" style="-fx-background-color: lightblue; -fx-background-radius: 20px;">
                            <children>
-                              <FontAwesomeIconView layoutX="32.0" layoutY="57.0" size="50" />
+                              <FontAwesomeIconView fill="#2f5efc" glyphName="ARCHIVE" layoutX="32.0" layoutY="57.0" size="50" />
                               <Label layoutX="36.0" layoutY="69.0" text="120" textFill="WHITE">
                                  <font>
                                     <Font name="System Bold" size="24.0" />
