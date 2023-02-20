@@ -9,4 +9,5 @@ public interface MemberDao extends Dao<Member>{
 
     public List<Member> searchByFirstName(String first_name) throws DBException;
     public List<Member> searchByLastName(String last_name) throws DBException;
+    public List<Member> getByFirstName(String first_name) throws  DBException;
 }
