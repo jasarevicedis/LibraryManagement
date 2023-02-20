@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/AddBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/AddBookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,13 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00112" summary="stack attributes added">
-      <created>1676818604592</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1676818604592</updated>
     </task>
     <task id="LOCAL-00113" summary="fixed login bug">
       <created>1676833674380</created>
@@ -419,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676916596219</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="controller fixing">
+      <created>1676917547923</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1676917547923</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,7 +436,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="book sql classes added" />
     <MESSAGE value="dao factory added" />
     <MESSAGE value="dao factory edit" />
     <MESSAGE value="dao factory fixed bugs" />
@@ -459,6 +460,7 @@
     <MESSAGE value="add book fxml work" />
     <MESSAGE value="add member fxml work" />
     <MESSAGE value="add loan fxml work" />
-    <option name="LAST_COMMIT_MESSAGE" value="add loan fxml work" />
+    <MESSAGE value="controller fixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="controller fixing" />
   </component>
 </project>

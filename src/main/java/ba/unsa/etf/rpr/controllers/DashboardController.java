@@ -29,7 +29,7 @@ import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
 import static javafx.scene.control.PopupControl.USE_COMPUTED_SIZE;
-import static jdk.internal.org.jline.utils.Curses.toInteger;
+
 
 public class DashboardController implements Initializable {
 
@@ -150,6 +150,7 @@ public class DashboardController implements Initializable {
         String author = authorField.getText();
         int publishYear;
         publishYear = Integer.parseInt( publishField.getText());
+
     }
     @FXML
     private void refreshBookTable(MouseEvent event){
