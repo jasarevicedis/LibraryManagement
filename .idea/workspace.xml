@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/LoanDaoSQLImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/MemberDaoSQLImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/DaoFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,27 +74,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00080" summary="scene builder fixes">
-      <created>1676496483496</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1676496483496</updated>
-    </task>
-    <task id="LOCAL-00081" summary="fixing fxml file">
-      <created>1676496577909</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1676496577909</updated>
-    </task>
-    <task id="LOCAL-00082" summary="login action fixing">
-      <created>1676533664950</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1676533664951</updated>
     </task>
     <task id="LOCAL-00083" summary="login action fixing">
       <created>1676534214530</created>
@@ -419,7 +397,28 @@
       <option name="project" value="LOCAL" />
       <updated>1676877896131</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="book sql classes added">
+      <created>1676878086635</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1676878086635</updated>
+    </task>
+    <task id="LOCAL-00130" summary="dao factory added">
+      <created>1676878189223</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1676878189224</updated>
+    </task>
+    <task id="LOCAL-00131" summary="dao factory edit">
+      <created>1676878320504</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1676878320504</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,9 +433,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fx" />
-    <MESSAGE value="fx updated" />
-    <MESSAGE value="renamed user exception" />
     <MESSAGE value="user exception created" />
     <MESSAGE value="get by id updated" />
     <MESSAGE value="book controller transformed to dashboard controller" />
@@ -459,6 +455,9 @@
     <MESSAGE value="refresh button added" />
     <MESSAGE value="book data edit" />
     <MESSAGE value="book sql class" />
-    <option name="LAST_COMMIT_MESSAGE" value="book sql class" />
+    <MESSAGE value="book sql classes added" />
+    <MESSAGE value="dao factory added" />
+    <MESSAGE value="dao factory edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="dao factory edit" />
   </component>
 </project>

@@ -15,4 +15,18 @@ public class DaoFactory {
         }
         return bookDao;
     }
+
+    public static MemberDao memberDao() throws DBException {
+        if(memberDao == null){
+            memberDao = new MemberDaoSQLImpl();
+        }
+        return memberDao;
+    }
+
+    public static LoanDao loanDao() throws DBException {
+        if(loanDao == null){
+            loanDao = new LoanDaoSQLImpl();
+        }
+        return loanDao;
+    }
 }
