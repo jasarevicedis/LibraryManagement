@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,13 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00075" summary="multi page theme">
-      <created>1676494974925</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1676494974925</updated>
     </task>
     <task id="LOCAL-00076" summary="grid pane atributtes added">
       <created>1676495071003</created>
@@ -419,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676836310779</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="README updates">
+      <created>1676837531617</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1676837531617</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,7 +434,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="book class updated" />
     <MESSAGE value="loadDate" />
     <MESSAGE value="logout added" />
     <MESSAGE value="icon placeholders added" />
@@ -459,6 +458,7 @@
     <MESSAGE value="added exit icon" />
     <MESSAGE value="fixed exit styling" />
     <MESSAGE value="added pane on home" />
-    <option name="LAST_COMMIT_MESSAGE" value="added pane on home" />
+    <MESSAGE value="README updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="README updates" />
   </component>
 </project>
