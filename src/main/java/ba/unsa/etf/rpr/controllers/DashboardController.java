@@ -2,6 +2,7 @@ package ba.unsa.etf.rpr.controllers;
 
 
 import ba.unsa.etf.rpr.domain.Book;
+import ba.unsa.etf.rpr.exceptions.DBException;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -9,12 +10,10 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
@@ -30,8 +29,16 @@ import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
 import static javafx.scene.control.PopupControl.USE_COMPUTED_SIZE;
+import static jdk.internal.org.jline.utils.Curses.toInteger;
 
 public class DashboardController implements Initializable {
+
+    @FXML
+    private TextField titleField;
+    @FXML
+    private TextField authorField;
+    @FXML
+    private TextField publishField;
     @FXML
     private StackPane dashboardStack;
     @FXML
@@ -118,8 +125,32 @@ public class DashboardController implements Initializable {
     ResultSet resultSet = null;
     Book book = null;
     ObservableList<Book> bookList = FXCollections.observableArrayList();
+
     @FXML
-    private void getAddBookView(MouseEvent event){}
+    private void close(MouseEvent event){
+        Stage stage =(Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
+    }
+    @FXML
+    private void getAddBookView(MouseEvent event) throws DBException {
+        try {
+            Parent parent = FXMLLoader.load(getClass().getResource("/fxml/addBook.fxml"));
+            Scene scene = new Scene(parent);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.initStyle(StageStyle.UTILITY);
+            stage.show();
+        }catch(Exception e){
+
+        }
+    }
+    @FXML
+    private void save(MouseEvent event){
+        String title = titleField.getText();
+        String author = authorField.getText();
+        int publishYear;
+        publishYear = Integer.parseInt( publishField.getText());
+    }
     @FXML
     private void refreshBookTable(MouseEvent event){
         bookList.clear();
