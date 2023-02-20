@@ -193,7 +193,7 @@
                               <Insets left="20.0" />
                            </HBox.margin>
                         </ComboBox>
-                        <Button fx:id="refreshBooks" mnemonicParsing="false" onAction="#refreshBookTable" style="-fx-background-color: transparent;">
+                        <Button fx:id="refreshBooks" mnemonicParsing="false" onMouseClicked="#refreshBookTable" style="-fx-background-color: transparent;">
                            <HBox.margin>
                               <Insets left="10.0" />
                            </HBox.margin>
@@ -201,7 +201,7 @@
                               <FontAwesomeIconView fill="#0598ff" glyphName="REFRESH" size="20" />
                            </graphic>
                         </Button>
-                        <Button fx:id="addBook" mnemonicParsing="false" onAction="#getAddBookView" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add books" textFill="WHITE">
+                        <Button fx:id="addBook" mnemonicParsing="false" onMouseClicked="#getAddBookView" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add books" textFill="WHITE">
                            <HBox.margin>
                               <Insets left="10.0" />
                            </HBox.margin>

@@ -132,7 +132,7 @@ public class DashboardController implements Initializable {
         stage.close();
     }
     @FXML
-    private void getAddBookView(MouseEvent event) throws DBException {
+    private void getAddBookView(ActionEvent event) throws DBException {
         try {
             Parent parent = FXMLLoader.load(getClass().getResource("/fxml/addBook.fxml"));
             Scene scene = new Scene(parent);
@@ -153,7 +153,7 @@ public class DashboardController implements Initializable {
 
     }
     @FXML
-    private void refreshBookTable(MouseEvent event){
+    private void refreshBookTable(ActionEvent event){
         bookList.clear();
     }
     private void loadDateBooks(){
