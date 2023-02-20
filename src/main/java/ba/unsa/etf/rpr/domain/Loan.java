@@ -2,7 +2,7 @@ package ba.unsa.etf.rpr.domain;
 
 import java.util.Date;
 
-public class Loan {
+public class Loan implements Idable {
     private int id;
     private Date loan_date;
     private int  member_id;
