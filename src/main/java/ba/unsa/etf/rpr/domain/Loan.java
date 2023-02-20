@@ -8,6 +8,14 @@ public class Loan implements Idable {
     private int  member_id;
     private int book_id;
 
+    public Loan(){};
+    public Loan(int id, Date loan_date, int member_id,int book_id){
+        this.id=id;
+        this.loan_date=loan_date;
+        this.member_id=member_id;
+        this.book_id = book_id;
+    };
+
     public int getId(){return id;}
     public Date getLoan_date(){
         return loan_date;
