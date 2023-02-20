@@ -3,8 +3,10 @@ package ba.unsa.etf.rpr.dao;
 import ba.unsa.etf.rpr.domain.Book;
 import ba.unsa.etf.rpr.exceptions.DBException;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -41,7 +43,27 @@ public class BookDaoSQLImpl extends AbstractDao<Book> implements BookDao {
 
     @Override
     public List<Book> getByTitle(String word) throws DBException {
+        List<Book> bookList = new ArrayList<>();
+        String query = "SELECT * FROM book WHERE id = ?";
 
+        try {
+            PreparedStatement preparedStatement = getConnection().prepareStatement(query);
+
+            preparedStatement.setString(1, word);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+                bookList.add(row2object(resultSet));
+            }
+
+            resultSet.close();
+
+        } catch (SQLException e) {
+            throw new DBException(e);
+        }
+
+        return bookList;
     }
 
     @Override
