@@ -8,8 +8,8 @@ import java.util.Map;
 
 public class MemberDaoSQLImpl extends AbstractDao<Member> implements MemberDao {
 
-    public MemberDaoSQLImpl(String tableName) {
-        super(tableName);
+    public MemberDaoSQLImpl() {
+        super("member");
     }
 
     @Override

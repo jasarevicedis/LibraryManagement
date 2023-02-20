@@ -7,8 +7,8 @@ import java.sql.ResultSet;
 import java.util.Map;
 
 public class LoanDaoSQLImpl extends AbstractDao<Loan> implements LoanDao{
-    public LoanDaoSQLImpl(String tableName) {
-        super(tableName);
+    public LoanDaoSQLImpl() {
+        super("loan");
     }
 
     @Override
