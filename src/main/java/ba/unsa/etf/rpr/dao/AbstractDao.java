@@ -93,7 +93,27 @@ public abstract class AbstractDao<T extends Idable> implements Dao<T> {
 
 
     public List<T> getAll() throws DBException {
-        return executeQuery("SELECT * FROM "+ tableName, null);
+        List<T> list = new ArrayList<>();
+
+        String query = "SELECT * FROM " + tableName;
+
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+                T object = row2object(resultSet);
+                list.add(object);
+            }
+
+            resultSet.close();
+
+        } catch (SQLException e) {
+            throw new DBException(e);
+        }
+
+        return list;
     }
 
     public void delete(int id) throws DBException {
