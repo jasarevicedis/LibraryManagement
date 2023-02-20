@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/MemberDaoSQLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/MemberDaoSQLImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/domain/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/domain/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,20 +74,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00093" summary="fx">
-      <created>1676744448244</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1676744448244</updated>
-    </task>
-    <task id="LOCAL-00094" summary="fx">
-      <created>1676744638416</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1676744638416</updated>
     </task>
     <task id="LOCAL-00095" summary="fx updated">
       <created>1676744976010</created>
@@ -421,7 +404,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676880535508</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="member constructor added">
+      <created>1676905484185</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1676905484186</updated>
+    </task>
+    <task id="LOCAL-00143" summary="Loan constructor added">
+      <created>1676905608057</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1676905608057</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -436,9 +433,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="stack attributes added" />
-    <MESSAGE value="fixed login bug" />
-    <MESSAGE value="fixed cloding login page bug" />
     <MESSAGE value="logout function added" />
     <MESSAGE value="styling homepage" />
     <MESSAGE value="item panes added" />
@@ -461,6 +455,9 @@
     <MESSAGE value="search methods added" />
     <MESSAGE value="getByTitle" />
     <MESSAGE value="get BY author implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="get BY author implemented" />
+    <MESSAGE value="member constructor added" />
+    <MESSAGE value="Loan constructor added" />
+    <MESSAGE value="member row20bject method fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="member row20bject method fixed" />
   </component>
 </project>

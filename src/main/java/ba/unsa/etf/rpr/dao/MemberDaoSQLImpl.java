@@ -8,6 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class MemberDaoSQLImpl extends AbstractDao<Member> implements MemberDao {
 
@@ -33,7 +34,14 @@ public class MemberDaoSQLImpl extends AbstractDao<Member> implements MemberDao {
 
     @Override
     public Map<String, Object> object2row(Member object) {
-        return null;
+        Map<String, Object> row = new TreeMap<>();
+
+        row.put("id", object.getId());
+        row.put("first_name", object.getFirst_name());
+        row.put("last_name", object.getLast_name());
+        row.put("join_date", object.getJoin_date());
+
+        return row;
     }
 
 
