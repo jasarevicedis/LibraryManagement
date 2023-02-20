@@ -22,6 +22,9 @@ import javafx.stage.StageStyle;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
 import static javafx.scene.control.PopupControl.USE_COMPUTED_SIZE;
@@ -107,10 +110,15 @@ public class DashboardController implements Initializable {
         primaryStage.show();
     }
 
+    String query= null;
+    Connection connection = null;
+    PreparedStatement preparedStatement = null;
+    ResultSet resultSet = null;
+    Book book = null;
     @FXML
-    private void getAddViewBooks(MouseEvent event){}
+    private void getAddBookView(MouseEvent event){}
     @FXML
-    private void refreshTableBooks(MouseEvent event){}
+    private void refreshBookTable(MouseEvent event){}
     private void loadDateBooks(){
         idCol.setCellValueFactory(new PropertyValueFactory<>("id"));
         titleCol.setCellValueFactory(new PropertyValueFactory<>("title"));
