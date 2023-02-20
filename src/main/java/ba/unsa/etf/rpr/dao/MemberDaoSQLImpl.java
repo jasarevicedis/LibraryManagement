@@ -16,7 +16,18 @@ public class MemberDaoSQLImpl extends AbstractDao<Member> implements MemberDao {
 
     @Override
     public Member row2object(ResultSet rs) throws DBException {
-        return null;
+        try {
+            return new Member(
+                    resultSet.getInt("id"),
+                    resultSet.getString("username"),
+                    resultSet.getString("password"),
+                    resultSet.getString("first_name"),
+                    resultSet.getString("last_name")
+            );
+
+        } catch (SQLException e) {
+            throw new DBHandleException(e);
+        }
     }
 
     @Override

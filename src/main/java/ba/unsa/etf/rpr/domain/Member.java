@@ -8,6 +8,14 @@ public class Member implements Idable {
     private String last_name;
     private Date join_date;
 
+    public Member(){};
+    public Member(int id, String first_name, String last_name,Date join_date){
+        this.id=id;
+        this.first_name=first_name;
+        this.last_name=last_name;
+        this.join_date=join_date;
+    };
+
     public int getId(){
         return id;
     }
