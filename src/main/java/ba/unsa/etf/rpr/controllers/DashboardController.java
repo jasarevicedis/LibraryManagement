@@ -2,6 +2,8 @@ package ba.unsa.etf.rpr.controllers;
 
 
 import ba.unsa.etf.rpr.domain.Book;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -115,10 +117,13 @@ public class DashboardController implements Initializable {
     PreparedStatement preparedStatement = null;
     ResultSet resultSet = null;
     Book book = null;
+    ObservableList<Book> bookList = FXCollections.observableArrayList();
     @FXML
     private void getAddBookView(MouseEvent event){}
     @FXML
-    private void refreshBookTable(MouseEvent event){}
+    private void refreshBookTable(MouseEvent event){
+        bookList.clear();
+    }
     private void loadDateBooks(){
         idCol.setCellValueFactory(new PropertyValueFactory<>("id"));
         titleCol.setCellValueFactory(new PropertyValueFactory<>("title"));
