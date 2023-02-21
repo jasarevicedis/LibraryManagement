@@ -44,15 +44,15 @@ public class DashboardController  {
     @FXML
     private StackPane dashboardStack;
     @FXML
-    private TableView<Book> bookTable;
+    public TableView<Book> bookTable;
     @FXML
-    private TableColumn<Book, Integer> bookIdCol;
+    public TableColumn<Book, Integer> bookIdCol;
     @FXML
-    private TableColumn<Book, String> bookTitleCol;
+    public TableColumn<Book, String> bookTitleCol;
     @FXML
-    private TableColumn<Book, Integer> bookPublishCol;
+    public TableColumn<Book, Integer> bookPublishCol;
     @FXML
-    private TableColumn<Book, String> bookAuthorCol;
+    public TableColumn<Book, String> bookAuthorCol;
     @FXML
     private Button logoutButton;
     @FXML
@@ -95,13 +95,13 @@ public class DashboardController  {
     public void initialize(){
         bookIdCol.setCellValueFactory(new PropertyValueFactory<>("id"));
         bookTitleCol.setCellValueFactory(new PropertyValueFactory<>("title"));
-        //publishCol.setCellValueFactory(new PropertyValueFactory<>("PublishYear"));
+        //bookPublishCol.setCellValueFactory(new PropertyValueFactory<>("PublishYear"));
         bookAuthorCol.setCellValueFactory(new PropertyValueFactory<>("author"));
 
         try {
             List<Book>  booksList = manager.getAll();
 
-            updateTable(booksList);
+            updateBookTable(booksList);
         } catch (DBException e) {
 
         }
@@ -176,20 +176,25 @@ public class DashboardController  {
         publishYear = Integer.parseInt( publishField.getText());
 
     }
+
     @FXML
     private void refreshBookTable(ActionEvent event){
-        bookList.clear();
-    }
-    private void loadDateBooks(){
-        bookIdCol.setCellValueFactory(new PropertyValueFactory<>("id"));
-        bookTitleCol.setCellValueFactory(new PropertyValueFactory<>("title"));
+
+        bookIdCol.setCellValueFactory(new PropertyValueFactory<>("Id"));
+        bookTitleCol.setCellValueFactory(new PropertyValueFactory<>("Title"));
         //publishCol.setCellValueFactory(new PropertyValueFactory<>("PublishYear"));
-        bookAuthorCol.setCellValueFactory(new PropertyValueFactory<>("author"));
+        bookAuthorCol.setCellValueFactory(new PropertyValueFactory<>("Author"));
 
     }
-    private void updateTable(List<Book> bookssList) {
+    private void updateBookTable(List<Book> bookssList) {
         bookTable.setItems(FXCollections.observableList(bookssList));
 
         bookTable.refresh();
+    }
+
+    public void refreshMembersTable(ActionEvent actionEvent) {
+    }
+
+    public void refreshLoansTable(ActionEvent actionEvent) {
     }
 }
