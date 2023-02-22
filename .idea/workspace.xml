@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/LoanDaoSQLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/LoanDaoSQLImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/MemberDaoSQLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/MemberDaoSQLImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,13 +106,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00128" summary="book sql class">
-      <created>1676877896131</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1676877896131</updated>
     </task>
     <task id="LOCAL-00129" summary="book sql classes added">
       <created>1676878086635</created>
@@ -451,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677088606791</updated>
     </task>
-    <option name="localTasksCounter" value="177" />
+    <task id="LOCAL-00177" summary="classes FINNALY FIXED, case sensitivity was problem...">
+      <created>1677088901684</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1677088901684</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -466,7 +465,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="name search methods for members implemented" />
     <MESSAGE value="abstract dao implemented" />
     <MESSAGE value="business layer created" />
     <MESSAGE value="book manager implemented" />
@@ -491,6 +489,7 @@
     <MESSAGE value="cant fix sql" />
     <MESSAGE value="maven dependencies added" />
     <MESSAGE value="first unit test created, testing sql methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="first unit test created, testing sql methods" />
+    <MESSAGE value="classes FINNALY FIXED, case sensitivity was problem..." />
+    <option name="LAST_COMMIT_MESSAGE" value="classes FINNALY FIXED, case sensitivity was problem..." />
   </component>
 </project>
