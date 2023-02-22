@@ -26,7 +26,7 @@ public class MemberDaoSQLImpl extends AbstractDao<Member> implements MemberDao {
                     resultSet.getInt("member_id"),
                     resultSet.getString("first_name"),
                     resultSet.getString("last_name"),
-                    resultSet.getDate("loan_date")
+                    resultSet.getDate("join_date")
 
             );
 

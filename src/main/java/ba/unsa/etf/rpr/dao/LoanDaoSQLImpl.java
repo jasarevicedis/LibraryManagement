@@ -1,10 +1,13 @@
 package ba.unsa.etf.rpr.dao;
 
+import ba.unsa.etf.rpr.domain.Book;
 import ba.unsa.etf.rpr.domain.Loan;
 import ba.unsa.etf.rpr.exceptions.DBException;
 
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class LoanDaoSQLImpl extends AbstractDao<Loan> implements LoanDao{
     public LoanDaoSQLImpl() throws DBException {
@@ -13,11 +16,26 @@ public class LoanDaoSQLImpl extends AbstractDao<Loan> implements LoanDao{
 
     @Override
     public Loan row2object(ResultSet rs) throws DBException {
-        return null;
+        try {
+            return new Loan(
+                    rs.getInt("loan_id"),
+                    rs.getDate("loan_date"),
+                    rs.getInt("Book_book_id"),
+                    rs.getInt("Member_member_id")
+            );
+        }catch(SQLException e){
+            throw new DBException(e);
+        }
     }
 
     @Override
     public Map<String, Object> object2row(Loan object) {
-        return null;
+        Map<String, Object> row = new TreeMap<>();
+        row.put("loan_id", object.getId());
+        row.put("loan_date", object.getLoan_date());
+        row.put("Book_book_id", object.getBook_id());
+        row.put("Member_member_id", object.getMember_id());
+
+        return row;
     }
 }
