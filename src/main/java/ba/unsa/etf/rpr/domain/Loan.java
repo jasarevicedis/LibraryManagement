@@ -3,20 +3,20 @@ package ba.unsa.etf.rpr.domain;
 import java.util.Date;
 
 public class Loan implements Idable {
-    private int id;
+    private int loan_id;
     private Date loan_date;
     private int  member_id;
     private int book_id;
 
     public Loan(){};
     public Loan(int id, Date loan_date, int member_id,int book_id){
-        this.id=id;
+        this.loan_id=id;
         this.loan_date=loan_date;
         this.member_id=member_id;
         this.book_id = book_id;
     };
 
-    public int getId(){return id;}
+    public int getId(){return loan_id;}
     public Date getLoan_date(){
         return loan_date;
     }
@@ -28,7 +28,7 @@ public class Loan implements Idable {
     }
 
     public void setId(int id){
-        this.id = id;
+        this.loan_id = id;
     }
     public void setLoan_date(Date loan_date){
         this.loan_date = loan_date;

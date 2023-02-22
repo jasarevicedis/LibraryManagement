@@ -20,7 +20,7 @@ public class BookDaoSQLImpl extends AbstractDao<Book> implements BookDao {
     public Book row2object(ResultSet rs) throws DBException {
         try {
             return new Book(
-                    rs.getInt("id"),
+                    rs.getInt("book_id"),
                     rs.getString("title"),
                     rs.getInt("PublishYear"),
                     rs.getString("author")
@@ -33,7 +33,7 @@ public class BookDaoSQLImpl extends AbstractDao<Book> implements BookDao {
     @Override
     public Map<String, Object> object2row(Book object) {
         Map<String, Object> row = new TreeMap<>();
-        row.put("id", object.getId());
+        row.put("book_id", object.getId());
         row.put("title", object.getTitle());
         row.put("PublishYear", object.getPublishYear());
         row.put("author", object.getAuthor());

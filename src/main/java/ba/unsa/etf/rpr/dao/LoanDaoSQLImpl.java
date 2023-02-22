@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.util.Map;
 
 public class LoanDaoSQLImpl extends AbstractDao<Loan> implements LoanDao{
-    public LoanDaoSQLImpl() {
+    public LoanDaoSQLImpl() throws DBException {
         super("Loan");
     }
 

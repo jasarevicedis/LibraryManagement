@@ -125,30 +125,50 @@ public class DashboardController  {
 
     @FXML
     public void initialize(){
-        bookIdCol.setCellValueFactory(new PropertyValueFactory<>("id"));
+
+        bookIdCol.setCellValueFactory(new PropertyValueFactory<>("book_id"));
         bookTitleCol.setCellValueFactory(new PropertyValueFactory<>("title"));
         bookPublishCol.setCellValueFactory(new PropertyValueFactory<>("PublishYear"));
-        bookAuthorCol.setCellValueFactory(new PropertyValueFactory<>("author"));
+        bookAuthorCol.setCellValueFactory(new PropertyValueFactory<>("Author"));
 
-        memberIdCol.setCellValueFactory(new PropertyValueFactory<>("id"));
-        memberFirstNameCol.setCellValueFactory(new PropertyValueFactory<>("firstName"));
-        memberLastNameCol.setCellValueFactory(new PropertyValueFactory<>("lastName"));
-        memberJoinDateCol.setCellValueFactory(new PropertyValueFactory<>("joinDate"));
+/*
+        memberIdCol.setCellValueFactory(new PropertyValueFactory<>("member_id"));
+        memberFirstNameCol.setCellValueFactory(new PropertyValueFactory<>("first_name"));
+        memberLastNameCol.setCellValueFactory(new PropertyValueFactory<>("last_name"));
+        memberJoinDateCol.setCellValueFactory(new PropertyValueFactory<>("join_date"));
 
-        loanIdCol.setCellValueFactory(new PropertyValueFactory<>("id"));
-        loanMemberCol.setCellValueFactory(new PropertyValueFactory<>("memberId"));
-        loanBookCol.setCellValueFactory(new PropertyValueFactory<>("bookId"));
-        loanDateCol.setCellValueFactory(new PropertyValueFactory<>("loanDate"));
-
+        loanIdCol.setCellValueFactory(new PropertyValueFactory<>("loan_id"));
+        loanMemberCol.setCellValueFactory(new PropertyValueFactory<>("Member_member_id"));
+        loanBookCol.setCellValueFactory(new PropertyValueFactory<>("Book_book_id"));
+        loanDateCol.setCellValueFactory(new PropertyValueFactory<>("loan_date"));
+*/
 
 
         try {
             List<Book>  booksList = bookManager.getAll();
-            List<Loan>  loansList = loanManager.getAll();
-            List<Member>  membersList = memberManager.getAll();
+
 
             updateBookTable(booksList);
+
+        } catch (DBException e) {
+
+        }
+        try {
+
+            List<Loan>  loansList = loanManager.getAll();
+
+
+
             updateLoanTable(loansList);
+
+        } catch (DBException e) {
+
+        }
+        try {
+
+            List<Member>  membersList = memberManager.getAll();
+
+
             updateMemberTable(membersList);
         } catch (DBException e) {
 
