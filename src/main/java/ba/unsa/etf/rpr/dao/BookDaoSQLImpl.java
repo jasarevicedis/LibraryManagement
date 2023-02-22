@@ -13,7 +13,7 @@ import java.util.TreeMap;
 
 public class BookDaoSQLImpl extends AbstractDao<Book> implements BookDao {
     public BookDaoSQLImpl() throws DBException {
-        super("book");
+        super("Book");
     }
 
     @Override
