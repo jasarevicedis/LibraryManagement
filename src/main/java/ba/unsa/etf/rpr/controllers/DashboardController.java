@@ -2,7 +2,11 @@ package ba.unsa.etf.rpr.controllers;
 
 
 import ba.unsa.etf.rpr.business.BookManager;
+import ba.unsa.etf.rpr.business.LoanManager;
+import ba.unsa.etf.rpr.business.MemberManager;
 import ba.unsa.etf.rpr.domain.Book;
+import ba.unsa.etf.rpr.domain.Loan;
+import ba.unsa.etf.rpr.domain.Member;
 import ba.unsa.etf.rpr.exceptions.DBException;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -27,6 +31,7 @@ import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.Date;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -53,6 +58,21 @@ public class DashboardController  {
     public TableColumn<Book, Integer> bookPublishCol;
     @FXML
     public TableColumn<Book, String> bookAuthorCol;
+
+    @FXML
+    public TableView<Loan> loanTable;
+    @FXML
+    public TableColumn<Loan, Integer> loanIdCol;
+    @FXML
+    public TableColumn<Loan, String> loanMemberCol;
+    @FXML
+    public TableColumn<Loan, String> loanBookCol;
+    @FXML
+    public TableColumn<Loan, Date> loanDateCol;
+
+
+
+
     @FXML
     private Button logoutButton;
     @FXML
@@ -85,8 +105,9 @@ public class DashboardController  {
     private GridPane pnLoans;
 
 
-    private final BookManager manager = new BookManager();
-
+    private final BookManager bookManager = new BookManager();
+    private final LoanManager loanManager = new LoanManager();
+    private final MemberManager memberManager = new MemberManager();
 
     public DashboardController() {
     }
@@ -99,7 +120,9 @@ public class DashboardController  {
         bookAuthorCol.setCellValueFactory(new PropertyValueFactory<>("author"));
 
         try {
-            List<Book>  booksList = manager.getAll();
+            List<Book>  booksList = bookManager.getAll();
+            List<Loan>  loansList = loanManager.getAll();
+            List<Member>  membersList = memberManager.getAll();
 
             updateBookTable(booksList);
         } catch (DBException e) {

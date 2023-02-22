@@ -157,7 +157,7 @@
                       <TableColumn fx:id="bookIdCol" prefWidth="71.0" text="BookId" />
                       <TableColumn fx:id="bookTitleCol" prefWidth="333.0" text="Title" />
                         <TableColumn fx:id="bookAuthorCol" minWidth="0.0" prefWidth="207.0" text="Author" />
-                       <TableColumn fx:id="bookPublishCol" minWidth="0.0" prefWidth="70.0" text="Publish year" />
+                       <TableColumn fx:id="bookPublishCol" minWidth="0.0" prefWidth="70.0" text="Year" />
 
                     </columns>
                   </TableView>
