@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class LoanDaoSQLImpl extends AbstractDao<Loan> implements LoanDao{
     public LoanDaoSQLImpl() {
-        super("loan");
+        super("Loan");
     }
 
     @Override

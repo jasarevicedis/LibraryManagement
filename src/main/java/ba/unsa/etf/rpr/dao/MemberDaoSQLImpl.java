@@ -15,7 +15,7 @@ import java.util.TreeMap;
 public class MemberDaoSQLImpl extends AbstractDao<Member> implements MemberDao {
 
     public MemberDaoSQLImpl() {
-        super("member");
+        super("Member");
     }
 
     @Override

@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/dao/AbstractDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/dao/BookDaoSQLImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/BookDaoSQLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/BookDaoSQLImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/BookManagerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/LoanDaoSQLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/LoanDaoSQLImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/MemberDaoSQLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/MemberDaoSQLImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +68,7 @@
       <recent name="ba.unsa.etf.rpr.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookDaoSQLImplTest.DoesSQLWork">
+  <component name="RunManager" selected="Application.Unnamed">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.App" />
       <module name="RPRprojekat" />
@@ -110,13 +107,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00127" summary="book data edit">
-      <created>1676877370292</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1676877370292</updated>
     </task>
     <task id="LOCAL-00128" summary="book sql class">
       <created>1676877896131</created>
@@ -454,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676955796469</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="first unit test created, testing sql methods">
+      <created>1677088606789</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1677088606791</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -469,7 +466,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated member dao" />
     <MESSAGE value="name search methods for members implemented" />
     <MESSAGE value="abstract dao implemented" />
     <MESSAGE value="business layer created" />
@@ -494,6 +490,7 @@
     <MESSAGE value="refresh buttons added" />
     <MESSAGE value="cant fix sql" />
     <MESSAGE value="maven dependencies added" />
-    <option name="LAST_COMMIT_MESSAGE" value="maven dependencies added" />
+    <MESSAGE value="first unit test created, testing sql methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="first unit test created, testing sql methods" />
   </component>
 </project>
