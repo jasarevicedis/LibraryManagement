@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/dao/LoanDaoSQLImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/LoanDaoSQLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/LoanDaoSQLImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/domain/Loan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/domain/Loan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +66,7 @@
       <recent name="ba.unsa.etf.rpr.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoanDaoSQLImplTest.DoesSQLWork3">
+  <component name="RunManager" selected="Application.Unnamed">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.App" />
       <module name="RPRprojekat" />
@@ -142,13 +139,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00135" summary="dao factory fixed bugs">
-      <created>1676878863856</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1676878863856</updated>
     </task>
     <task id="LOCAL-00136" summary="book class edits">
       <created>1676879450857</created>
@@ -486,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677101449385</updated>
     </task>
-    <option name="localTasksCounter" value="184" />
+    <task id="LOCAL-00184" summary="sql bugs fixed FINALLLLLYYYYYYY">
+      <created>1677103552665</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1677103552665</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -501,7 +498,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fxing urls" />
     <MESSAGE value="addb book fxml work" />
     <MESSAGE value="add book fxml work" />
     <MESSAGE value="add member fxml work" />
@@ -526,6 +522,7 @@
     <MESSAGE value="FIXING PROPERTYvALUES" />
     <MESSAGE value="trying to fix sql display bugs" />
     <MESSAGE value="fixed DAO sql row2object methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed DAO sql row2object methods" />
+    <MESSAGE value="sql bugs fixed FINALLLLLYYYYYYY" />
+    <option name="LAST_COMMIT_MESSAGE" value="sql bugs fixed FINALLLLLYYYYYYY" />
   </component>
 </project>

@@ -131,17 +131,17 @@ public class DashboardController  {
         bookPublishCol.setCellValueFactory(new PropertyValueFactory<>("PublishYear"));
         bookAuthorCol.setCellValueFactory(new PropertyValueFactory<>("Author"));
 
-/*
+
         memberIdCol.setCellValueFactory(new PropertyValueFactory<>("member_id"));
         memberFirstNameCol.setCellValueFactory(new PropertyValueFactory<>("first_name"));
         memberLastNameCol.setCellValueFactory(new PropertyValueFactory<>("last_name"));
         memberJoinDateCol.setCellValueFactory(new PropertyValueFactory<>("join_date"));
 
         loanIdCol.setCellValueFactory(new PropertyValueFactory<>("loan_id"));
-        loanMemberCol.setCellValueFactory(new PropertyValueFactory<>("Member_member_id"));
-        loanBookCol.setCellValueFactory(new PropertyValueFactory<>("Book_book_id"));
+        loanMemberCol.setCellValueFactory(new PropertyValueFactory<>("member_id"));
+        loanBookCol.setCellValueFactory(new PropertyValueFactory<>("Book_id"));
         loanDateCol.setCellValueFactory(new PropertyValueFactory<>("loan_date"));
-*/
+
 
 
         try {
