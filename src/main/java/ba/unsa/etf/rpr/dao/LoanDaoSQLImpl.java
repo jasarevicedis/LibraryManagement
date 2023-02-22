@@ -20,8 +20,8 @@ public class LoanDaoSQLImpl extends AbstractDao<Loan> implements LoanDao{
             return new Loan(
                     rs.getInt("loan_id"),
                     rs.getDate("loan_date"),
-                    rs.getInt("Book_book_id"),
-                    rs.getInt("Member_member_id")
+                    rs.getInt("Book_id"),
+                    rs.getInt("member_id")
             );
         }catch(SQLException e){
             throw new DBException(e);
@@ -33,8 +33,8 @@ public class LoanDaoSQLImpl extends AbstractDao<Loan> implements LoanDao{
         Map<String, Object> row = new TreeMap<>();
         row.put("loan_id", object.getId());
         row.put("loan_date", object.getLoan_date());
-        row.put("Book_book_id", object.getBook_id());
-        row.put("Member_member_id", object.getMember_id());
+        row.put("Book_id", object.getBook_id());
+        row.put("member_id", object.getMember_id());
 
         return row;
     }

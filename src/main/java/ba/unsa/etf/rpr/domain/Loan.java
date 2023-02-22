@@ -5,15 +5,15 @@ import java.util.Date;
 public class Loan implements Idable {
     private int loan_id;
     private Date loan_date;
-    private int  member_id;
-    private int book_id;
+    private int  Member_member_id;
+    private int Book_book_id;
 
     public Loan(){};
-    public Loan(int id, Date loan_date, int member_id,int book_id){
+    public Loan(int id, Date loan_date, int Book_book_id,int Member_member_id){
         this.loan_id=id;
         this.loan_date=loan_date;
-        this.member_id=member_id;
-        this.book_id = book_id;
+        this.Member_member_id=Member_member_id;
+        this.Book_book_id = Book_book_id;
     };
 
     public int getId(){return loan_id;}
@@ -21,10 +21,10 @@ public class Loan implements Idable {
         return loan_date;
     }
     public int getMember_id(){
-        return member_id;
+        return Member_member_id;
     }
     public int getBook_id(){
-        return book_id;
+        return Book_book_id;
     }
 
     public void setId(int id){
@@ -34,9 +34,9 @@ public class Loan implements Idable {
         this.loan_date = loan_date;
     }
     public void setMember_id(int member_id){
-        this.member_id = member_id;
+        this.Member_member_id = member_id;
     }
     public void setBook_id(int book_id){
-        this.book_id = book_id;
+        this.Book_book_id = book_id;
     }
 }
