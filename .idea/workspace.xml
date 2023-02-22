@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/business/LoanManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/business/LoanManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/business/MemberManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/business/MemberManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,13 +105,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00131" summary="dao factory edit">
-      <created>1676878320504</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1676878320504</updated>
     </task>
     <task id="LOCAL-00132" summary="dao factory edit">
       <created>1676878602398</created>
@@ -452,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677092329001</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="managers updated">
+      <created>1677093614669</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1677093614669</updated>
+    </task>
+    <option name="localTasksCounter" value="181" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -467,7 +464,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="book manager implemented" />
     <MESSAGE value="unnecesary removed" />
     <MESSAGE value="added pop up containers" />
     <MESSAGE value="adding controllers" />
@@ -492,6 +488,7 @@
     <MESSAGE value="classes FINNALY FIXED, case sensitivity was problem..." />
     <MESSAGE value="ids updated" />
     <MESSAGE value="fixing dashboard" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing dashboard" />
+    <MESSAGE value="managers updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="managers updated" />
   </component>
 </project>

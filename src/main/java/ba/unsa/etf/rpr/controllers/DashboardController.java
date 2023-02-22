@@ -70,6 +70,17 @@ public class DashboardController  {
     @FXML
     public TableColumn<Loan, Date> loanDateCol;
 
+    @FXML
+    public TableView<Member> memberTable;
+    @FXML
+    public TableColumn<Member, Integer> memberIdCol;
+    @FXML
+    public TableColumn<Member, String> memberFirstNameCol;
+    @FXML
+    public TableColumn<Member, String> memberLastNameCol;
+    @FXML
+    public TableColumn<Member, Date> memberJoinDateCol;
+
 
 
 
@@ -119,12 +130,26 @@ public class DashboardController  {
         bookPublishCol.setCellValueFactory(new PropertyValueFactory<>("PublishYear"));
         bookAuthorCol.setCellValueFactory(new PropertyValueFactory<>("author"));
 
+        memberIdCol.setCellValueFactory(new PropertyValueFactory<>("id"));
+        memberFirstNameCol.setCellValueFactory(new PropertyValueFactory<>("firstName"));
+        memberLastNameCol.setCellValueFactory(new PropertyValueFactory<>("lastName"));
+        memberJoinDateCol.setCellValueFactory(new PropertyValueFactory<>("joinDate"));
+
+        loanIdCol.setCellValueFactory(new PropertyValueFactory<>("id"));
+        loanMemberCol.setCellValueFactory(new PropertyValueFactory<>("memberId"));
+        loanBookCol.setCellValueFactory(new PropertyValueFactory<>("bookId"));
+        loanDateCol.setCellValueFactory(new PropertyValueFactory<>("loanDate"));
+
+
+
         try {
             List<Book>  booksList = bookManager.getAll();
             List<Loan>  loansList = loanManager.getAll();
             List<Member>  membersList = memberManager.getAll();
 
             updateBookTable(booksList);
+            updateLoanTable(loansList);
+            updateMemberTable(membersList);
         } catch (DBException e) {
 
         }
@@ -213,6 +238,16 @@ public class DashboardController  {
         bookTable.setItems(FXCollections.observableList(bookssList));
 
         bookTable.refresh();
+    }
+    private void updateLoanTable(List<Loan> loanssList) {
+        loanTable.setItems(FXCollections.observableList(loanssList));
+
+        loanTable.refresh();
+    }
+    private void updateMemberTable(List<Member> memberssList) {
+        memberTable.setItems(FXCollections.observableList(memberssList));
+
+        memberTable.refresh();
     }
 
     public void refreshMembersTable(ActionEvent actionEvent) {
