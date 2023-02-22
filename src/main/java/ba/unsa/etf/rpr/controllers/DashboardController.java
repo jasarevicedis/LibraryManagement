@@ -95,7 +95,7 @@ public class DashboardController  {
     public void initialize(){
         bookIdCol.setCellValueFactory(new PropertyValueFactory<>("id"));
         bookTitleCol.setCellValueFactory(new PropertyValueFactory<>("title"));
-        //bookPublishCol.setCellValueFactory(new PropertyValueFactory<>("PublishYear"));
+        bookPublishCol.setCellValueFactory(new PropertyValueFactory<>("PublishYear"));
         bookAuthorCol.setCellValueFactory(new PropertyValueFactory<>("author"));
 
         try {
