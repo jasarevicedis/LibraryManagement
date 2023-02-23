@@ -95,7 +95,7 @@ public class BookDaoSQLImpl extends AbstractDao<Book> implements BookDao {
     public Book searchByTitle(String title) throws DBException {
         Book book = null;
 
-        String query = "SELECT * FROM course WHERE name = ?";
+        String query = "SELECT * FROM Book WHERE title = ?";
 
         try {
             PreparedStatement preparedStatement = getConnection().prepareStatement(query);
