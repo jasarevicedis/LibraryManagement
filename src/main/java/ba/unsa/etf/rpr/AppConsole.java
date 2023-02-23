@@ -1,16 +1,31 @@
 package ba.unsa.etf.rpr;
 import org.apache.commons.cli.*;
 import ba.unsa.etf.rpr.dao.DaoFactory;
-import ba.unsa.etf.rpr.domain.Book;
+import ba.unsa.etf.rpr.domain.*;
+import ba.unsa.etf.rpr.business.*;
+import java.io.PrintWriter;
+import java.time.LocalDate;
+import java.util.Date;
+
 import ba.unsa.etf.rpr.exceptions.*;
 
 public class AppConsole {
+
     private static final Option addBook = new Option("b", "add-book", false, "Adding book to the database");
     private static final Option addMember = new Option("m", "add-member", false, "Adding member to the database");
     private static final Option getBooks = new Option("getB", "get-books", false, "Printing all books from the database");
     private static final Option getMembers = new Option("getM", "get-members", false, "Printing all members from the database");
 
+    private static void printFormattedOptions(Options options) {
+        HelpFormatter helpFormatter = new HelpFormatter();
+        PrintWriter printWriter = new PrintWriter(System.out);
 
+        helpFormatter.printUsage(printWriter, 150, "java -jar RPRprojekat.jar [option] 'something else if needed' ");
+        helpFormatter.printOptions(printWriter, 150, options, 2, 7);
+
+        printWriter.close();
+    }
+    static Date today = new Date();
     private static Options addOptions() {
         Options options = new Options();
 
@@ -43,48 +58,28 @@ public class AppConsole {
                 System.exit(1);
             }
 
-            Exam exam = new Exam();
 
-            exam.setUser(user);
-            exam.setCourse(course);
 
-            try {
-                exam.setExamTime(parseDate(cl.getArgList().get(1)));
-            } catch (ParseException e) {
-                System.out.println("Date format incorrect. Must be dd/MM/yyyy. Please try again.");
 
-                System.exit(1);
-            }
 
-            exam.setAnswerSheet(cl.getArgList().get(2));
-
-            DaoFactory.examDao().add(exam);
-
-            System.out.println("Exam successfully added to the database.");
-
-        } else if (cl.hasOption(getExams.getOpt()) || cl.hasOption(getExams.getLongOpt())) {
-            ExamManager examManager = new ExamManager();
-
-            examManager.getAll().forEach(q -> System.out.println(q.getAnswerSheet() + "\n"));
-
-        } else if (cl.hasOption(addCourse.getOpt()) || cl.hasOption(addCourse.getLongOpt())) {
-            CourseManager courseManager = new CourseManager();
+        } else if (cl.hasOption(addMember.getOpt()) || cl.hasOption(addMember.getLongOpt())) {
+            MemberManager memberManager = new MemberManager();
 
             if (cl.getArgList().size() != 2) {
-                System.out.println("Course addition must have two arguments: the name of the course and the name of the professor. Please try again.");
+                System.out.println("Member addition must have two arguments: the first and the last name. Please try again.");
 
                 System.exit(1);
             }
 
             try {
-                courseManager.createCourse(cl.getArgList().get(0), cl.getArgList().get(1));
-            } catch (DBHandleException e) {
-                System.out.println("Course with the same name already exists. Please try again.");
+                memberManager.createMember(cl.getArgList().get(0), cl.getArgList().get(1), today);
+            } catch (DBException e) {
+                System.out.println("Member with the same name already exists. Please try again.");
 
                 System.exit(1);
             }
 
-            System.out.println("Course successfully added to the database.");
+            System.out.println("Member successfully added to the database.");
 
         } else {
             printFormattedOptions(options);
