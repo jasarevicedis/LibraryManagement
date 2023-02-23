@@ -12,7 +12,7 @@ public class BookManager {
             return null;
         }
 
-        if (DaoFactory.bookDao().getByTitle(title) !=null) {
+        if (DaoFactory.bookDao().searchByTitle(title) !=null) {
             throw new DBException("Book title is already added");
         }
 
