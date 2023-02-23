@@ -131,7 +131,7 @@
                               <FontAwesomeIconView fill="#0598ff" glyphName="REFRESH" size="20" />
                            </graphic>
                         </Button>
-                        <Button fx:id="addLoan" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add loan" textFill="WHITE">
+                        <Button fx:id="addLoan" mnemonicParsing="false" onAction="#getAddLoanView" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add loan" textFill="WHITE">
                            <HBox.margin>
                               <Insets left="30.0" />
                            </HBox.margin>
@@ -198,7 +198,7 @@
                               <FontAwesomeIconView fill="#0598ff" glyphName="REFRESH" size="20" />
                            </graphic>
                         </Button>
-                        <Button fx:id="addMember" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add members" textFill="WHITE">
+                        <Button fx:id="addMember" onAction="#getAddMemberView" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add members" textFill="WHITE">
                            <HBox.margin>
                               <Insets left="30.0" />
                            </HBox.margin>
