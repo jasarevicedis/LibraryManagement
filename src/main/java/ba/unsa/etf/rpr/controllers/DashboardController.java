@@ -237,6 +237,32 @@ public class DashboardController  {
         }
     }
     @FXML
+    private void getAddMemberView(ActionEvent event) throws DBException {
+        try {
+            Parent parent = FXMLLoader.load(getClass().getResource("/fxml/addMember.fxml"));
+            Scene scene = new Scene(parent);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.initStyle(StageStyle.UTILITY);
+            stage.show();
+        }catch(Exception e){
+
+        }
+    }
+    @FXML
+    private void getAddLoanView(ActionEvent event) throws DBException {
+        try {
+            Parent parent = FXMLLoader.load(getClass().getResource("/fxml/addLoan.fxml"));
+            Scene scene = new Scene(parent);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.initStyle(StageStyle.UTILITY);
+            stage.show();
+        }catch(Exception e){
+
+        }
+    }
+    @FXML
     private void save(MouseEvent event){
         String title = titleField.getText();
         String author = authorField.getText();
