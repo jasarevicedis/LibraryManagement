@@ -23,19 +23,5 @@ class BookDaoSQLImplTest {
 
 
 
-    @Test
-    void row2object() {
-    }
 
-    @Test
-    void object2row() {
-    }
-
-    @Test
-    void getByTitle() {
-    }
-
-    @Test
-    void getByAuthor() {
-    }
 }

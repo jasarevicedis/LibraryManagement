@@ -72,7 +72,7 @@ public class AppConsole {
             }
 
             try {
-                memberManager.createMember(cl.getArgList().get(0), cl.getArgList().get(1), today);
+                memberManager.createMember(cl.getArgList().get(0), cl.getArgList().get(1));
             } catch (DBException e) {
                 System.out.println("Member with the same name already exists. Please try again.");
 

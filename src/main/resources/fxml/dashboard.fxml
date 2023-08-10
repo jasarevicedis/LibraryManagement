@@ -6,6 +6,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -23,14 +24,17 @@
          <children>
             <Pane prefHeight="148.0" prefWidth="189.0">
                <children>
-                  <ImageView fitHeight="66.0" fitWidth="98.0" layoutX="44.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="86.0" fitWidth="91.0" layoutX="52.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/logo.png" />
+                     </image></ImageView>
                </children></Pane>
             <Button fx:id="btnHome" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="49.0" prefWidth="189.0" style="-fx-background-color: transparent;" text="Home" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
                <graphic>
-                  <FontAwesomeIconView fill="WHITE" glyphName="HOME" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="HOME" text="" />
                </graphic>
                <padding>
                   <Insets left="40.0" />
@@ -47,7 +51,7 @@
                   <Font name="System Bold" size="20.0" />
                </font>
                <graphic>
-                  <FontAwesomeIconView fill="WHITE" glyphName="BOOK" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="BOOK" text="" />
                </graphic>
             </Button>
             <Button fx:id="btnMembers" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="49.0" prefWidth="189.0" style="-fx-background-color: transparent;" text="Members" textFill="WHITE">
@@ -69,7 +73,7 @@
                   <Font name="System Bold" size="20.0" />
                </font>
                <graphic>
-                  <FontAwesomeIconView fill="WHITE" glyphName="ARCHIVE" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="ARCHIVE" text="" />
                </graphic>
             </Button>
             <Pane prefHeight="166.0" prefWidth="189.0">
@@ -104,120 +108,6 @@
       </Pane>
       <StackPane fx:id="dashboardStack" layoutX="189.0" layoutY="114.0" prefHeight="417.0" prefWidth="682.0">
          <children>
-            <GridPane fx:id="pnLoans" prefHeight="329.0" prefWidth="682.0" style="-fx-background-color: white;">
-               <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               </columnConstraints>
-               <rowConstraints>
-                  <RowConstraints maxHeight="168.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="354.0" minHeight="10.0" prefHeight="349.0" vgrow="SOMETIMES" />
-               </rowConstraints>
-               <children>
-                  <TableView fx:id="loanTable" prefHeight="288.0" prefWidth="682.0" GridPane.rowIndex="1">
-                     <columns>
-                        <TableColumn fx:id="loanIdCol" prefWidth="71.0" text="Loan id" />
-                        <TableColumn fx:id="loanMemberCol" prefWidth="195.0" text="Member" />
-                        <TableColumn fx:id="loanBookCol" minWidth="0.0" prefWidth="206.0" text="Book" />
-                        <TableColumn fx:id="loanDateCol" minWidth="0.0" prefWidth="209.0" text="Loan date" />
-                     </columns>
-                     <columnResizePolicy>
-                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
-                     </columnResizePolicy>
-                  </TableView>
-                  <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="678.0">
-                     <children>
-                        <Button fx:id="refreshLoans" mnemonicParsing="false" onAction="#refreshLoansTable" style="-fx-background-color: transparent;">
-                           <graphic>
-                              <FontAwesomeIconView fill="#0598ff" glyphName="REFRESH" size="20" />
-                           </graphic>
-                        </Button>
-                        <Button fx:id="addLoan" mnemonicParsing="false" onAction="#getAddLoanView" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add loan" textFill="WHITE">
-                           <HBox.margin>
-                              <Insets left="30.0" />
-                           </HBox.margin>
-                           <graphic>
-                              <FontAwesomeIconView fill="WHITE" glyphName="PLUS" />
-                           </graphic>
-                        </Button>
-                     </children>
-                  </HBox>
-               </children>
-            </GridPane>
-            <GridPane fx:id="pnBooks" prefHeight="329.0" prefWidth="682.0" style="-fx-background-color: lightgray;">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-              </columnConstraints>
-              <rowConstraints>
-                  <RowConstraints maxHeight="167.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="363.0" minHeight="10.0" prefHeight="363.0" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <children>
-                  <TableView fx:id="bookTable" prefHeight="333.0" prefWidth="662.0" GridPane.rowIndex="1">
-                    <columns>
-                      <TableColumn fx:id="bookIdCol" prefWidth="71.0" text="BookId" />
-                      <TableColumn fx:id="bookTitleCol" prefWidth="333.0" text="Title" />
-                        <TableColumn fx:id="bookAuthorCol" minWidth="0.0" prefWidth="207.0" text="Author" />
-                       <TableColumn fx:id="bookPublishCol" minWidth="0.0" prefWidth="70.0" text="Year" />
-
-                    </columns>
-                  </TableView>
-                  <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="531.0">
-                     <children>
-                        <Button fx:id="refreshBooks" mnemonicParsing="false" onAction="#refreshBookTable" style="-fx-background-color: transparent;">
-                           <HBox.margin>
-                              <Insets left="10.0" />
-                           </HBox.margin>
-                           <graphic>
-                              <FontAwesomeIconView fill="#0598ff" glyphName="REFRESH" size="20" />
-                           </graphic>
-                        </Button>
-                        <Button fx:id="addBook" mnemonicParsing="false" onAction="#getAddBookView" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add books" textFill="WHITE">
-                           <HBox.margin>
-                              <Insets left="10.0" />
-                           </HBox.margin>
-                           <graphic>
-                              <FontAwesomeIconView fill="WHITE" glyphName="PLUS" />
-                           </graphic></Button>
-                     </children>
-                  </HBox>
-               </children>
-            </GridPane>
-            <GridPane fx:id="pnMembers" style="-fx-background-color: white;">
-               <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               </columnConstraints>
-               <rowConstraints>
-                  <RowConstraints maxHeight="203.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="365.0" minHeight="10.0" prefHeight="362.0" vgrow="SOMETIMES" />
-               </rowConstraints>
-               <children>
-                  <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="531.0">
-                     <children>
-                        <Button fx:id="refreshMembers" mnemonicParsing="false" onAction="#refreshMembersTable" style="-fx-background-color: transparent;">
-                           <graphic>
-                              <FontAwesomeIconView fill="#0598ff" glyphName="REFRESH" size="20" />
-                           </graphic>
-                        </Button>
-                        <Button fx:id="addMember" onAction="#getAddMemberView" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add members" textFill="WHITE">
-                           <HBox.margin>
-                              <Insets left="30.0" />
-                           </HBox.margin>
-                           <graphic>
-                              <FontAwesomeIconView fill="WHITE" glyphName="PLUS" />
-                           </graphic>
-                        </Button>
-                     </children>
-                  </HBox>
-                  <TableView fx:id="memberTable" prefHeight="329.0" prefWidth="682.0" GridPane.rowIndex="1">
-                     <columns>
-                        <TableColumn fx:id="memberIdCol" prefWidth="71.0" text="Id" />
-                        <TableColumn fx:id="memberFirstNameCol" prefWidth="195.0" text="First name" />
-                        <TableColumn fx:id="memberLastNameCol" minWidth="0.0" prefWidth="206.0" text="Last name" />
-                        <TableColumn fx:id="memberJoinDateCol" minWidth="0.0" prefWidth="209.0" text="Join date" />
-                     </columns>
-                  </TableView>
-               </children>
-            </GridPane>
             <GridPane fx:id="pnHome" style="background-color: white;">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -260,6 +150,102 @@
                         </Pane>
                         <Pane layoutX="98.0" layoutY="45.0" prefHeight="148.0" prefWidth="469.0" style="-fx-background-color: lightblue; -fx-background-radius: 20px;" />
                      </children></Pane>
+               </children>
+            </GridPane>
+            <GridPane fx:id="pnMembers" style="-fx-background-color: white;">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="203.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="365.0" minHeight="10.0" prefHeight="362.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="531.0">
+                     <children>
+                        <Button fx:id="addMember" mnemonicParsing="false" onAction="#getAddMemberView" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add members" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="PLUS" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <TableView fx:id="memberTable" prefHeight="329.0" prefWidth="682.0" GridPane.rowIndex="1">
+                     <columns>
+                        <TableColumn fx:id="memberIdCol" prefWidth="71.0" text="Id" />
+                        <TableColumn fx:id="memberFirstNameCol" prefWidth="195.0" text="First name" />
+                        <TableColumn fx:id="memberLastNameCol" minWidth="0.0" prefWidth="206.0" text="Last name" />
+                        <TableColumn fx:id="memberJoinDateCol" minWidth="0.0" prefWidth="209.0" text="Join date" />
+                     </columns>
+                  </TableView>
+               </children>
+            </GridPane>
+            <GridPane fx:id="pnLoans" prefHeight="329.0" prefWidth="682.0" style="-fx-background-color: white;">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="168.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="354.0" minHeight="10.0" prefHeight="349.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TableView fx:id="loanTable" prefHeight="288.0" prefWidth="682.0" GridPane.rowIndex="1">
+                     <columns>
+                        <TableColumn fx:id="loanIdCol" prefWidth="71.0" text="Loan id" />
+                        <TableColumn fx:id="loanMemberCol" prefWidth="195.0" text="Member" />
+                        <TableColumn fx:id="loanBookCol" minWidth="0.0" prefWidth="206.0" text="Book" />
+                        <TableColumn fx:id="loanDateCol" minWidth="0.0" prefWidth="209.0" text="Loan date" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="678.0">
+                     <children>
+                        <Button fx:id="addLoan" mnemonicParsing="false" onAction="#getAddLoanView" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add loan" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="PLUS" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+            <GridPane fx:id="pnBooks" prefHeight="329.0" prefWidth="682.0" style="-fx-background-color: lightgray;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="167.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="363.0" minHeight="10.0" prefHeight="363.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TableView fx:id="bookTable" prefHeight="333.0" prefWidth="662.0" GridPane.rowIndex="1">
+                    <columns>
+                      <TableColumn fx:id="bookIdCol" prefWidth="71.0" text="BookId" />
+                      <TableColumn fx:id="bookTitleCol" prefWidth="333.0" text="Title" />
+                        <TableColumn fx:id="bookAuthorCol" minWidth="0.0" prefWidth="207.0" text="Author" />
+                       <TableColumn fx:id="bookPublishCol" minWidth="0.0" prefWidth="70.0" text="Year" />
+
+                    </columns>
+                  </TableView>
+                  <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="531.0">
+                     <children>
+                        <Button fx:id="addBook" mnemonicParsing="false" onAction="#getAddBookView" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add books" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="PLUS" />
+                           </graphic></Button>
+                     </children>
+                  </HBox>
                </children>
             </GridPane>
          </children>
