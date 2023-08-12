@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/AppConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/AppConsole.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/dao/BookDaoSQLImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/dao/BookDaoSQLImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,13 +157,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672241746336</updated>
-    </task>
-    <task id="LOCAL-00145" summary="member row20bject method fixed">
-      <created>1676906025157</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1676906025157</updated>
     </task>
     <task id="LOCAL-00146" summary="updated member dao">
       <created>1676906599130</created>
@@ -503,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677173527545</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="logo and refresh buttons modified">
+      <created>1691676544599</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1691676544600</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -518,7 +516,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="trying to fix size of panes" />
     <MESSAGE value="fixing book table connection" />
     <MESSAGE value="fixing bugs, adding properties" />
     <MESSAGE value="fixing fxml" />
@@ -543,7 +540,8 @@
     <MESSAGE value="add views added" />
     <MESSAGE value="fxml fixed" />
     <MESSAGE value="fixing add controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing add controllers" />
+    <MESSAGE value="logo and refresh buttons modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="logo and refresh buttons modified" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
