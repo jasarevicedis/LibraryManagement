@@ -4,20 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="sql delete methods updated">
+    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="big fixes of sql queries">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/business/LoanManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/business/MemberManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/AppConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/AppConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/business/LoanManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/business/LoanManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/business/MemberManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/business/MemberManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/AddBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/AddBookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/AddLoanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/AddLoanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/AddMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/AddMemberController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/AbstractDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/BookDaoSQLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/BookDaoSQLImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/DaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/LoanDaoSQLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/LoanDaoSQLImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/MemberDaoSQLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/MemberDaoSQLImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/business/BookManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/business/BookManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/dao/AbstractDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/dao/BookDaoSQLImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/dao/LoanDaoSQLImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/dao/MemberDaoSQLImplTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +91,7 @@
       <recent name="ba.unsa.etf.rpr.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MemberDaoSQLImplTest.DoesSQLWork2">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.App" />
       <module name="RPRprojekat" />
@@ -100,22 +100,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookDaoSQLImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RPRprojekat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ba.unsa.etf.rpr.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr.dao" />
-      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.dao.BookDaoSQLImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookManagerTest.deleteBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RPRprojekat" />
       <extension name="coverage">
         <pattern>
@@ -125,65 +110,83 @@
       </extension>
       <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr.business" />
       <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.business.BookManagerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoanDaoSQLImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RPRprojekat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ba.unsa.etf.rpr.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr.dao" />
-      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.dao.LoanDaoSQLImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MemberDaoSQLImplTest.DoesSQLWork2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RPRprojekat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ba.unsa.etf.rpr.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr.dao" />
-      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.dao.MemberDaoSQLImplTest" />
-      <option name="METHOD_NAME" value="DoesSQLWork2" />
+      <option name="METHOD_NAME" value="deleteBook" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="rpr in RPRprojekat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoanManagerTest.addNewLoan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RPRprojekat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ba.unsa.etf.rpr.business.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr.business" />
+      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.business.LoanManagerTest" />
+      <option name="METHOD_NAME" value="addNewLoan" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoanManagerTest.deleteLoan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RPRprojekat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ba.unsa.etf.rpr.business.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr.business" />
+      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.business.LoanManagerTest" />
+      <option name="METHOD_NAME" value="deleteLoan" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberManagerTest.addNewBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RPRprojekat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ba.unsa.etf.rpr.business.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr.business" />
+      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.business.MemberManagerTest" />
+      <option name="METHOD_NAME" value="addNewBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="business in RPRprojekat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RPRprojekat" />
       <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr" />
+      <dir value="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/business" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.App" />
-      <item itemvalue="JUnit.BookDaoSQLImplTest" />
-      <item itemvalue="JUnit.LoanDaoSQLImplTest" />
-      <item itemvalue="JUnit.rpr in RPRprojekat" />
-      <item itemvalue="JUnit.BookManagerTest" />
-      <item itemvalue="JUnit.MemberDaoSQLImplTest.DoesSQLWork2" />
+      <item itemvalue="JUnit.BookManagerTest.deleteBook" />
+      <item itemvalue="JUnit.LoanManagerTest.addNewLoan" />
+      <item itemvalue="JUnit.LoanManagerTest.deleteLoan" />
+      <item itemvalue="JUnit.MemberManagerTest.addNewBook" />
+      <item itemvalue="JUnit.business in RPRprojekat" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MemberDaoSQLImplTest.DoesSQLWork2" />
-        <item itemvalue="JUnit.rpr in RPRprojekat" />
-        <item itemvalue="JUnit.LoanDaoSQLImplTest" />
-        <item itemvalue="JUnit.BookDaoSQLImplTest" />
-        <item itemvalue="JUnit.BookManagerTest" />
+        <item itemvalue="JUnit.business in RPRprojekat" />
+        <item itemvalue="JUnit.LoanManagerTest.deleteLoan" />
+        <item itemvalue="JUnit.BookManagerTest.deleteBook" />
+        <item itemvalue="JUnit.LoanManagerTest.addNewLoan" />
+        <item itemvalue="JUnit.MemberManagerTest.addNewBook" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +203,8 @@
       <workItem from="1694803599912" duration="9515000" />
       <workItem from="1694969359882" duration="10598000" />
       <workItem from="1695020341103" duration="101000" />
-      <workItem from="1695022189276" duration="11512000" />
+      <workItem from="1695022189276" duration="14611000" />
+      <workItem from="1695058849710" duration="7424000" />
     </task>
     <task id="LOCAL-00146" summary="updated member dao">
       <created>1676906599130</created>
@@ -545,7 +549,7 @@
       <option name="project" value="LOCAL" />
       <updated>1691676544600</updated>
     </task>
-    <option name="localTasksCounter" value="196" />
+    <option name="localTasksCounter" value="197" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -563,7 +567,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixing bugs, adding properties" />
     <MESSAGE value="fixing fxml" />
     <MESSAGE value="logout function" />
     <MESSAGE value="init style fixing" />
@@ -588,15 +591,16 @@
     <MESSAGE value="fixing add controllers" />
     <MESSAGE value="logo and refresh buttons modified" />
     <MESSAGE value="sql delete methods updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="sql delete methods updated" />
+    <MESSAGE value="big fixes of sql queries" />
+    <option name="LAST_COMMIT_MESSAGE" value="big fixes of sql queries" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/business/BookManagerTest.java</url>
-          <line>77</line>
-          <option name="timeStamp" value="1" />
+          <line>72</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,13 +1,11 @@
 package ba.unsa.etf.rpr.business;
 
-
 import ba.unsa.etf.rpr.domain.Book;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Objects;
+import ba.unsa.etf.rpr.domain.Member;
 
-import ba.unsa.etf.rpr.dao.BookDaoSQLImpl;
+import java.util.*;
+
+import ba.unsa.etf.rpr.dao.MemberDaoSQLImpl;
 import ba.unsa.etf.rpr.dao.DaoFactory;
 import ba.unsa.etf.rpr.exceptions.*;
 import org.junit.jupiter.api.AfterEach;
@@ -20,54 +18,45 @@ import org.mockito.Mockito;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyString;
-import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-class BookManagerTest {
-    private BookManager bookManager;
-    private Book book;
-    private BookDaoSQLImpl bookDaoSQLMock;
-    private List<Book> books;
+class MemberManagerTest {
+    private MemberManager memberManager;
+    private Member member;
+    private MemberDaoSQLImpl memberDaoSQL;
+    private List<Member> books;
+
     /**
      * This method will be called before each test to initialize objects needed
      */
-
     @BeforeEach
     public void initializeObjectsWeNeed(){
-        bookManager = mock(BookManager.class);
-        bookDaoSQLMock = mock(BookDaoSQLImpl.class);
-        book = new Book(1,"knjiga", 1999, "safet isovic");
+        memberManager = Mockito.mock(MemberManager.class);
+        memberDaoSQL = Mockito.mock(MemberDaoSQLImpl.class);
+        member = new Member(1,"safet", "isovic", new Date(2003,12,12));
     }
 
     /**
-     * This method tests adding book
+     * This method tests adding member
      * @throws DBException
      */
     @Test
-    void addNewBook() throws DBException {
-        bookManager.add(book);
+    void addNewMember() throws DBException {
+        memberManager.add(member);
         Assertions.assertTrue(true);
-        Mockito.verify(bookManager).add(book);
+        Mockito.verify(memberManager).add(member);
     }
     /**
-     * This method tests deleting book
+     * This method tests adding member
      * @throws DBException
      */
     @Test
-    void deleteBook() throws DBException {
-        Book deletionBook = new Book(1,"a",2000,"b");
-        bookManager.delete(deletionBook);
+    void deleteMember() throws DBException {
+        Member deletionMember = new Member(1,"a","b",new Date(2000));
+        memberManager.delete(deletionMember);
 
         Assertions.assertTrue(true);
-        Mockito.verify(bookManager).delete(deletionBook);
+        Mockito.verify(memberManager).delete(deletionMember);
     }
-
-
-
-
-
-
-
-
 
 }

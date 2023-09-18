@@ -121,6 +121,7 @@ public class DashboardController  {
     }
 
     public DashboardController() {
+
     }
 
     @FXML
@@ -141,7 +142,18 @@ public class DashboardController  {
         loanMemberCol.setCellValueFactory(new PropertyValueFactory<>("member_id"));
         loanBookCol.setCellValueFactory(new PropertyValueFactory<>("Book_id"));
         loanDateCol.setCellValueFactory(new PropertyValueFactory<>("loan_date"));
+        new Thread(new Runnable() {
 
+            @Override
+            public void run() {
+                // Your infinite loop here
+                while(true) {
+                    updateBookTable();
+                    updateLoanTable();
+                    updateMemberTable();
+                }
+            }
+        }).start();
         updateBookTable();
         updateLoanTable();
         updateMemberTable();
@@ -166,6 +178,7 @@ public class DashboardController  {
             lblPageName.setText("Loans");
             pnLoans.toFront();
         }
+
     }
     public void cancelButtonOnAction(ActionEvent e){
         Stage stage = (Stage) cancelButton.getScene().getWindow();
@@ -325,4 +338,6 @@ public class DashboardController  {
 
     public void refreshLoansTable(ActionEvent actionEvent) {
     }
+
+
 }

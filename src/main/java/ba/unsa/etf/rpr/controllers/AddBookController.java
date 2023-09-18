@@ -62,11 +62,8 @@ public class AddBookController {
 
         System.out.println( book.getTitle());
 
-/*
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("fxml/dashboard.fxml"));
-        Parent root = fxmlLoader.load();
-        DashboardController controller = fxmlLoader.getController();
-        controller.updateBookTable();*/
+
+
 /*
             ObservableList<Book> books = bookTable.getItems();
             books.add(book);
