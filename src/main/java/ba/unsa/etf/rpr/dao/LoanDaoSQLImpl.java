@@ -10,12 +10,19 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class LoanDaoSQLImpl extends AbstractDao<Loan> implements LoanDao{
-    public LoanDaoSQLImpl() throws DBException {
+    private static LoanDaoSQLImpl instance = null;
+
+    LoanDaoSQLImpl() throws  DBException{
         super("Loan");
+    }
+    public static LoanDaoSQLImpl getInstance() throws DBException {
+        if(instance == null)
+            instance = new LoanDaoSQLImpl();
+        return instance;
     }
 
     @Override
-    public Loan row2object(ResultSet rs) throws DBException {
+    public Loan rowToObject(ResultSet rs) throws DBException {
         try {
             return new Loan(
                     rs.getInt("id"),
@@ -29,7 +36,7 @@ public class LoanDaoSQLImpl extends AbstractDao<Loan> implements LoanDao{
     }
 
     @Override
-    public Map<String, Object> object2row(Loan object) {
+    public Map<String, Object> objectToRow(Loan object) {
         Map<String, Object> row = new TreeMap<>();
         row.put("id", object.getId());
         row.put("loan_date", object.getLoan_date());

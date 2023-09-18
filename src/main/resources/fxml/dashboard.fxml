@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import de.jensd.fx.glyphs.fontawesome.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="531.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.controllers.DashboardController">
+<AnchorPane prefHeight="531.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.controllers.DashboardController">
    <children>
       <VBox prefHeight="531.0" prefWidth="189.0" style="-fx-background-color: #0598ff;">
          <children>
@@ -97,34 +107,34 @@
       </Pane>
       <StackPane fx:id="dashboardStack" layoutX="189.0" layoutY="114.0" prefHeight="417.0" prefWidth="682.0">
          <children>
-            <GridPane fx:id="pnBooks" prefHeight="329.0" prefWidth="682.0" style="-fx-background-color: lightgray;">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-              </columnConstraints>
-              <rowConstraints>
-                  <RowConstraints maxHeight="167.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="363.0" minHeight="10.0" prefHeight="363.0" vgrow="SOMETIMES" />
-              </rowConstraints>
+            <GridPane fx:id="pnLoans" prefHeight="329.0" prefWidth="682.0" style="-fx-background-color: white;">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="168.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="354.0" minHeight="10.0" prefHeight="349.0" vgrow="SOMETIMES" />
+               </rowConstraints>
                <children>
-                  <TableView fx:id="bookTable" prefHeight="333.0" prefWidth="662.0" GridPane.rowIndex="1">
-                    <columns>
-                      <TableColumn fx:id="bookIdCol" prefWidth="71.0" text="BookId" />
-                      <TableColumn fx:id="bookTitleCol" prefWidth="333.0" text="Title" />
-                        <TableColumn fx:id="bookAuthorCol" minWidth="0.0" prefWidth="207.0" text="Author" />
-                       <TableColumn fx:id="bookPublishCol" minWidth="0.0" prefWidth="70.0" text="Year" />
-
-                    </columns>
+                  <TableView fx:id="loanTable" prefHeight="288.0" prefWidth="682.0" GridPane.rowIndex="1">
+                     <columns>
+                        <TableColumn fx:id="loanIdCol" prefWidth="58.0" text="Loan id" />
+                        <TableColumn fx:id="loanMemberCol" prefWidth="205.5" text="Member" />
+                        <TableColumn fx:id="loanBookCol" minWidth="0.0" prefWidth="227.0" text="Book" />
+                        <TableColumn fx:id="loanDateCol" minWidth="0.0" prefWidth="185.5" text="Loan date" />
+                     </columns>
                   </TableView>
-                  <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="531.0">
+                  <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="678.0">
                      <children>
-                        <Button fx:id="addBook" mnemonicParsing="false" onAction="#getAddBookView" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add books" textFill="WHITE">
+                        <Button fx:id="addLoan" mnemonicParsing="false" onAction="#getAddLoanView" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add loan" textFill="WHITE">
                            <HBox.margin>
-                              <Insets left="10.0" />
+                              <Insets left="30.0" />
                            </HBox.margin>
                            <graphic>
                               <FontAwesomeIconView fill="WHITE" glyphName="PLUS" />
-                           </graphic></Button>
-                        <Button fx:id="deleteBook" layoutX="20.0" layoutY="25.0" mnemonicParsing="false" onAction="#deleteBook" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: red;" text="Delete book" textFill="WHITE">
+                           </graphic>
+                        </Button>
+                        <Button fx:id="deleteLoan" layoutX="40.0" layoutY="32.0" mnemonicParsing="false" onAction="#deleteLoan" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: red;" text="Delete loan" textFill="WHITE">
                            <graphic>
                               <FontAwesomeIconView fill="WHITE" glyphName="TRASH" />
                            </graphic>
@@ -155,7 +165,7 @@
                               <FontAwesomeIconView fill="WHITE" glyphName="PLUS" />
                            </graphic>
                         </Button>
-                        <Button fx:id="deleteMember" onAction="#deleteMember" layoutX="40.0" layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: red;" text="Delete member" textFill="WHITE">
+                        <Button fx:id="deleteMember" layoutX="40.0" layoutY="25.0" mnemonicParsing="false" onAction="#deleteMember" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: red;" text="Delete member" textFill="WHITE">
                            <graphic>
                               <FontAwesomeIconView fill="WHITE" glyphName="TRASH" />
                            </graphic>
@@ -175,45 +185,37 @@
                   </TableView>
                </children>
             </GridPane>
-            <GridPane fx:id="pnLoans" prefHeight="329.0" prefWidth="682.0" style="-fx-background-color: white;">
-               <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               </columnConstraints>
-               <rowConstraints>
-                  <RowConstraints maxHeight="168.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="354.0" minHeight="10.0" prefHeight="349.0" vgrow="SOMETIMES" />
-               </rowConstraints>
+            <GridPane fx:id="pnBooks" prefHeight="329.0" prefWidth="682.0" style="-fx-background-color: lightgray;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="167.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="363.0" minHeight="10.0" prefHeight="363.0" vgrow="SOMETIMES" />
+              </rowConstraints>
                <children>
-                  <TableView fx:id="loanTable" prefHeight="288.0" prefWidth="682.0" GridPane.rowIndex="1">
-                     <columns>
-                        <TableColumn fx:id="loanIdCol" prefWidth="58.0" text="Loan id" />
-                        <TableColumn fx:id="loanMemberCol" prefWidth="161.0" text="Member" />
-                        <TableColumn fx:id="loanBookCol" minWidth="0.0" prefWidth="220.0" text="Book" />
-                        <TableColumn fx:id="loanDateCol" minWidth="0.0" prefWidth="174.0" text="Loan date" />
-                        <TableColumn fx:id="returnCol" minWidth="0.0" prefWidth="68.0" text="Returned" />
-                     </columns>
+                  <TableView fx:id="bookTable" prefHeight="333.0" prefWidth="662.0" GridPane.rowIndex="1">
+                    <columns>
+                      <TableColumn fx:id="bookIdCol" prefWidth="71.0" text="BookId" />
+                      <TableColumn fx:id="bookTitleCol" prefWidth="333.0" text="Title" />
+                        <TableColumn fx:id="bookAuthorCol" minWidth="0.0" prefWidth="207.0" text="Author" />
+                       <TableColumn fx:id="bookPublishCol" minWidth="0.0" prefWidth="70.0" text="Year" />
+
+                          </columns>
                   </TableView>
-                  <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="678.0">
+                  <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="531.0">
                      <children>
-                        <Button fx:id="addLoan" mnemonicParsing="false" onAction="#getAddLoanView" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add loan" textFill="WHITE">
+                        <Button fx:id="addBook" mnemonicParsing="false" onAction="#getAddBookView" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: darkblue;" text="Add books" textFill="WHITE">
                            <HBox.margin>
-                              <Insets left="30.0" />
+                              <Insets left="10.0" />
                            </HBox.margin>
                            <graphic>
                               <FontAwesomeIconView fill="WHITE" glyphName="PLUS" />
                            </graphic>
                         </Button>
-                        <Button fx:id="deleteLoan"  layoutX="40.0" layoutY="32.0" mnemonicParsing="false" onAction="#deleteLoan" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: red;" text="Delete loan" textFill="WHITE">
+                        <Button fx:id="deleteBook" layoutX="20.0" layoutY="25.0" mnemonicParsing="false" onAction="#deleteBook" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: red;" text="Delete book" textFill="WHITE">
                            <graphic>
                               <FontAwesomeIconView fill="WHITE" glyphName="TRASH" />
-                           </graphic>
-                           <HBox.margin>
-                              <Insets left="10.0" />
-                           </HBox.margin>
-                        </Button>
-                        <Button fx:id="returnLoan" layoutX="198.0" layoutY="32.0" mnemonicParsing="false" onAction="#getAddLoanView" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: purple;" text="Return book" textFill="WHITE">
-                           <graphic>
-                              <FontAwesomeIconView fill="WHITE" glyphName="BOOK" />
                            </graphic>
                            <HBox.margin>
                               <Insets left="10.0" />
@@ -263,7 +265,16 @@
                               </Label>
                            </children>
                         </Pane>
-                        <Pane layoutX="98.0" layoutY="45.0" prefHeight="148.0" prefWidth="469.0" style="-fx-background-color: lightblue; -fx-background-radius: 20px;" />
+                        <Pane layoutX="98.0" layoutY="45.0" prefHeight="148.0" prefWidth="469.0" style="-fx-background-color: lightblue; -fx-background-radius: 20px;">
+                           <children>
+                              <Label fx:id="labelwelcome" layoutX="155.0" layoutY="22.0" prefHeight="55.0" prefWidth="285.0" style="-fx-background-color: transparent;" text="Welcome admin" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="33.0" />
+                                 </font>
+                              </Label>
+                              <FontAwesomeIconView fill="#0f3968" glyphName="FAX" layoutX="23.0" layoutY="109.0" size="100" wrappingWidth="103.5" />
+                           </children>
+                        </Pane>
                      </children>
                   </Pane>
                </children>

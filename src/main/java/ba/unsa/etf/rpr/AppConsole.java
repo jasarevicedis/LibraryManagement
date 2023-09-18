@@ -10,82 +10,56 @@ import java.util.Date;
 import ba.unsa.etf.rpr.exceptions.*;
 
 public class AppConsole {
+    private static final Option login = new Option("l","login",false,"Login - Enter your username and password!");
+    private static final Option displayBooks = new Option("b","display-books",false,"Display all books");
+    private static final Option addBook = new Option("a","add-book",false,"Add new book");
 
-    private static final Option addBook = new Option("b", "add-book", false, "Adding book to the database");
-    private static final Option addMember = new Option("m", "add-member", false, "Adding member to the database");
-    private static final Option getBooks = new Option("getB", "get-books", false, "Printing all books from the database");
-    private static final Option getMembers = new Option("getM", "get-members", false, "Printing all members from the database");
 
-    private static void printFormattedOptions(Options options) {
+    private static final BookManager bookManager = new BookManager();
+
+    /**
+     * Prints all the options on the console
+     * @param options - options to be printed
+     */
+    public static void printFormattedOptions(Options options) {
         HelpFormatter helpFormatter = new HelpFormatter();
         PrintWriter printWriter = new PrintWriter(System.out);
-
-        helpFormatter.printUsage(printWriter, 150, "java -jar RPRprojekat.jar [option] 'something else if needed' ");
+        helpFormatter.printUsage(printWriter, 150, "java -jar rpr.jar [option] 'something else if needed' ");
         helpFormatter.printOptions(printWriter, 150, options, 2, 7);
-
         printWriter.close();
     }
-    static Date today = new Date();
-    private static Options addOptions() {
+
+    /**
+     * Adds option objects to Options object
+     * @return - Options object
+     */
+    public static Options addOptions() {
         Options options = new Options();
-
+        options.addOption(login);
+        options.addOption(displayBooks);
         options.addOption(addBook);
-        options.addOption(addMember);
-        options.addOption(getBooks);
-        options.addOption(getMembers);
-
         return options;
     }
-    public static void main(String[] args) throws Exception {
 
+    /**
+     * The main method for executing the commands given by the user
+     * @param args - eventual arguments of commands
+     * @throws Exception
+     */
+    public static void main(String[] args) throws Exception{
         Options options = addOptions();
-
         CommandLineParser commandLineParser = new DefaultParser();
         CommandLine cl = commandLineParser.parse(options, args);
+        if((cl.hasOption(login.getOpt()) || cl.hasOption(login.getLongOpt())) && cl.hasOption((login.getLongOpt()))){
 
-        if (cl.hasOption(addBook.getOpt()) || cl.hasOption(addBook.getLongOpt())) {
-            Book book = null;
+            System.out.println("You have successfully registered");
 
-            if (cl.getArgList().size() != 3) {
-                System.out.println("Must have three arguments: the book title, publish year and author name.");
-            }
-
-            try {
-                book = DaoFactory.bookDao().searchByTitle(cl.getArgList().get(0));
-            } catch (DBException e) {
-                System.out.println("Course not defined. Please try again.");
-
-                System.exit(1);
-            }
-
-
-
-
-
-        } else if (cl.hasOption(addMember.getOpt()) || cl.hasOption(addMember.getLongOpt())) {
-            MemberManager memberManager = new MemberManager();
-
-            if (cl.getArgList().size() != 2) {
-                System.out.println("Member addition must have two arguments: the first and the last name. Please try again.");
-
-                System.exit(1);
-            }
-
-            try {
-                memberManager.createMember(cl.getArgList().get(0), cl.getArgList().get(1));
-            } catch (DBException e) {
-                System.out.println("Member with the same name already exists. Please try again.");
-
-                System.exit(1);
-            }
-
-            System.out.println("Member successfully added to the database.");
-
-        } else {
+        }
+        else {
             printFormattedOptions(options);
-
             System.exit(-1);
         }
     }
+
 }
 

@@ -1,6 +1,7 @@
 package ba.unsa.etf.rpr.business;
 
 import ba.unsa.etf.rpr.dao.DaoFactory;
+import ba.unsa.etf.rpr.domain.Book;
 import ba.unsa.etf.rpr.domain.Loan;
 import ba.unsa.etf.rpr.exceptions.DBException;
 
@@ -38,5 +39,11 @@ public class LoanManager {
      */
     public List<Loan> getAll() throws DBException {
         return DaoFactory.loanDao().getAll();
+    }
+    public void delete(Loan loan) throws DBException {
+        DaoFactory.loanDao().delete(loan.getId());
+    }
+    public Loan add(Loan loan) throws  DBException{
+        return DaoFactory.loanDao().add(loan);
     }
 }

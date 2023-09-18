@@ -14,13 +14,19 @@ import java.util.TreeMap;
 
 public class MemberDaoSQLImpl extends AbstractDao<Member> implements MemberDao {
 
-    public MemberDaoSQLImpl() throws  DBException {
+    private static MemberDaoSQLImpl instance = null;
 
+    MemberDaoSQLImpl() throws DBException {
         super("Member");
+    }
+    public static MemberDaoSQLImpl getInstance() throws DBException {
+        if(instance == null)
+            instance = new MemberDaoSQLImpl();
+        return instance;
     }
 
     @Override
-    public Member row2object(ResultSet resultSet) throws DBException {
+    public Member rowToObject(ResultSet resultSet) throws DBException {
         try {
             return new Member(
                     resultSet.getInt("id"),
@@ -36,7 +42,7 @@ public class MemberDaoSQLImpl extends AbstractDao<Member> implements MemberDao {
     }
 
     @Override
-    public Map<String, Object> object2row(Member object) {
+    public Map<String, Object> objectToRow(Member object) {
         Map<String, Object> row = new TreeMap<>();
 
         row.put("id", object.getId());
@@ -66,7 +72,7 @@ public class MemberDaoSQLImpl extends AbstractDao<Member> implements MemberDao {
             ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {
-                members.add(row2object(resultSet));
+                members.add(rowToObject(resultSet));
             }
 
             resultSet.close();
@@ -96,7 +102,7 @@ public class MemberDaoSQLImpl extends AbstractDao<Member> implements MemberDao {
             ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {
-                members.add(row2object(resultSet));
+                members.add(rowToObject(resultSet));
             }
 
             resultSet.close();

@@ -9,12 +9,9 @@ import ba.unsa.etf.rpr.domain.Loan;
 import ba.unsa.etf.rpr.domain.Member;
 import ba.unsa.etf.rpr.exceptions.DBException;
 import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -27,17 +24,10 @@ import javafx.stage.StageStyle;
 
 import java.awt.event.MouseEvent;
 import java.io.IOException;
-import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.Date;
-import java.util.List;
-import java.util.ResourceBundle;
-
-import static ba.unsa.etf.rpr.dao.AbstractDao.getConnection;
-import static javafx.scene.control.PopupControl.USE_COMPUTED_SIZE;
 
 
 public class DashboardController  {
@@ -152,37 +142,9 @@ public class DashboardController  {
         loanBookCol.setCellValueFactory(new PropertyValueFactory<>("Book_id"));
         loanDateCol.setCellValueFactory(new PropertyValueFactory<>("loan_date"));
 
-
-
-        try {
-            List<Book>  booksList = bookManager.getAll();
-
-
-            updateBookTable();
-
-        } catch (DBException e) {
-
-        }
-        try {
-
-            List<Loan>  loansList = loanManager.getAll();
-
-
-
-            updateLoanTable(loansList);
-
-        } catch (DBException e) {
-
-        }
-        try {
-
-            List<Member>  membersList = memberManager.getAll();
-
-
-            updateMemberTable(membersList);
-        } catch (DBException e) {
-
-        }
+        updateBookTable();
+        updateLoanTable();
+        updateMemberTable();
     }
 
     @FXML
@@ -251,15 +213,18 @@ public class DashboardController  {
         updateBookTable();
         
     }
+
     @FXML
     private void deleteMember() throws DBException {
-        int selectedId = memberTable.getSelectionModel().getSelectedIndex();
-        memberTable.getItems().remove(selectedId);
+        Member member = memberTable.getSelectionModel().getSelectedItem();
+        memberManager.delete(member);
+        updateMemberTable();
     }
     @FXML
     private void deleteLoan() throws DBException {
-        int selectedId = loanTable.getSelectionModel().getSelectedIndex();
-        loanTable.getItems().remove(selectedId);
+        Loan loan = loanTable.getSelectionModel().getSelectedItem();
+        loanManager.delete(loan);
+        updateLoanTable();
     }
     @FXML
     private void getAddMemberView(ActionEvent event) throws DBException {
@@ -342,14 +307,16 @@ public class DashboardController  {
         }catch (DBException e){};
         bookTable.refresh();
     }
-    public void updateLoanTable(List<Loan> loanssList) {
-        loanTable.setItems(FXCollections.observableList(loanssList));
-
+    public void updateLoanTable() {
+        try {
+            loanTable.setItems(FXCollections.observableList(loanManager.getAll()));
+        }catch (DBException e){};
         loanTable.refresh();
     }
-    public void updateMemberTable(List<Member> memberssList) {
-        memberTable.setItems(FXCollections.observableList(memberssList));
-
+    public void updateMemberTable() {
+        try {
+            memberTable.setItems(FXCollections.observableList(memberManager.getAll()));
+        }catch (DBException e){};
         memberTable.refresh();
     }
 

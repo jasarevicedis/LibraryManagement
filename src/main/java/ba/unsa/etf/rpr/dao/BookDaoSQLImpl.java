@@ -12,12 +12,20 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class BookDaoSQLImpl extends AbstractDao<Book> implements BookDao {
-    public BookDaoSQLImpl() throws DBException {
+    private static BookDaoSQLImpl instance = null;
+
+    BookDaoSQLImpl() throws DBException{
         super("Book");
     }
+    public static BookDaoSQLImpl getInstance() throws DBException {
+        if(instance == null)
+            instance = new BookDaoSQLImpl();
+        return instance;
+    }
+
 
     @Override
-    public Book row2object(ResultSet rs) throws DBException {
+    public Book rowToObject(ResultSet rs) throws DBException {
         try {
             return new Book(
                     rs.getInt("id"),
@@ -31,7 +39,7 @@ public class BookDaoSQLImpl extends AbstractDao<Book> implements BookDao {
     }
 
     @Override
-    public Map<String, Object> object2row(Book object) {
+    public Map<String, Object> objectToRow(Book object) {
         Map<String, Object> row = new TreeMap<>();
         row.put("id", object.getId());
         row.put("title", object.getTitle());
@@ -54,7 +62,7 @@ public class BookDaoSQLImpl extends AbstractDao<Book> implements BookDao {
             ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {
-                bookList.add(row2object(resultSet));
+                bookList.add(rowToObject(resultSet));
             }
 
             resultSet.close();
@@ -80,7 +88,7 @@ public class BookDaoSQLImpl extends AbstractDao<Book> implements BookDao {
             ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {
-                bookList.add(row2object(resultSet));
+                bookList.add(rowToObject(resultSet));
             }
 
             resultSet.close();
@@ -105,7 +113,7 @@ public class BookDaoSQLImpl extends AbstractDao<Book> implements BookDao {
             ResultSet resultSet = preparedStatement.executeQuery();
 
             if (resultSet.next()) {
-                book = row2object(resultSet);
+                book = rowToObject(resultSet);
             }
 
             resultSet.close();
