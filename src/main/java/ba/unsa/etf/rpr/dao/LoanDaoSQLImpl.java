@@ -18,7 +18,7 @@ public class LoanDaoSQLImpl extends AbstractDao<Loan> implements LoanDao{
     public Loan row2object(ResultSet rs) throws DBException {
         try {
             return new Loan(
-                    rs.getInt("loan_id"),
+                    rs.getInt("id"),
                     rs.getDate("loan_date"),
                     rs.getInt("Book_id"),
                     rs.getInt("member_id")
@@ -31,7 +31,7 @@ public class LoanDaoSQLImpl extends AbstractDao<Loan> implements LoanDao{
     @Override
     public Map<String, Object> object2row(Loan object) {
         Map<String, Object> row = new TreeMap<>();
-        row.put("loan_id", object.getId());
+        row.put("id", object.getId());
         row.put("loan_date", object.getLoan_date());
         row.put("Book_id", object.getBook_id());
         row.put("member_id", object.getMember_id());

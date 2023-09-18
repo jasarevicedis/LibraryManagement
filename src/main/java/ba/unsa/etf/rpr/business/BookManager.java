@@ -44,4 +44,10 @@ public class BookManager {
     public List<Book> getAll() throws DBException {
         return DaoFactory.bookDao().getAll();
     }
+    public void delete(Book book) throws DBException {
+        DaoFactory.bookDao().delete(book.getId());
+    }
+    public Book add(Book book) throws  DBException{
+        return DaoFactory.bookDao().add(book);
+    }
 }

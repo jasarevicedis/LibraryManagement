@@ -23,7 +23,7 @@ public class MemberDaoSQLImpl extends AbstractDao<Member> implements MemberDao {
     public Member row2object(ResultSet resultSet) throws DBException {
         try {
             return new Member(
-                    resultSet.getInt("member_id"),
+                    resultSet.getInt("id"),
                     resultSet.getString("first_name"),
                     resultSet.getString("last_name"),
                     resultSet.getDate("join_date")
@@ -39,7 +39,7 @@ public class MemberDaoSQLImpl extends AbstractDao<Member> implements MemberDao {
     public Map<String, Object> object2row(Member object) {
         Map<String, Object> row = new TreeMap<>();
 
-        row.put("member_id", object.getId());
+        row.put("id", object.getId());
         row.put("first_name", object.getFirst_name());
         row.put("last_name", object.getLast_name());
         row.put("join_date", object.getJoin_date());

@@ -31,21 +31,23 @@ import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.Date;
 import java.util.List;
 import java.util.ResourceBundle;
 
+import static ba.unsa.etf.rpr.dao.AbstractDao.getConnection;
 import static javafx.scene.control.PopupControl.USE_COMPUTED_SIZE;
 
 
 public class DashboardController  {
 
     @FXML
-    private TextField titleField;
+    public TextField titleField;
     @FXML
-    private TextField authorField;
+    public TextField authorField;
     @FXML
-    private TextField publishField;
+    public TextField publishField;
     @FXML
     private StackPane dashboardStack;
     @FXML
@@ -118,7 +120,15 @@ public class DashboardController  {
 
     private final BookManager bookManager = new BookManager();
     private final LoanManager loanManager = new LoanManager();
-    private final MemberManager memberManager = new MemberManager();
+    private final MemberManager memberManager;String query = null;
+    Connection connection = null ;
+    PreparedStatement preparedStatement = null ;
+    ResultSet resultSet = null ;
+
+
+    {
+        memberManager = new MemberManager();
+    }
 
     public DashboardController() {
     }
@@ -126,18 +136,18 @@ public class DashboardController  {
     @FXML
     public void initialize(){
 
-        bookIdCol.setCellValueFactory(new PropertyValueFactory<>("book_id"));
+        bookIdCol.setCellValueFactory(new PropertyValueFactory<>("id"));
         bookTitleCol.setCellValueFactory(new PropertyValueFactory<>("title"));
         bookPublishCol.setCellValueFactory(new PropertyValueFactory<>("PublishYear"));
         bookAuthorCol.setCellValueFactory(new PropertyValueFactory<>("Author"));
 
 
-        memberIdCol.setCellValueFactory(new PropertyValueFactory<>("member_id"));
+        memberIdCol.setCellValueFactory(new PropertyValueFactory<>("id"));
         memberFirstNameCol.setCellValueFactory(new PropertyValueFactory<>("first_name"));
         memberLastNameCol.setCellValueFactory(new PropertyValueFactory<>("last_name"));
         memberJoinDateCol.setCellValueFactory(new PropertyValueFactory<>("join_date"));
 
-        loanIdCol.setCellValueFactory(new PropertyValueFactory<>("loan_id"));
+        loanIdCol.setCellValueFactory(new PropertyValueFactory<>("id"));
         loanMemberCol.setCellValueFactory(new PropertyValueFactory<>("member_id"));
         loanBookCol.setCellValueFactory(new PropertyValueFactory<>("Book_id"));
         loanDateCol.setCellValueFactory(new PropertyValueFactory<>("loan_date"));
@@ -148,7 +158,7 @@ public class DashboardController  {
             List<Book>  booksList = bookManager.getAll();
 
 
-            updateBookTable(booksList);
+            updateBookTable();
 
         } catch (DBException e) {
 
@@ -211,12 +221,8 @@ public class DashboardController  {
         primaryStage.show();
     }
 
-    String query= null;
-    Connection connection = null;
-    PreparedStatement preparedStatement = null;
-    ResultSet resultSet = null;
-    Book book = null;
-    ObservableList<Book> bookList = FXCollections.observableArrayList();
+
+
 
     @FXML
     private void close(MouseEvent event){
@@ -235,6 +241,25 @@ public class DashboardController  {
         }catch(Exception e){
 
         }
+    }
+
+
+    @FXML
+    private void deleteBook(ActionEvent actionEvent) throws DBException {
+        Book book = bookTable.getSelectionModel().getSelectedItem();
+        bookManager.delete(book);
+        updateBookTable();
+        
+    }
+    @FXML
+    private void deleteMember() throws DBException {
+        int selectedId = memberTable.getSelectionModel().getSelectedIndex();
+        memberTable.getItems().remove(selectedId);
+    }
+    @FXML
+    private void deleteLoan() throws DBException {
+        int selectedId = loanTable.getSelectionModel().getSelectedIndex();
+        loanTable.getItems().remove(selectedId);
     }
     @FXML
     private void getAddMemberView(ActionEvent event) throws DBException {
@@ -272,6 +297,37 @@ public class DashboardController  {
     }
 
     @FXML
+    private void refreshTable() {
+        /*
+        try {
+
+            StudentList.clear();
+
+            query = "SELECT * FROM `student`";
+            preparedStatement = connection.prepareStatement(query);
+            resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()){
+                StudentList.add(new  Student(
+                        resultSet.getInt("id"),
+                        resultSet.getString("name"),
+                        resultSet.getDate("birth"),
+                        resultSet.getString("adress"),
+                        resultSet.getString("email")));
+                studentsTable.setItems(StudentList);
+
+            }
+
+
+        } catch (SQLException ex) {
+            Logger.getLogger(TableViewController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+*/
+
+
+    }
+
+    @FXML
     private void refreshBookTable(ActionEvent event){
 
         bookIdCol.setCellValueFactory(new PropertyValueFactory<>("Id"));
@@ -280,17 +336,18 @@ public class DashboardController  {
         bookAuthorCol.setCellValueFactory(new PropertyValueFactory<>("Author"));
 
     }
-    private void updateBookTable(List<Book> bookssList) {
-        bookTable.setItems(FXCollections.observableList(bookssList));
-
+    public void updateBookTable() {
+        try {
+            bookTable.setItems(FXCollections.observableList(bookManager.getAll()));
+        }catch (DBException e){};
         bookTable.refresh();
     }
-    private void updateLoanTable(List<Loan> loanssList) {
+    public void updateLoanTable(List<Loan> loanssList) {
         loanTable.setItems(FXCollections.observableList(loanssList));
 
         loanTable.refresh();
     }
-    private void updateMemberTable(List<Member> memberssList) {
+    public void updateMemberTable(List<Member> memberssList) {
         memberTable.setItems(FXCollections.observableList(memberssList));
 
         memberTable.refresh();

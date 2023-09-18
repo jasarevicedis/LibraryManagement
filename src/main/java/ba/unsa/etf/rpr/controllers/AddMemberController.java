@@ -15,18 +15,6 @@ public class AddMemberController {
      * @param actionEvent pressing add button will add member to the table view
      */
     public void add(javafx.event.ActionEvent actionEvent) {
-        try {
-            Member member = manager.createMember(memberFirstNameField.getText(), memberLastNameField.getText());
 
-            if (member == null) {
-                return;
-            }
-
-            Stage stage = (Stage) memberFirstNameField.getScene().getWindow();
-
-
-        } catch (DBException e) {
-
-        }
     }
 }
