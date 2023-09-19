@@ -13,7 +13,9 @@
 8. JavaBeans classes for database (2 points) ✔
 9. DAO/DAL (2 points) ✔
 10. UI, 5 components at least (2 points) ✔
-11. Command line user interface (2 points) ✔
+11. Command line user interface (2 points) 
 12. 2 design patterns at least (2 points) ✔
 13. JavaDoc (1 point) ✔
 14. .properties files (1 point) ✔
+
+Project represents library managment system for library admins.Admin can add,update, delete Books,Members and Loans!
