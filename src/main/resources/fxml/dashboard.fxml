@@ -238,7 +238,7 @@
                         <Pane layoutX="98.0" layoutY="259.0" prefHeight="118.0" prefWidth="114.0" style="-fx-background-color: lightblue; -fx-background-radius: 20px;">
                            <children>
                               <FontAwesomeIconView fill="#004eff" glyphName="BOOK" layoutX="32.0" layoutY="57.0" size="50" />
-                              <Label fx:id="brojKnjiga" layoutX="36.0" layoutY="69.0" text="#dajBrojKnjiga" textFill="WHITE">
+                              <Label fx:id="brojKnjiga" layoutX="36.0" layoutY="69.0" text="1" textFill="WHITE">
                                  <font>
                                     <Font name="System Bold" size="24.0" />
                                  </font>
@@ -248,7 +248,7 @@
                         <Pane layoutX="278.0" layoutY="259.0" prefHeight="118.0" prefWidth="114.0" style="-fx-background-color: lightblue; -fx-background-radius: 20px;">
                            <children>
                               <FontAwesomeIconView fill="#125dff" glyphName="USER" layoutX="39.0" layoutY="57.0" size="50" />
-                              <Label fx:id="brojMembera" layoutX="36.0" layoutY="69.0" text="#dajBrojMembera" textFill="WHITE">
+                              <Label fx:id="brojMembera" layoutX="36.0" layoutY="69.0" text="1" textFill="WHITE">
                                  <font>
                                     <Font name="System Bold" size="24.0" />
                                  </font>
@@ -258,7 +258,7 @@
                         <Pane layoutX="453.0" layoutY="259.0" prefHeight="118.0" prefWidth="114.0" style="-fx-background-color: lightblue; -fx-background-radius: 20px;">
                            <children>
                               <FontAwesomeIconView fill="#2f5efc" glyphName="ARCHIVE" layoutX="32.0" layoutY="57.0" size="50" />
-                              <Label fx:id="brojLoana" layoutX="36.0" layoutY="69.0" text="#dajBrojLoana" textFill="WHITE">
+                              <Label fx:id="brojLoana" layoutX="36.0" layoutY="69.0" text="1" textFill="WHITE">
                                  <font>
                                     <Font name="System Bold" size="24.0" />
                                  </font>

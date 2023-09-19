@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="unit tests and fxml fix">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b5343b6e-0cf6-40e5-85db-6f52d30a4e00" name="Changes" comment="javadoc updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/AddLoanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/AddLoanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/AddMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/AddMemberController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/dao/AbstractDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +81,7 @@
       <recent name="ba.unsa.etf.rpr.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.rpr in RPRprojekat">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.App" />
       <module name="RPRprojekat" />
@@ -195,7 +188,8 @@
       <workItem from="1695022189276" duration="14611000" />
       <workItem from="1695058849710" duration="7627000" />
       <workItem from="1695066522690" duration="87000" />
-      <workItem from="1695085986150" duration="2473000" />
+      <workItem from="1695085986150" duration="2704000" />
+      <workItem from="1695099761043" duration="1246000" />
     </task>
     <task id="LOCAL-00146" summary="updated member dao">
       <created>1676906599130</created>
@@ -540,7 +534,7 @@
       <option name="project" value="LOCAL" />
       <updated>1691676544600</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,7 +552,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="logout function" />
     <MESSAGE value="init style fixing" />
     <MESSAGE value="refresh buttons added" />
     <MESSAGE value="cant fix sql" />
@@ -583,14 +576,15 @@
     <MESSAGE value="sql delete methods updated" />
     <MESSAGE value="big fixes of sql queries" />
     <MESSAGE value="unit tests and fxml fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="unit tests and fxml fix" />
+    <MESSAGE value="javadoc updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="javadoc updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/business/BookManagerTest.java</url>
-          <line>72</line>
+          <line>77</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>

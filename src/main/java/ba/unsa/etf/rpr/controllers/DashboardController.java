@@ -74,6 +74,12 @@ public class DashboardController  {
     @FXML
     public TableColumn<Member, Date> memberJoinDateCol;
 
+    @FXML
+    public Label brojKnjiga;
+    @FXML
+    public Label brojMembera;
+    @FXML
+    public Label brojLoana;
 
 
 
@@ -108,6 +114,9 @@ public class DashboardController  {
     @FXML
     private GridPane pnLoans;
 
+    String numBooks="";
+    String numMembers="";
+    String numLoans="";
 
     private final BookManager bookManager = new BookManager();
     private final LoanManager loanManager = new LoanManager();
@@ -153,7 +162,25 @@ public class DashboardController  {
                     updateLoanTable();
                     updateMemberTable();
                     try {
-                        TimeUnit.SECONDS.sleep(1);
+                        numBooks=dajBrojKnjiga();
+                    } catch (DBException e) {
+                        throw new RuntimeException(e);
+                    }
+                    try {
+                        numMembers=dajBrojMembera();
+                    } catch (DBException e) {
+                        throw new RuntimeException(e);
+                    }
+                    try {
+                        numLoans=dajBrojLoana();
+                    } catch (DBException e) {
+                        throw new RuntimeException(e);
+                    }
+                    brojKnjiga.setText(numBooks);
+                    brojMembera.setText(numMembers);
+                    brojLoana.setText(numLoans);
+                    try {
+                        TimeUnit.SECONDS.sleep(5);
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
