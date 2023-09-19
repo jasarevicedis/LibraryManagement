@@ -22,6 +22,9 @@ import javafx.stage.Stage;
 import javafx.scene.control.Label;
 import javafx.stage.StageStyle;
 
+/**
+ * controller for sign in option
+ */
 public class LoginController  {
     private int  loginSuccessfull=0;
     @FXML
@@ -34,7 +37,9 @@ public class LoginController  {
     private PasswordField passwordPasswordField;
 
 
-
+    /**
+     * method that works after clicking login
+     */
     public void loginButtonOnAction(ActionEvent e) throws IOException {
 
 
@@ -57,6 +62,9 @@ public class LoginController  {
             loginMessageLabel.setText("Please enter username and password");
         }
     }
+    /**
+     * checks if login data is regular
+     */
     public void validateLogin(){
         DatabaseConnection connectNow = new DatabaseConnection();
         Connection connectDB = connectNow.getConnection();
@@ -78,7 +86,9 @@ public class LoginController  {
             e.printStackTrace();
         }
     }
-
+    /**
+     * leaving of the screen
+     */
     public void cancelButtonOnAction(ActionEvent e){
         Stage stage = (Stage) cancelButton.getScene().getWindow();
         stage.close();

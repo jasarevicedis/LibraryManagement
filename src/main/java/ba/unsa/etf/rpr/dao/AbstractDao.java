@@ -11,14 +11,19 @@ import java.util.*;
 /**
  * Abstract class which implements core Dao method form interface Dao for all entities in the database
  */
-
 public abstract class AbstractDao <Type extends Idable> implements Dao<Type> {
 
     private  final Connection connection;
     private  final String tableName;
+    /**
+     * creates connection
+     */
     public Connection getConnection() {
         return connection;
     }
+    /**
+     * constructor that connects to table
+     */
     public AbstractDao(String tableName) throws  DBException {
 
             this.tableName = tableName;

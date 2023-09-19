@@ -3,6 +3,9 @@ package ba.unsa.etf.rpr.controllers;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
+/**
+ * controller for database connection
+ */
 public class DatabaseConnection {
     public static Connection databaseLink;
     public static Connection getConnection(){

@@ -61,6 +61,11 @@ class BookManagerTest {
         Assertions.assertTrue(true);
         Mockito.verify(bookManager).delete(deletionBook);
     }
+    @Test
+    public void shouldAnswerWithTrueBook()
+    {
+        assertTrue( true );
+    }
 
 
 

@@ -58,5 +58,10 @@ class MemberManagerTest {
         Assertions.assertTrue(true);
         Mockito.verify(memberManager).delete(deletionMember);
     }
+    @Test
+    public void shouldAnswerWithTrueMember()
+    {
+        assertTrue( true );
+    }
 
 }

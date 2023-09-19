@@ -12,7 +12,9 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import static org.apache.velocity.tools.ConversionUtils.toDate;
-
+/**
+ * controller for add loan dialog
+ */
 public class AddLoanController {
     public TextField memberIdField;
     public TextField bookIdField;

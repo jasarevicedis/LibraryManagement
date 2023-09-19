@@ -12,6 +12,9 @@ import java.time.LocalDate;
 
 import static org.apache.velocity.tools.ConversionUtils.toDate;
 
+/**
+ * controller for add member dialog
+ */
 public class AddMemberController {
     public TextField memberFirstNameField;
     public TextField memberLastNameField;

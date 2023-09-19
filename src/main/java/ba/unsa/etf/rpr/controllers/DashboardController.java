@@ -28,6 +28,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 
 public class DashboardController  {
@@ -151,6 +152,12 @@ public class DashboardController  {
                     updateBookTable();
                     updateLoanTable();
                     updateMemberTable();
+                    try {
+                        TimeUnit.SECONDS.sleep(1);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+
                 }
             }
         }).start();
@@ -338,6 +345,15 @@ public class DashboardController  {
 
     public void refreshLoansTable(ActionEvent actionEvent) {
     }
+    public String dajBrojKnjiga() throws DBException {
+        return Integer.toString(bookManager.getAll().size());
+    };
+    public String dajBrojMembera() throws DBException {
+        return Integer.toString(memberManager.getAll().size());
+    };
+    public String dajBrojLoana() throws DBException {
+        return Integer.toString(loanManager.getAll().size());
+    };
 
 
 }

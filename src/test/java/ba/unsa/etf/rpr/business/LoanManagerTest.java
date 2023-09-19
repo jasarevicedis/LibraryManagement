@@ -57,5 +57,9 @@ class LoanManagerTest {
         Assertions.assertTrue(true);
         Mockito.verify(loanManager).delete(deletionLoan);
     }
-
+    @Test
+    public void shouldAnswerWithTrueLoan()
+    {
+        assertTrue( true );
+    }
 }
